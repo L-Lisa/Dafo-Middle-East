@@ -14,6 +14,11 @@ import { VideoBackground } from "..//components/VideoBackground.js"
 import Dafo400 from "images/DafoDubai400.png"
 import HeroLogo from "images/DafoMeNoBackTransp.png"
 import DafoDubai from "images/DafoDubai.jpg"
+import { ContactsBox } from "../components/ContactsBox"
+import { ContactInfoCard } from "../components/ContactInfoCard"
+import Shadi from "..//images/Shadi.jpg"
+
+import JohanDafo from "..//images/JohanDafo.jpg"
 // import style from "../index.css" ;
 
 
@@ -41,31 +46,9 @@ export const MainPage = () => {
     <Wrapper>
       <MainSection>
         <Intro>
-
-
           <VideoBackground videoSource={"https://res.cloudinary.com/dnjk2bwkp/video/upload/v1600336003/dafo/road_1_uonbx5.mp4"} ImgFront={"DafoDubaiME"}></VideoBackground>
 
 
-
-          {/*  <img src="https://res.cloudinary.com/dnjk2bwkp/image/upload/v1599474586/dafo/DafoDubaiLrgFullColr_epa5j9.jpg" type="jpg" alt="Dafo Middle East" /> */}
-          {/*  <DubaiVideo
-            display="inline"
-            height="400"
-            autoPlay
-            loop
-            muted
-            preload="auto"
-            poster="poster.png">
-            <source src="https://res.cloudinary.com/dnjk2bwkp/video/upload/v1600182376/dafo/smlDafoMain_vdskmy.mp4" type="video/mp4" />
-
-            <p>Image loading..</p>
-          </DubaiVideo> */}
-          {/* <DafoImage src={Dafo400} alt="Dafo" /> */}
-
-          {/*  <Hero>
-            <DafoHeroLogo src={HeroLogo} alt="Dafo" />
-          </Hero> */}
-          {/*  <img src="https://res.cloudinary.com/dnjk2bwkp/image/upload/v1599474586/dafo/DafoDubaiLrgFullColr_epa5j9.jpg" type="jpg" alt="Dafo Middle East" /> */}
           {/*  <PlayerContainer>
             <EmbedPlayer>
               <ReactPlayer
@@ -94,24 +77,58 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
             </p>
           </MainText>
         </Intro>
-        <ProductsDiv>
-          <Link to="/powergenerators">
-            <PowerGeneratorImg className="product-block ">
-              <h4>Power Generator</h4>
-            </PowerGeneratorImg>
-          </Link>
-          <Link to="/bus">
-            <BusBlockImg className="product-block">
-              <h4>Vehicles</h4>
-            </BusBlockImg>
-          </Link>
-          <Link to="/mining-constructon">
-            <MiningConstructionImg className="product-block">
-              <MiningH>Mining & heavy duty mobile equipment</MiningH>
-            </MiningConstructionImg>
-          </Link>
-        </ProductsDiv>
       </MainSection>
+
+
+
+      <ContactSection>
+
+        <ContactDiv>
+          <ContactsBox
+            coverImage={JohanDafo}
+            title="General Manager"
+            supportingText={"Johan Larsson Email address +971 4 232 3957"}
+          />
+
+          <ContactsBox
+            coverImage={Shadi}
+            title="Regional Manager"
+            supportingText={"Abdulah Shadi Email adress+971 55 800 5509 "}
+          />
+
+          <ContactsBox
+            coverImage={contactUs}
+            title="Sales & General inquires"
+            supportingText={"Dafo sales team: sales@dafo-middle-east.com +971 4 232 3957 General inquires: info@dafo-middle-east.com +971 4 232 3957"}
+          />
+        </ContactDiv>
+        <InfoDiv>
+          <ContactInfoCard
+            title={" Info Rutor"}
+            p1={"Clover Bay Tower"}
+            p2={"Office 1106, Business Bay"}
+            p3="Dubai, UAE"
+          />
+          <ContactInfoCard
+            title={"Dubai Office"}
+            p1={"Clover Bay Tower"}
+            p2={"Office 1106, Business Bay"}
+            p3="Dubai, UAE"
+          />
+          <ContactInfoCard
+            title={"Dubai Office"}
+            p1={"Clover Bay Tower"}
+            p2={"Office 1106, Business Bay"}
+            p3="Dubai, UAE"
+          />
+        </InfoDiv>
+
+      </ContactSection>
+
+
+
+
+
 
       {/*  <FlexDiv2>
         <ContactUs>
@@ -150,7 +167,7 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
         </ContactUs>
       </FlexDiv2> */}
 
-      <TwitterBox>
+      {/*  <TwitterBox>
         <Timeline
           renderError={(_err) => <p>Could not load Twitter</p>}
           dataSource={{
@@ -163,7 +180,7 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
           }}
           onLoad={() => settwitterLoaded(true)}
         />
-      </TwitterBox>
+      </TwitterBox> */}
     </Wrapper >
   );
 };
@@ -179,20 +196,20 @@ const MainSection = styled.section`
 width:100%;
 `
 
-const DubaiVideo = styled.video`
-width: 100%;
-height: auto;
+
+const ContactSection = styled.section`
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content: space-evenly;
+align-items: center;
 `;
 
-
-const DafoImage = styled.img`
-    width: 30%;
-    max-width: 200px;
-    margin-top: -36%;
-    margin-left: 0%;
-    @media (min-width: 1200px) {
-      margin-top: -30%;
-    }
+const InfoDiv = styled.div`
+display:flex;
+`;
+const ContactDiv = styled.div`
+display:flex;
 `;
 
 /* const Hero = styled.section`
@@ -235,11 +252,13 @@ width: inherit;
 const MainText = styled.div`
   width:90%;
   margin: 0 auto;
-  font-size:2rem;
-  @media (min-width: 676px) {
-    width:70%;
-  }
+  font-size:1.2rem;
+ height:100vh;
+ display:flex;
+ flex-direction: column;
+    justify-content: center;
 `;
+
 const ProductsDiv = styled.section`
   margin-top: 10px;
   display: flex;
@@ -283,96 +302,8 @@ const ProductsDiv = styled.section`
     }
   }
 `;
-const PowerGeneratorImg = styled.div`
-  background-image: url(${PowerGen});
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 310px;
-  padding: 4px;
-  @media (min-width: 676px) {
-    width: 100%;
-  }
-`;
-const BusBlockImg = styled.div`
-  background-image: url(${Buses});
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 310px;
-  padding: 4px;
-  @media (min-width: 676px) {
-    width: 100%;
-  }
-`;
-const MiningConstructionImg = styled.div`
-  background-image: url(${Mining});
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 310px;
-  padding: 4px;
-  @media (min-width: 676px) {
-    width: 100%;
-  }
-`;
-const MiningH = styled.h4`
-width:60%;
-@media (min-width: 320px) {
-    width: 50% !important;
-  }
-  @media (min-width: 550px) {
-    width: 40% !important;
-  }
-  @media (min-width: 678px) {
-    width: 90% !important;
-  }
-`
-const ContactUs = styled.article`
-  box-sizing: border-box;
-  width: 100%;
-  display: flex;
-  margin-top: 25px;
-  flex-direction: column;
-  align-items: center;
-  img {
-    width: 250px;
-    height: auto;
-    @media (max-width: 245px) {
-    width: 100%;
-  }
-  }
-  
-  div {
-    padding: 10px 2px;
-  }
-  ul {
-    list-style: none;
-    display: inline;
-    margin: 0;
-  }
-  li {
-    padding: 6px 2px;
-  }
-  h3 {
-    display: inline;
-    font-size: 1rem;
-  }
-  p {
-    margin: 0;
-  }
-  .block {
-    display: block;
-    margin-block-start: 0;
-  }
-  @media (min-width: 676px) {
-    margin-top: 0;
-    align-items: start;
-    img {
-      width: 100%;
-    }
-  }
-`;
+
+
 const TwitterBox = styled.div`
   overflow: scroll;
   height: auto;

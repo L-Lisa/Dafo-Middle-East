@@ -7,12 +7,13 @@ export const VideoBackground = ({ videoSource, DafoDubaiME }) => {
     videoSource = "https://res.cloudinary.com/dnjk2bwkp/video/upload/v1600336003/dafo/road_1_uonbx5.mp4"
     return (
         <Container>
-            <video autoPlay="autoplay" loop="loop" muted>
+            <Video autoPlay="autoplay" loop="loop" muted>
                 <source src={videoSource} type="video/mp4" />
-            </video>
+            </Video>
             <ImgBox>
                 <img src={DafoLogo} alt="Dafo" />
             </ImgBox>
+            <V>V</V>
         </Container>
     )
 }
@@ -21,11 +22,14 @@ export const VideoBackground = ({ videoSource, DafoDubaiME }) => {
 const Container = styled.section`
 position: relative;
     min-height: 300px;
-    max-height: 800px;
     overflow: hidden;
-    video{
-    width: 100%;
-    height: 100%;
+`;
+const Video = styled.video`
+width: 100%;
+height:100%;
+@media (min-width:1190px){
+    height: 100vh;
+    object-fit: cover;
     }
 `;
 
@@ -48,5 +52,20 @@ position: absolute;
    /*  border: #f1f1f1 1px solid;
     border-radius: 50%; */
   }
+`;
+
+const V = styled.div`
+width: 100%;
+height:30px;
+display:flex;
+justify-content:center;
+align-items:center;
+position:absolute;
+bottom:0;
+color:white;
+visibility:hidden;
+@media (min-width:1190px){
+    visibility:visible;
+    }
 `;
 

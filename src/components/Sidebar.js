@@ -1,4 +1,4 @@
-import React from "react"
+/* import React from "react"
 import styled from 'styled-components/macro'
 import JohanDafo from "..//images/JohanDafo.jpg"
 import UnceImage from "..//images/UnceImage.png"
@@ -73,7 +73,7 @@ h2{
         width: 100%;
         max-width:250px;
     }
-}   
+}
 li{
     padding: 7px 2px;
 }
@@ -91,7 +91,7 @@ a{
 }
 `;
 
-export const Person = styled.img`    
+export const Person = styled.img`
 width:35%;
 height: auto;
 border: ${props => props.Shadi ? "solid 1px #b0b0b0c9" : " "};
@@ -112,4 +112,4 @@ line-height: 7px;
 list-style:none;
 display: inline;
 padding-bottom:5px;
-`;
+`; */
