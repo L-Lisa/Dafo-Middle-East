@@ -139,6 +139,7 @@ width:100%;
 position: -webkit-sticky;
 position: sticky;
 top: 0;
+z-index: 10;
 `;
 
 const TopHeader = styled.section`
@@ -338,7 +339,7 @@ color:#626262a3;
 const ProductNav = styled.p`
 margin-top: 0px;
 padding-right: 12px;
-color:#626262;
+color:#eb141b;
 `;
 
 const Li2 = styled.li`

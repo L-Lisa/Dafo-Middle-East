@@ -39,7 +39,7 @@ export const MainPage = () => {
 
   return (
     <Wrapper>
-      <FlexDiv1>
+      <MainSection>
         <Intro>
 
 
@@ -60,12 +60,6 @@ export const MainPage = () => {
 
             <p>Image loading..</p>
           </DubaiVideo> */}
-
-
-
-
-
-
           {/* <DafoImage src={Dafo400} alt="Dafo" /> */}
 
           {/*  <Hero>
@@ -85,14 +79,17 @@ export const MainPage = () => {
           <MainText>
             <h1>Automatic fire detection and suppression system </h1>
             <p>
-              Dafo was one of the first companies in the world which started to develop intergrated firefighting solutions for vehicles. <br />Over the years Dafo has obtained vas experience and knowledge from our end user installations which have been used as a basis for
-            <br />
-Eliminating false alarms
-<br />
-Eliminating false releases
-<br />
+              Dafo was one of the first companies in the world which started to develop intergrated firefighting solutions for vehicles.
+              <br /><br />
+              Over the years Dafo has obtained vas experience and knowledge from our end user installations which have been used as a basis for
+            <ul>
+                <li>Eliminating false alarms</li>
+
+                <li>Eliminating false releases</li>
+              </ul>
+
  As a result of the development Dafo can today proudly present state of the art reliable solutions without vulnerable and pressurized agent containers.
- <br />
+ <br /><br />
 With more than 165000 vehicle systems sold worldwide know-how and experience ensure our customers to have the latest technology combined with proven reliability.
             </p>
           </MainText>
@@ -114,7 +111,7 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
             </MiningConstructionImg>
           </Link>
         </ProductsDiv>
-      </FlexDiv1>
+      </MainSection>
 
       {/*  <FlexDiv2>
         <ContactUs>
@@ -175,39 +172,12 @@ const Wrapper = styled.main`
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
-  @media (min-width: 676px) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  h2 {
-    color: white;
-    font-weight: bold;
-    background: black;
-    width: max-content;
-    width: 100%;
-    max-width: 316px;
-    text-align: center;
-    margin-block-start: 0;
-    @media (min-width: 676px) {
-      padding-bottom: 5px;
-    }
-  }
+  width:100%;
 `;
 
-const FlexDiv1 = styled.section`
-  margin: 0 auto;
-`;
-/* const FlexDiv2 = styled.section`
-  margin: 0 auto;
-  @media (min-width: 676px) {
-    width: 25%;
-  }
-  @media (min-width: 790px) {
-    width: 19%;
-    margin-left: 10px;
-  }
-`; */
+const MainSection = styled.section`
+width:100%;
+`
 
 const DubaiVideo = styled.video`
 width: 100%;
@@ -263,9 +233,11 @@ width: inherit;
     height: auto;
 `
 const MainText = styled.div`
-  padding: 0 30px;
+  width:90%;
+  margin: 0 auto;
+  font-size:2rem;
   @media (min-width: 676px) {
-    padding: 0px;
+    width:70%;
   }
 `;
 const ProductsDiv = styled.section`
