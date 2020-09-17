@@ -16,6 +16,7 @@ import HeroLogo from "images/DafoMeNoBackTransp.png"
 import DafoDubai from "images/DafoDubai.jpg"
 import { ContactsBox } from "../components/ContactsBox"
 import { ContactInfoCard } from "../components/ContactInfoCard"
+/* import { ScrollButton } from "../components/ScrollButton" */
 import Shadi from "..//images/Shadi.jpg"
 
 import JohanDafo from "..//images/JohanDafo.jpg"
@@ -24,6 +25,10 @@ import JohanDafo from "..//images/JohanDafo.jpg"
 
 
 export const MainPage = () => {
+  const [section, setSection] = useState("top")
+
+
+
   const [twitterLoaded, settwitterLoaded] = useState(false);
   useEffect(() => {
     if (twitterLoaded) {
@@ -42,23 +47,26 @@ export const MainPage = () => {
     }
   }, [twitterLoaded]);
 
+
+
+
+
   return (
     <Wrapper>
+      <BtnContainer >
+        <Button onClick={e => setSection("top")}></Button>
+        <Button onClick={e => setSection("sectionMid")}></Button>
+        <Button onClick={e => setSection("sectionEnd")}></Button>
+      </BtnContainer>
       <MainSection>
-        <Intro>
+
+
+        {section === "top" && (
           <VideoBackground videoSource={"https://res.cloudinary.com/dnjk2bwkp/video/upload/v1600363154/road_2_bvodzf.mp4"} ImgFront={"DafoDubaiME"}></VideoBackground>
 
 
-          {/*  <PlayerContainer>
-            <EmbedPlayer>
-              <ReactPlayer
-                url="https://res.cloudinary.com/dnjk2bwkp/video/upload/v1600007246/dafo/mediumTransp_amf8r5.mp4" width='auto'
-                height='100%'
-              />
-            </EmbedPlayer>
-          </PlayerContainer> */}
-
-
+        )}
+        {section === "sectionMid" && (
           <MainText>
             <h1>Automatic fire detection and suppression system </h1>
             <p>
@@ -76,54 +84,57 @@ export const MainPage = () => {
 With more than 165000 vehicle systems sold worldwide know-how and experience ensure our customers to have the latest technology combined with proven reliability.
             </p>
           </MainText>
-        </Intro>
+        )}
+
+
+
       </MainSection>
-      <ContactSection>
-        <ContactDiv>
-          <ContactsBox
-            coverImage={JohanDafo}
-            title="General Manager"
-            supportingText={"Johan Larsson Email address +971 4 232 3957"}
-          />
+      {
+        section === "sectionEnd" && (
+          <ContactSection>
+            <ContactDiv>
+              <ContactsBox
+                coverImage={JohanDafo}
+                title="General Manager"
+                supportingText={"Johan Larsson Email address +971 4 232 3957"}
+              />
 
-          <ContactsBox
-            coverImage={Shadi}
-            title="Regional Manager"
-            supportingText={"Abdulah Shadi Email adress+971 55 800 5509 "}
-          />
+              <ContactsBox
+                coverImage={Shadi}
+                title="Regional Manager"
+                supportingText={"Abdulah Shadi Email adress+971 55 800 5509 "}
+              />
 
-          <ContactsBox
-            coverImage={contactUs}
-            title="Sales & General inquires"
-            supportingText={"Dafo sales team: sales@dafo-middle-east.com +971 4 232 3957 General inquires: info@dafo-middle-east.com +971 4 232 3957"}
-          />
-        </ContactDiv>
-        <InfoDiv>
-          <ContactInfoCard
-            title={" Info Rutor"}
-            p1={"Clover Bay Tower"}
-            p2={"Office 1106, Business Bay"}
-            p3="Dubai, UAE"
-          />
-          <ContactInfoCard
-            title={"Dubai Office"}
-            p1={"Clover Bay Tower"}
-            p2={"Office 1106, Business Bay"}
-            p3="Dubai, UAE"
-          />
-          <ContactInfoCard
-            title={"Dubai Office"}
-            p1={"Clover Bay Tower"}
-            p2={"Office 1106, Business Bay"}
-            p3="Dubai, UAE"
-          />
-        </InfoDiv>
+              <ContactsBox
+                coverImage={contactUs}
+                title="Sales & General inquires"
+                supportingText={"Dafo sales team: sales@dafo-middle-east.com +971 4 232 3957 General inquires: info@dafo-middle-east.com +971 4 232 3957"}
+              />
+            </ContactDiv>
+            <InfoDiv>
+              <ContactInfoCard
+                title={" Info Rutor"}
+                p1={"Clover Bay Tower"}
+                p2={"Office 1106, Business Bay"}
+                p3="Dubai, UAE"
+              />
+              <ContactInfoCard
+                title={"Dubai Office"}
+                p1={"Clover Bay Tower"}
+                p2={"Office 1106, Business Bay"}
+                p3="Dubai, UAE"
+              />
+              <ContactInfoCard
+                title={"Dubai Office"}
+                p1={"Clover Bay Tower"}
+                p2={"Office 1106, Business Bay"}
+                p3="Dubai, UAE"
+              />
+            </InfoDiv>
 
-      </ContactSection>
-
-
-
-
+          </ContactSection>
+        )
+      }
 
 
       {/*  <FlexDiv2>
@@ -181,6 +192,11 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
   );
 };
 
+const ScrollButtonBox = styled.div`
+position: absolute;
+right:0;
+top:50%;
+`
 const Wrapper = styled.main`
   display: flex;
   flex-direction: column;
@@ -359,9 +375,27 @@ margin:0 auto;
 height: 400px;
 }
 `;
-const PlayerContainer = styled.div`
-width: max-content;
-height:auto;
-margin: 0 auto;
-margin-top: 40px;
+
+
+
+
+const BtnContainer = styled.div`
+height: 50px;
+    z-index: 200;
+    position: sticky;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: flex-end;
+    top: 50%;
+    padding-right: 10px;
+`;
+
+const Button = styled.button`
+height: 30px;
+    width: 30px;
+    padding: 10px;
+    border: solid;
+    border-radius: 50px;
 `;
