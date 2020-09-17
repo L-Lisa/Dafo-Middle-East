@@ -1,6 +1,7 @@
 import React from "react"
 import styled from 'styled-components/macro'
 import FilmText from "../images/filmtext.png";
+import { ScrollLink } from "components/ScrollButton"
 
 export const VideoBackground = ({ videoSource, DafoDubaiME }) => {
 
@@ -13,7 +14,7 @@ export const VideoBackground = ({ videoSource, DafoDubaiME }) => {
             <ImgBox>
                 <img src={FilmText} alt="Dafo" />
             </ImgBox>
-            <V>V</V>
+            <V>  <ScrollLink /></V>
         </Container>
     )
 }
@@ -23,6 +24,7 @@ const Container = styled.section`
 position: relative;
     min-height: 300px;
     overflow: hidden;
+    height: 100vh;
 `;
 const Video = styled.video`
 width: 100%;

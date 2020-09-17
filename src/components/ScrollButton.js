@@ -1,31 +1,79 @@
 import React, { useState } from 'react'
 import styled from "styled-components/macro"
-/* import PropTypes from 'prop-types'; */
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 
-export const ScrollButton = () => {
-    const [section, setSection] = useState("top")
+export const ScrollLink = () => {
 
 
     return (
+        <BtnContainer >
 
-        <Container >
-            <Button onClick={e => setSection("top")}></Button>
-            <Button onClick={e => setSection("sectionMid")}></Button>
-            <Button onClick={e => setSection("sectionEnd")}></Button>
-        </Container>
+            <Link
+                activeClass="active"
+                to="top"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={1000}>
+                &#9678;
+            </Link>
+
+            <Link
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                to="sectionMid">
+                &#9678;
+            </Link>
+
+
+
+            <Link
+                activeClass="active"
+                to="sectionEnd"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+            >  &#9678;</Link>
+
+        </BtnContainer >
     )
 }
 
-const Container = styled.div`
-width:20px;
+
+const BtnContainer = styled.div`
+width:100%;
 height:50px;
 z-index:200;
+display:flex;
+align-content:center;
+justify-content: center;
+font-weight:900;
+font-size:2rem;
+margin-bottom: 20px;
+a{
+    padding:10px;
+}
+.active {
+      color: red;
+    }
 `;
 
-const Button = styled.button`
-height:9px;
-width:9px;
-border-radius:50px;
-`;
+
+/* const Dot = styled.p`
+height: 30px;
+width: 30px;
+    background-color: #708090d4;
+    margin: 5px;
+    border-radius: 50%;
+    border: 1px solid black;
+    color: #80808000;
+    .activeClass:active{
+    background-color:red;
+}
+`; */
