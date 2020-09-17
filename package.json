@@ -19,7 +19,7 @@
     "react-mailchimp-form": "^1.0.2",
     "react-player": "^2.5.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.3.0",
+    "react-scripts": "^3.4.3",
     "react-twitter-widgets": "^1.9.5",
     "styled-components": "^5.1.1"
   },

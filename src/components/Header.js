@@ -16,7 +16,7 @@ export const Header = () => {
     const [showMenuX, setShowMenuX] = useState(false)
     return (
         < HeaderWrapper >
-            <TopHeader>
+            {/*  <TopHeader>
                 <SocialMediaBox>
                     <a href="https://www.youtube.com/channel/UCnnPIlXaWwE-wY3X-l3nTXw"><LogoIcon src={youtubeicon} alt="Dafo Youtube link" /></a>
                     < a href="https://www.linkedin.com/company/dafo-middle-east"><LogoIcon src={Linkedin} alt="Dafo youtube link" /></a>
@@ -30,7 +30,7 @@ export const Header = () => {
                     <NavLink to="/contact-us">Contact</NavLink>
                     <NavLink to="/">Home</NavLink>
                 </MiniNav>
-            </TopHeader>
+            </TopHeader> */}
 
 
             <Nav>
@@ -93,7 +93,6 @@ export const Header = () => {
                     <li>
                         <NavLink to="#">Services</NavLink>
                     </li>
-
                     <li>
                         <NavLink to="/certifications">Certificates</NavLink>
                     </li>
@@ -101,7 +100,13 @@ export const Header = () => {
                         <NavLink to="#">About</NavLink>
                     </li>
                     <li>
-                        <NavLink to="#"></NavLink>
+                        <NavLink to="/downloads">Downloads</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/contact-us">Contact</NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/">Home</NavLink>
                     </li>
                 </ul>
             </InlineNav>
@@ -149,7 +154,7 @@ display:none;
 }
 `;
 
-const SocialMediaBox = styled.span`
+/* const SocialMediaBox = styled.span`
     width: 35%;
     display: flex;
     align-items: center;
@@ -172,7 +177,7 @@ a{
         color:gray;
         transform: scale(1.1);
     }}
-`;
+`; */
 const LogoHeader = styled.div`
 img{
 width: 150px;

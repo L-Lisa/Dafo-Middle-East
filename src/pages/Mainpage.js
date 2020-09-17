@@ -41,13 +41,14 @@ export const MainPage = () => {
     <Wrapper>
       <FlexDiv1>
         <Intro>
-          {/*  <DafoImage src={Dafo400} alt="Dafo" /> */}
-          {/*  <VideoBackground videoSource={"https://res.cloudinary.com/dnjk2bwkp/video/upload/v1599940534/smlDafoDubaiBackground_hmayt7.mp4"} ImgFront={"DafoDubaiME"}></VideoBackground> */}
+
+
+          <VideoBackground videoSource={"https://res.cloudinary.com/dnjk2bwkp/video/upload/v1600336003/dafo/road_1_uonbx5.mp4"} ImgFront={"DafoDubaiME"}></VideoBackground>
 
 
 
           {/*  <img src="https://res.cloudinary.com/dnjk2bwkp/image/upload/v1599474586/dafo/DafoDubaiLrgFullColr_epa5j9.jpg" type="jpg" alt="Dafo Middle East" /> */}
-          <DubaiVideo
+          {/*  <DubaiVideo
             display="inline"
             height="400"
             autoPlay
@@ -58,7 +59,7 @@ export const MainPage = () => {
             <source src="https://res.cloudinary.com/dnjk2bwkp/video/upload/v1600182376/dafo/smlDafoMain_vdskmy.mp4" type="video/mp4" />
 
             <p>Image loading..</p>
-          </DubaiVideo>
+          </DubaiVideo> */}
 
 
 
@@ -82,14 +83,19 @@ export const MainPage = () => {
 
 
           <MainText>
-            <h1>Fire & rescue systems for your safety</h1>
+            <h1>Automatic fire detection and suppression system </h1>
             <p>
-              Dafo was one of the first companies in the world which started to develop integrated firefighting solutions for vehicles. Over the years Dafo has obtained vas experience and knowledge from our end user installations which have been used as a basis for eliminating false alarms and false releases. As a result of the development Dafo can today proudly present state of the art reliable solutions without vulnerable and pressurized agent containers.
-              With more than 165000 vehicle systems sold worldwide knowhow and experience ensure our customers to have the latest technology combined with proven reliability.
+              Dafo was one of the first companies in the world which started to develop intergrated firefighting solutions for vehicles. <br />Over the years Dafo has obtained vas experience and knowledge from our end user installations which have been used as a basis for
+            <br />
+Eliminating false alarms
+<br />
+Eliminating false releases
+<br />
+ As a result of the development Dafo can today proudly present state of the art reliable solutions without vulnerable and pressurized agent containers.
+ <br />
+With more than 165000 vehicle systems sold worldwide know-how and experience ensure our customers to have the latest technology combined with proven reliability.
             </p>
           </MainText>
-
-
         </Intro>
         <ProductsDiv>
           <Link to="/powergenerators">
@@ -110,7 +116,7 @@ export const MainPage = () => {
         </ProductsDiv>
       </FlexDiv1>
 
-      <FlexDiv2>
+      {/*  <FlexDiv2>
         <ContactUs>
           <h2>Contact Us</h2>
           <ContactImg src={contactUs} alt="Contact Dafo here" />
@@ -142,23 +148,25 @@ export const MainPage = () => {
               </li>
             </ul>
           </div>
-          {/*  <h2>News</h2> */}
-          <TwitterBox>
-            <Timeline
-              renderError={(_err) => <p>Could not load Twitter</p>}
-              dataSource={{
-                sourceType: "profile",
-                screenName: "Dafovehicle",
-                width: "100%",
-              }}
-              options={{
-                height: "700",
-              }}
-              onLoad={() => settwitterLoaded(true)}
-            />
-          </TwitterBox>
+         
+
         </ContactUs>
-      </FlexDiv2>
+      </FlexDiv2> */}
+
+      <TwitterBox>
+        <Timeline
+          renderError={(_err) => <p>Could not load Twitter</p>}
+          dataSource={{
+            sourceType: "profile",
+            screenName: "Dafovehicle",
+            width: "100%",
+          }}
+          options={{
+            height: "700",
+          }}
+          onLoad={() => settwitterLoaded(true)}
+        />
+      </TwitterBox>
     </Wrapper >
   );
 };
@@ -189,16 +197,8 @@ const Wrapper = styled.main`
 
 const FlexDiv1 = styled.section`
   margin: 0 auto;
-  max-width: 1299px;
-  @media (min-width: 676px) {
-    margin-right: 10px;
-    width: 65%;
-  }
-  @media (min-width: 790px) {
-    width: 70%;
-  }
 `;
-const FlexDiv2 = styled.section`
+/* const FlexDiv2 = styled.section`
   margin: 0 auto;
   @media (min-width: 676px) {
     width: 25%;
@@ -207,7 +207,7 @@ const FlexDiv2 = styled.section`
     width: 19%;
     margin-left: 10px;
   }
-`;
+`; */
 
 const DubaiVideo = styled.video`
 width: 100%;
