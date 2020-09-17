@@ -30,7 +30,6 @@ export const MainPage = () => {
         <VideoBackground videoSource={"https://res.cloudinary.com/dnjk2bwkp/video/upload/v1600363154/road_2_bvodzf.mp4"} ImgFront={"DafoDubaiME"}
         ></VideoBackground>
 
-        <ScrollLink />
 
       </VideoContainer>
 
@@ -42,7 +41,6 @@ export const MainPage = () => {
               Over the years Dafo has obtained vas experience and knowledge from our end user installations which have been used as a basis for
             <ul>
             <li>Eliminating false alarms</li>
-
             <li>Eliminating false releases</li>
           </ul>
 
@@ -105,7 +103,7 @@ const MainText = styled.div`
     background: #f5f5f5;
     margin: 0 auto;
     font-size: 1.2rem;
-    height: 100vh;
+    
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -118,28 +116,50 @@ const MainText = styled.div`
     -ms-flex-pack: center;
     justify-content: center;
     padding-left: 30px;
+    @media (min-width: 1200px) {
+  height:100vh;
+  }
 `;
 
 
 const ContactSection = styled.section`
 width:100%;
-height:100vh;
+
 display:flex;
 flex-direction:column;
 justify-content: center;
 align-items: center;
+@media (min-width: 1200px) {
+  height:100vh;
+  }
 `;
 
 const ContactDiv = styled.div`
 display:flex;
+flex-direction:column;
+@media (min-width: 500px) {
+  flex-direction: row;
+    flex-wrap: wrap;
+  }
+@media (min-width: 1200px) {
+  height:100vh;
+  }
 `;
 const InfoDiv = styled.div`
 display:flex;
+flex-direction:column;
+@media (min-width: 500px) {
+  flex-direction: row;
+    flex-wrap: wrap;
+  }
 `;
 
 const VideoContainer = styled.section`
-height:100vh;
+
 background:#fff;
+@media (min-width: 1200px) {
+  height:100vh;
+  }
 `;
 
 /* const TwitterBox = styled.div`
@@ -186,7 +206,7 @@ background:#fff;
 const EmbedPlayer = styled.div`
 display:none;
 @media(min-width:676px){
-          display:inline-block;
+display:inline-block;
 margin:0 auto;
 height: 400px;
 }

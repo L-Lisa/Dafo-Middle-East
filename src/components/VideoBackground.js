@@ -24,15 +24,16 @@ const Container = styled.section`
 position: relative;
     min-height: 300px;
     overflow: hidden;
-    height: 100vh;
+    @media (min-width: 1190px) {
+  height:100vh;
+  }
 `;
 const Video = styled.video`
 width: 100%;
 height:100%;
-@media (min-width:1190px){
-    height: 100vh;
-    object-fit: cover;
-    }
+@media (min-width: 1190px) {
+  height:100vh;
+  }
 `;
 
 const ImgBox = styled.div`
@@ -41,7 +42,7 @@ position: absolute;
     /* color:#f1f1f1;
     background-color: rgba(0, 0, 0, 0.3); */
     width: 100%;
-    height: 100%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,10 +65,9 @@ justify-content:center;
 align-items:center;
 position:absolute;
 bottom:0;
-color:white;
-visibility:hidden;
+
 @media (min-width:1190px){
-    visibility:visible;
+   
     }
 `;
 

@@ -9,7 +9,7 @@ margin-bottom: 20px;
 border-radius: 3px;
 background: whitesmoke;
 width: 200px;
-
+margin: 8px;
 `;
 
 const Title = styled.h1`
