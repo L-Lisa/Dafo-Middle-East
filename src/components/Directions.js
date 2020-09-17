@@ -50,7 +50,7 @@ export const Directions = () => {
                     </Route>
                 </Switch>
             </main>
-            <Footer />
+
         </BrowserRouter>
     )
 }

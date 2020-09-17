@@ -78,11 +78,7 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
           </MainText>
         </Intro>
       </MainSection>
-
-
-
       <ContactSection>
-
         <ContactDiv>
           <ContactsBox
             coverImage={JohanDafo}
@@ -250,13 +246,23 @@ width: inherit;
     height: auto;
 `
 const MainText = styled.div`
-  width:90%;
-  margin: 0 auto;
-  font-size:1.2rem;
- height:100vh;
- display:flex;
- flex-direction: column;
+ width: 100%;
+    background: #f5f5f5;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    padding-left: 30px;
 `;
 
 const ProductsDiv = styled.section`
