@@ -46,7 +46,7 @@ export const MainPage = () => {
     <Wrapper>
       <MainSection>
         <Intro>
-          <VideoBackground videoSource={"https://res.cloudinary.com/dnjk2bwkp/video/upload/v1600336003/dafo/road_1_uonbx5.mp4"} ImgFront={"DafoDubaiME"}></VideoBackground>
+          <VideoBackground videoSource={"https://res.cloudinary.com/dnjk2bwkp/video/upload/v1600363154/road_2_bvodzf.mp4"} ImgFront={"DafoDubaiME"}></VideoBackground>
 
 
           {/*  <PlayerContainer>

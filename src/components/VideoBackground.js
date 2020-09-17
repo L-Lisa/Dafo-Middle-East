@@ -1,6 +1,6 @@
 import React from "react"
 import styled from 'styled-components/macro'
-import DafoLogo from "../images/DafoMeNoBackTransp.png";
+import FilmText from "../images/filmtext.png";
 
 export const VideoBackground = ({ videoSource, DafoDubaiME }) => {
 
@@ -11,7 +11,7 @@ export const VideoBackground = ({ videoSource, DafoDubaiME }) => {
                 <source src={videoSource} type="video/mp4" />
             </Video>
             <ImgBox>
-                <img src={DafoLogo} alt="Dafo" />
+                <img src={FilmText} alt="Dafo" />
             </ImgBox>
             <V>V</V>
         </Container>
