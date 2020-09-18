@@ -11,7 +11,8 @@ import { Header } from "../components/Header"
 import { Downloads } from "../pages/Downloads"
 import { Certifications } from "../pages/Certifications"
 import { Vehicles } from "../pages/Vehicles"
-
+import { Mining } from "../pages/Mining"
+import { Power } from "../pages/Power"
 
 export const Directions = () => {
     return (
@@ -30,6 +31,14 @@ export const Directions = () => {
 
                     <Route path="/vehicles" exact>
                         <Vehicles />
+                    </Route>
+
+                    <Route path="/mining" exact>
+                        <Mining />
+                    </Route>
+
+                    <Route path="/power" exact>
+                        <Power />
                     </Route>
 
                     <Route path="/powergenerators" exact>

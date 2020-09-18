@@ -61,7 +61,7 @@ const BtnContainer = styled.div`
     font-size: 2rem;
     margin-bottom: 20px;
     position: absolute;
-    bottom: -239%;
+    top:300px;
     flex-direction: column;
     position: absolute;
     width: 100%;
@@ -69,14 +69,18 @@ const BtnContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    position: absolute;
+    position: sticky;
     display: none;
 @media (min-width:1190px){ 
     display: flex;
     }
 a{
-    padding:10px;
+    padding: 6px;
     cursor: pointer;
+    background: #fff;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin-right: 7px;
 }
 .active {
       color: red;

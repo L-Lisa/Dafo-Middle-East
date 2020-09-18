@@ -28,7 +28,6 @@ solutions like water sprinkler, dry chemical or CO2-systems</p>
 }
 
 
-
 const Wrapper = styled.main`
 display:flex;
 flex-direction:column;

@@ -26,7 +26,7 @@ export const MainPage = () => {
 
   return (
     <>
-      {/*  <ScrollLink /> */}
+      <ScrollLink />
       <VideoContainer id="top">
         <VideoBackground videoSource={"https://res.cloudinary.com/dnjk2bwkp/video/upload/v1600437742/18eMainVid_yok0cm.mp4"} ImgFront={"DafoDubaiME"}
         ></VideoBackground>
@@ -48,6 +48,12 @@ export const MainPage = () => {
 With more than 165000 vehicle systems sold worldwide know-how and experience ensure our customers to have the latest technology combined with proven reliability.
             </p>
         <Space></Space>
+        <V><Link activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-15}
+          duration={500}
+          to="sectionEnd"><p>V</p></Link></V>
       </MainText>
 
       <ContactSection id="sectionEnd" >
@@ -183,6 +189,19 @@ justify-content:center;
 color:gray;
 background:whitesmoke;
 }
+`;
+
+const V = styled.div`
+width: 100%;
+height:30px;
+justify-content:center;
+align-items:center;
+color: red;
+display:none;
+    margin-bottom: 20px;
+@media (min-width:1190px){ 
+    display:flex;
+    }
 `;
 /* const TwitterBox = styled.div`
   overflow: scroll;

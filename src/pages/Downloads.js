@@ -82,7 +82,7 @@ export const Downloads = () => {
                                         </div>
                                         <div>
                                             <div className="clear" >
-                                                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
+                                                <input type="submit" value="continue" name="subscribe" id="mc-embedded-subscribe"
                                                     className="button"
                                                 />
                                                 {/*  <div className="indicates-required"><span className="asterisk">*</span> indicates required</div> */}

@@ -16,11 +16,11 @@ export const Footer = () => {
                     <div>
                         <h1>Follow Dafo</h1>
 
-                        < a href="https://www.youtube.com/user/dafobrand">Youtube</a>
+                        < a href="https://www.youtube.com/user/dafobrand" target="_blank" rel="noopener noreferrer">Youtube</a>
                         <br />
-                        < a href="https://www.linkedin.com/company/dafo-middle-east">LinkedIn</a>
+                        < a href="https://www.linkedin.com/company/dafo-middle-east" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         <br />
-                        < a href="https://twitter.com/Dafovehicle">Twitter</a>
+                        < a href="https://twitter.com/Dafovehicle" target="_blank" rel="noopener noreferrer">Twitter</a>
                     </div>
                 </Box2>
                 <Box3>

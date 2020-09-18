@@ -19,9 +19,9 @@ export const Header = () => {
         < HeaderWrapper >
             {/*  <TopHeader>
                 <SocialMediaBox>
-                    <a href="https://www.youtube.com/channel/UCnnPIlXaWwE-wY3X-l3nTXw"><LogoIcon src={youtubeicon} alt="Dafo Youtube link" /></a>
-                    < a href="https://www.linkedin.com/company/dafo-middle-east"><LogoIcon src={Linkedin} alt="Dafo youtube link" /></a>
-                    < a href="https://twitter.com/Dafovehicle"><LogoIcon src={twittericon} alt="Dafo twitter link" /></a>
+                    <a href="https://www.youtube.com/channel/UCnnPIlXaWwE-wY3X-l3nTXw" target="_blank" rel="noopener noreferrer"><LogoIcon src={youtubeicon} alt="Dafo Youtube link" /></a>
+                    < a href="https://www.linkedin.com/company/dafo-middle-east" target="_blank" rel="noopener noreferrer"><LogoIcon src={Linkedin} alt="Dafo youtube link" /></a>
+                    < a href="https://twitter.com/Dafovehicle" target="_blank" rel="noopener noreferrer"><LogoIcon src={twittericon} alt="Dafo twitter link" /></a>
 
                     <Link to="/"><VehicleImg src={DafoRedNoBackground} alt="Dafo Middle East" /></Link>
                 </SocialMediaBox>
@@ -56,10 +56,10 @@ export const Header = () => {
                             <NavLink to="/vehicles" onClick={() => setShowMenu(false)}>Vehicles</NavLink>
                         </li>
                         <li>
-                            <NavLink to="/powergenerators" onClick={() => setShowMenu(false)}>Power generators </NavLink>
+                            <NavLink to="/power" onClick={() => setShowMenu(false)}>Power generators </NavLink>
                         </li>
                         <li>
-                            <NavLink to="/mining-constructon" onClick={() => setShowMenu(false)}>Mining & heavy duty mobile equipment</NavLink>
+                            <NavLink to="/mining" onClick={() => setShowMenu(false)}>Mining & heavy duty mobile equipment</NavLink>
                         </li>
                         <li>
                             <NavLink to="#" onClick={() => setShowMenu(false)}>Services</NavLink>
@@ -113,22 +113,33 @@ export const Header = () => {
             </InlineNav>
             {showProducts &&
                 <InlineNav2 id="close" >
-
-
                     <ProductNav>Automatic fire detection and suppression system for:</ProductNav>
+                    <Li2>
+                        <NavLink to="/vehicles" onClick={() => setShowProducts(false)}> <Link
 
-                    <Li2>
-                        <NavLink to="/vehicles" onClick={() => setShowProducts(false)}>Vehicles</NavLink>
+                            to="top"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}>
+                        </Link>Vehicles</NavLink>
                     </Li2>
                     <Li2>
-                        <NavLink to="/powergenerators" onClick={() => setShowProducts(false)}>Powergenerators</NavLink>
+                        <NavLink to="/power" onClick={() => setShowProducts(false)}>Powergenerators</NavLink>
                     </Li2>
                     <Li2>
-                        <NavLink to="/mining-constructon" onClick={() => setShowProducts(false)} >Mining & heavy duty mobile equipment</NavLink>
+                        <NavLink to="/mining" onClick={() => setShowProducts(false)} > <Link
+
+                            to="top"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}>
+                        </Link>Mining & heavy duty mobile equipment</NavLink>
                     </Li2>
                 </InlineNav2>
             }
-            <ScrollLink />
+
         </HeaderWrapper >
 
     )
@@ -194,7 +205,7 @@ const BurgerBox = styled.section`
 display:flex;
 flex-direction:column;
 align-items: center;
-background:#1c1c1c;
+background:#fff;
 justify-content:space-between;
 @media(min-width:319px){
     flex-direction:row;
