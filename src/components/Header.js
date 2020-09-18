@@ -9,6 +9,7 @@ import Vehicle from "..//images/Vehicle.jpg"
 import redNblack from "..//images/redNblackLogo.png"
 import DafoRedNoBackground from "..//images/DafoVehicleLogoNoBackground.png"
 import DafoRedFlame from "../images/DafoRedFlame.jpg"
+import { ScrollLink } from "components/ScrollButton"
 
 export const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -127,6 +128,7 @@ export const Header = () => {
                     </Li2>
                 </InlineNav2>
             }
+            <ScrollLink />
         </HeaderWrapper >
 
     )

@@ -2,6 +2,8 @@ import React from "react"
 import styled from 'styled-components/macro'
 import FilmText from "../images/filmtext.png";
 import { ScrollLink } from "components/ScrollButton"
+/* import { Vscroller } from "components/Vscroller" */
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export const VideoBackground = ({ videoSource, DafoDubaiME }) => {
 
@@ -13,8 +15,15 @@ export const VideoBackground = ({ videoSource, DafoDubaiME }) => {
             </Video>
             <ImgBox>
                 <img src={FilmText} alt="Dafo" />
+                <V><Link activeClass="active"
+                    spy={true}
+                    smooth={true}
+                    offset={-15}
+                    duration={500}
+                    to="sectionMid"><p>&#8595;</p></Link></V>
             </ImgBox>
-            <V>  <ScrollLink /></V>
+
+
         </Container>
     )
 }
@@ -31,8 +40,10 @@ position: relative;
 const Video = styled.video`
 width: 100%;
 height:100%;
+
+    background: black;
 @media (min-width: 1190px) {
-  height:100vh;
+    height: 100vh;
   }
 `;
 
@@ -68,9 +79,10 @@ justify-content:center;
 align-items:center;
 position:absolute;
 bottom:0;
+color: white;
+    margin-bottom: 20px;
+@media (min-width:1190px){ 
 
-@media (min-width:1190px){
-   
     }
 `;
 

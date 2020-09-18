@@ -18,19 +18,17 @@ import { ContactInfoCard } from "../components/ContactInfoCard"
 import Shadi from "..//images/Shadi.jpg"
 import { ScrollLink } from "components/ScrollButton"
 import JohanDafo from "..//images/JohanDafo.jpg"
-
+import { Vscroller } from "components/Vscroller"
 
 
 export const MainPage = () => {
 
-
   return (
     <>
+      {/*  <ScrollLink /> */}
       <VideoContainer id="top">
         <VideoBackground videoSource={"https://res.cloudinary.com/dnjk2bwkp/video/upload/v1600363154/road_2_bvodzf.mp4"} ImgFront={"DafoDubaiME"}
         ></VideoBackground>
-
-
       </VideoContainer>
 
       <MainText id="sectionMid" >
@@ -48,10 +46,11 @@ export const MainPage = () => {
  <br /><br />
 With more than 165000 vehicle systems sold worldwide know-how and experience ensure our customers to have the latest technology combined with proven reliability.
             </p>
-        <ScrollLink />
+
       </MainText>
-      <ContactSection id="sectionEnd"  >
-        <ContactDiv>
+
+      <ContactSection id="sectionEnd" >
+        <ContactDiv >
           <ContactsBox
             coverImage={JohanDafo}
             title="General Manager"
@@ -63,14 +62,14 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
             title="Regional Manager"
             supportingText={"Abdulah Shadi Email adress+971 55 800 5509 "}
           />
-          <span id="sectionEnd"></span>
+          <span ></span>
           <ContactsBox
             coverImage={contactUs}
             title="Sales & General inquires"
             supportingText={"Dafo sales team: sales@dafo-middle-east.com +971 4 232 3957 General inquires: info@dafo-middle-east.com +971 4 232 3957"}
           />
         </ContactDiv>
-        <InfoDiv>
+        <InfoDiv >
           <ContactInfoCard
             title={" Info Rutor"}
             p1={"Clover Bay Tower"}
@@ -91,7 +90,7 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
             p3="Dubai, UAE"
           />
         </InfoDiv>
-        <ScrollLink />
+        <Space></Space>
       </ContactSection>
     </>
   )
@@ -116,7 +115,7 @@ const MainText = styled.div`
     -ms-flex-pack: center;
     justify-content: center;
     padding-left: 30px;
-    @media (min-width: 1200px) {
+    @media (min-width: 1000px) {
   height:100vh;
   }
 `;
@@ -124,25 +123,22 @@ const MainText = styled.div`
 
 const ContactSection = styled.section`
 width:100%;
-
 display:flex;
 flex-direction:column;
 justify-content: center;
 align-items: center;
-@media (min-width: 1200px) {
+@media (min-width: 1190px) {
   height:100vh;
   }
 `;
 
 const ContactDiv = styled.div`
 display:flex;
+height:min-content;
 flex-direction:column;
 @media (min-width: 500px) {
   flex-direction: row;
     flex-wrap: wrap;
-  }
-@media (min-width: 1200px) {
-  height:100vh;
   }
 `;
 const InfoDiv = styled.div`
@@ -155,12 +151,14 @@ flex-direction:column;
 `;
 
 const VideoContainer = styled.section`
-
 background:#fff;
 @media (min-width: 1200px) {
   height:100vh;
   }
 `;
+const Space = styled.span`
+height:30px;
+`
 
 /* const TwitterBox = styled.div`
   overflow: scroll;

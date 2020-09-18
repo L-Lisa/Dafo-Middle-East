@@ -15,8 +15,8 @@ export const ScrollLink = () => {
                 to="top"
                 spy={true}
                 smooth={true}
-                offset={0}
-                duration={1000}>
+                offset={-15}
+                duration={500}>
                 &#9678;
             </Link>
 
@@ -24,22 +24,22 @@ export const ScrollLink = () => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-15}
                 duration={500}
                 to="sectionMid">
                 &#9678;
             </Link>
 
 
-
             <Link
                 activeClass="active"
-                to="sectionEnd"
                 spy={true}
                 smooth={true}
                 offset={0}
                 duration={500}
-            >  &#9678;</Link>
+                to="sectionEnd">
+                &#9678;
+            </Link>
 
         </BtnContainer >
     )
@@ -47,15 +47,31 @@ export const ScrollLink = () => {
 
 
 const BtnContainer = styled.div`
-width:100%;
-height:50px;
-z-index:200;
-display:flex;
-align-content:center;
-justify-content: center;
-font-weight:900;
-font-size:2rem;
-margin-bottom: 20px;
+    z-index: 200;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center; 
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    font-weight: 900;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: -239%;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: absolute;
+@media (min-width:1190px){ 
+    }
 a{
     padding:10px;
 }
