@@ -1,23 +1,52 @@
-/* import React, { useState } from 'react'
+import React, { useState } from 'react'
 import styled from "styled-components/macro"
 import { Link, animateScroll as scroll } from "react-scroll";
 
 
 
-export const Vscroller = () => {
-
-
+export const VscrollerTop = () => {
   return (
     <Vdiv>
-      <Link to="sectionEnd"> <WhiteV>&#8595;</WhiteV></Link>
-      <Link to="top"> <BlackV>&#8593;</BlackV></Link>
-      <br />
+      <Link
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        to="top"><p>V</p>
+      </Link>
+    </Vdiv >
+  )
+}
+
+export const VscrollerMid = () => {
+  return (
+    <Vdiv>
+      <Link
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        to="sectionMid"><p>V</p>
+      </Link>
+    </Vdiv >
+  )
+}
+export const VscrollerEndd = () => {
+  return (
+    <Vdiv>
+      <Link
+        spy={true}
+        smooth={true}
+        offset={0}
+        duration={500}
+        to="sectionEnd"><p>V</p>
+      </Link>
     </Vdiv >
   )
 }
 
 const Vdiv = styled.div`
-z-index: 200;
+/* z-index: 200;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -40,16 +69,16 @@ z-index: 200;
     justify-content: center;
     align-items: flex-end;
     position: absolute;
-
-
-@media (min-width:1190px){
-    display: flex;
+ */
+width: 100%;
+height:30px;
+justify-content:center;
+align-items:center;
+color: red;
+display:none;
+    margin-bottom: 20px;
+@media (min-width:1190px){ 
+    display:flex;
     bottom: 60px;
     }
 `;
-const WhiteV = styled.p`
-color:white;
-`;
-const BlackV = styled.p`
-color:black;
-`; */

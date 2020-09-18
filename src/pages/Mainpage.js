@@ -197,6 +197,7 @@ height:30px;
 justify-content:center;
 align-items:center;
 color: red;
+cursor:pointer;
 display:none;
     margin-bottom: 20px;
 @media (min-width:1190px){ 

@@ -71,14 +71,15 @@ position: absolute;
 `;
 
 const V = styled.div`
-width: 100%;
-height:30px;
+width: 80px;
+height:80px;
 justify-content:center;
 align-items:center;
 position:absolute;
 bottom:0;
 color: white;
 display:none;
+cursor:pointer;
     margin-bottom: 20px;
 @media (min-width:1190px){ 
     display:flex;
