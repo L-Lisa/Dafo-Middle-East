@@ -47,6 +47,9 @@ position: absolute;
     justify-content: center;
     align-items: center;
     padding: 0;
+    @media (min-width: 550px) {
+  height:100%;
+  }
     img {
     width: 250px;
     height: auto;
