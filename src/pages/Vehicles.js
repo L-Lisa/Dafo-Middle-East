@@ -1,14 +1,13 @@
 import React from "react"
 import styled from 'styled-components/macro'
 import { PageComponent } from "components/PageComponent.js"
-import BusGirl from "..//images/BusGirl.jpeg"
+import BusGirl from "../images/BusGirl.jpeg"
 import ReactPlayer from 'react-player'
 import { Link, animateScroll as scroll } from "react-scroll";
 import { VideoBackground } from "..//components/VideoBackground.js"
 
 
 export const Vehicles = ({ videoSource }) => {
-
 
     return (
         <>
@@ -31,6 +30,7 @@ export const Vehicles = ({ videoSource }) => {
                                 />
                             </EmbedPlayer>
                         </PlayerContainer>
+
                     </>
                 }
             />

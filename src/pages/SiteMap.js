@@ -12,7 +12,7 @@ export const SiteMap = () => {
                     <Link to="/"><h1>Dafo Home Page</h1></Link>
                 </LI>
                 <LI>
-                    <Link to="/bus"> <h2>Fire Suppression Systems - Buses & vehicles</h2></Link></LI>
+                    <Link to="/vehicles"> <h2>Fire Suppression Systems - Buses & vehicles</h2></Link></LI>
                 <LI>
                     <Link to="/powergenerators"> <h2>Power Generators</h2></Link>
                 </LI>

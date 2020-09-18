@@ -20,6 +20,7 @@ import { ScrollLink } from "components/ScrollButton"
 import JohanDafo from "..//images/JohanDafo.jpg"
 import { Vscroller } from "components/Vscroller"
 import { Link, animateScroll as scroll } from "react-scroll";
+import { BuyButton } from "..//components/BuyButton"
 
 
 export const MainPage = () => {
@@ -27,6 +28,7 @@ export const MainPage = () => {
   return (
     <>
       <ScrollLink />
+      <BuyButton />
       <VideoContainer id="top">
         <VideoBackground videoSource={"https://res.cloudinary.com/dnjk2bwkp/video/upload/v1600437742/18eMainVid_yok0cm.mp4"} ImgFront={"DafoDubaiME"}
         ></VideoBackground>

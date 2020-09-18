@@ -9,6 +9,7 @@ export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, ma
 
         <PageWrapper>
             <ScrollLink />
+
             <TopSection id="top">
 
                 {coverImage && <CoverImage src={coverImage} />}

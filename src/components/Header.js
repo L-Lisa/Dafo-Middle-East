@@ -125,7 +125,14 @@ export const Header = () => {
                         </Link>Vehicles</NavLink>
                     </Li2>
                     <Li2>
-                        <NavLink to="/power" onClick={() => setShowProducts(false)}>Powergenerators</NavLink>
+                        <NavLink to="/power" onClick={() => setShowProducts(false)}><Link
+
+                            to="top"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}>
+                        </Link>Powergenerators</NavLink>
                     </Li2>
                     <Li2>
                         <NavLink to="/mining" onClick={() => setShowProducts(false)} > <Link

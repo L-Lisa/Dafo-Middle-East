@@ -8,10 +8,8 @@ export const ContactInfoCard = ({ title, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10
 
         <Container >
             <TitleBar>
-
                 <div>
                     {title && <Title>{title}</Title>}
-
                 </div>
             </TitleBar>
             <TextDiv>
@@ -49,8 +47,8 @@ font-weight:800;
 const TextDiv = styled.div`
 margin-left:3px;
 line-height: 10px;
-`
+`;
 
 const P1 = styled.p`
 text-align:left;
-`
+`;
