@@ -28,7 +28,7 @@ export const MainPage = () => {
     <>
       {/*  <ScrollLink /> */}
       <VideoContainer id="top">
-        <VideoBackground videoSource={"https://res.cloudinary.com/dnjk2bwkp/video/upload/v1600363154/road_2_bvodzf.mp4"} ImgFront={"DafoDubaiME"}
+        <VideoBackground videoSource={"https://res.cloudinary.com/dnjk2bwkp/video/upload/v1600437742/18eMainVid_yok0cm.mp4"} ImgFront={"DafoDubaiME"}
         ></VideoBackground>
       </VideoContainer>
 
@@ -100,7 +100,7 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
         spy={true}
         smooth={true}
         offset={-15}
-        duration={500}>Top &#8593;
+        duration={500}> &#8593;
             </Link></Top>
     </>
   )
@@ -124,7 +124,7 @@ const MainText = styled.div`
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-left: 3px;
+    padding: 3px;
     @media (min-width: 1200px) {
   height:100vh;
   padding-left: 30px;

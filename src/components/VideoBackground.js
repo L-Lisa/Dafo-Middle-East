@@ -7,7 +7,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 export const VideoBackground = ({ videoSource, DafoDubaiME }) => {
 
-    videoSource = "https://res.cloudinary.com/dnjk2bwkp/video/upload/v1600336003/dafo/road_1_uonbx5.mp4"
+
     return (
         <Container>
             <Video autoPlay="autoplay" loop="loop" muted>

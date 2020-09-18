@@ -33,6 +33,7 @@ export const BusPage = () => {
                         <ReactPlayer
                             url="https://www.youtube.com/watch?v=yFrJz5tydMQ&t=50s" width='100%'
                             height='100%'
+                            muted
                         />
                     </EmbedPlayer>
                 </PlayerContainer>

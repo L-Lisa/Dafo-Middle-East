@@ -53,7 +53,7 @@ export const Header = () => {
                 {showMenu &&
                     <ul>
                         <li>
-                            <NavLink to="/bus" onClick={() => setShowMenu(false)}>Vehicles</NavLink>
+                            <NavLink to="/vehicles" onClick={() => setShowMenu(false)}>Vehicles</NavLink>
                         </li>
                         <li>
                             <NavLink to="/powergenerators" onClick={() => setShowMenu(false)}>Power generators </NavLink>
@@ -118,7 +118,7 @@ export const Header = () => {
                     <ProductNav>Automatic fire detection and suppression system for:</ProductNav>
 
                     <Li2>
-                        <NavLink to="/bus" onClick={() => setShowProducts(false)}>Vehicles</NavLink>
+                        <NavLink to="/vehicles" onClick={() => setShowProducts(false)}>Vehicles</NavLink>
                     </Li2>
                     <Li2>
                         <NavLink to="/powergenerators" onClick={() => setShowProducts(false)}>Powergenerators</NavLink>

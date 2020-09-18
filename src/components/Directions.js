@@ -10,6 +10,8 @@ import { Footer } from "../components/Footer"
 import { Header } from "../components/Header"
 import { Downloads } from "../pages/Downloads"
 import { Certifications } from "../pages/Certifications"
+import { Vehicles } from "../pages/Vehicles"
+
 
 export const Directions = () => {
     return (
@@ -24,6 +26,10 @@ export const Directions = () => {
 
                     <Route path="/bus" exact>
                         <BusPage />
+                    </Route>
+
+                    <Route path="/vehicles" exact>
+                        <Vehicles />
                     </Route>
 
                     <Route path="/powergenerators" exact>
