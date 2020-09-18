@@ -31,7 +31,6 @@ export const VideoBackground = ({ videoSource, DafoDubaiME }) => {
 
 const Container = styled.section`
 position: relative;
-    min-height: 300px;
     overflow: hidden;
     @media (min-width: 1190px) {
   height:100vh;
@@ -53,7 +52,7 @@ position: absolute;
     /* color:#f1f1f1;
     background-color: rgba(0, 0, 0, 0.3); */
     width: 100%;
-    height: 50%;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +61,7 @@ position: absolute;
   height:100%;
   }
     img {
-    width: 250px;
+    width: 200px;
     height: auto;
     display: block;
     position: absolute;
@@ -74,15 +73,16 @@ position: absolute;
 const V = styled.div`
 width: 100%;
 height:30px;
-display:flex;
+
 justify-content:center;
 align-items:center;
 position:absolute;
 bottom:0;
 color: white;
+display:none;
     margin-bottom: 20px;
 @media (min-width:1190px){ 
-
+    display:flex;
     }
 `;
 

@@ -36,9 +36,9 @@ export const Header = () => {
 
             <Nav>
                 <BurgerBox>
-                    <LogoHeader>
+                    {/*  <LogoHeader>
                         <Link to="/"><img src={DafoRedNoBackground} alt="Dafo Middle East" /></Link>
-                    </LogoHeader>
+                    </LogoHeader> */}
 
                     <Hamburger>
                         <div className="container" onClick={() => setShowMenu(!showMenu)}>
@@ -241,7 +241,7 @@ margin-right: 5px;
   cursor: pointer;
   height: 32px;
     width: 100%;
-    margin-bottom: 15px;
+    margin: 15px;
   @media(min-width:676px){
     display:none;
 }

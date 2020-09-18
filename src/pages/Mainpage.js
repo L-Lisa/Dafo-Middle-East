@@ -19,6 +19,7 @@ import Shadi from "..//images/Shadi.jpg"
 import { ScrollLink } from "components/ScrollButton"
 import JohanDafo from "..//images/JohanDafo.jpg"
 import { Vscroller } from "components/Vscroller"
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 export const MainPage = () => {
@@ -46,10 +47,11 @@ export const MainPage = () => {
  <br /><br />
 With more than 165000 vehicle systems sold worldwide know-how and experience ensure our customers to have the latest technology combined with proven reliability.
             </p>
-
+        <Space></Space>
       </MainText>
 
       <ContactSection id="sectionEnd" >
+
         <ContactDiv >
           <ContactsBox
             coverImage={JohanDafo}
@@ -90,8 +92,16 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
             p3="Dubai, UAE"
           />
         </InfoDiv>
-        <Space></Space>
+
       </ContactSection>
+      <Top> <Link
+        activeClass="active"
+        to="top"
+        spy={true}
+        smooth={true}
+        offset={-15}
+        duration={500}>Top &#8593;
+            </Link></Top>
     </>
   )
 }
@@ -101,7 +111,7 @@ const MainText = styled.div`
  width: 100%;
     background: #f5f5f5;
     margin: 0 auto;
-    font-size: 1.2rem;
+    font-size: 1rem;
     
     display: -webkit-box;
     display: -webkit-flex;
@@ -114,9 +124,11 @@ const MainText = styled.div`
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-left: 30px;
-    @media (min-width: 1000px) {
+    padding-left: 3px;
+    @media (min-width: 1200px) {
   height:100vh;
+  padding-left: 30px;
+  font-size: 1.2rem;
   }
 `;
 
@@ -158,8 +170,20 @@ background:#fff;
 `;
 const Space = styled.span`
 height:30px;
-`
+`;
 
+const Top = styled.div`
+height:30px;
+color:#fff;
+background:gray;
+display:flex;
+padding: 7px;
+justify-content:center;
+:hover{
+color:gray;
+background:whitesmoke;
+}
+`;
 /* const TwitterBox = styled.div`
   overflow: scroll;
   height: auto;

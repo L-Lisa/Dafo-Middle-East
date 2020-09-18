@@ -22,6 +22,7 @@ export const ScrollLink = () => {
 
             <Link
                 activeClass="active"
+
                 spy={true}
                 smooth={true}
                 offset={-15}
@@ -51,7 +52,6 @@ const BtnContainer = styled.div`
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
     -webkit-align-content: center;
     -ms-flex-line-pack: center; 
     -webkit-box-pack: center;
@@ -70,10 +70,13 @@ const BtnContainer = styled.div`
     justify-content: center;
     align-items: flex-end;
     position: absolute;
+    display: none;
 @media (min-width:1190px){ 
+    display: flex;
     }
 a{
     padding:10px;
+    cursor: pointer;
 }
 .active {
       color: red;
