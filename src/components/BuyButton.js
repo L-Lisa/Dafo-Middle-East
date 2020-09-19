@@ -67,7 +67,7 @@ a{
 
 
 const P = styled.p`
-
+margin-right: 6px;
     color: #fff;
     padding: 6px;
     border-radius: 50px;
@@ -92,6 +92,6 @@ border - radius: 50 %;
 border: 1px solid black;
 color: #80808000;
     .activeClass: active{
-    background - color: red;
+    background - color: #ee273e;
 }
 `; */

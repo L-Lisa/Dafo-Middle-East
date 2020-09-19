@@ -56,7 +56,7 @@ export const Footer = () => {
 const FooterContainer = styled.footer`
 width:100%;
 min-height:250px;
-background:black;
+background:#1c1c1c;
 font-size:0.8rem;
 h1{
     font-size:1.2rem;
@@ -74,7 +74,7 @@ padding:10px 5px;
 display:flex;
 flex-direction:row;
 flex-wrap:wrap;
-background:black;
+background:#1c1c1c;
 color:white;
 justify-content:center;
 `

@@ -179,7 +179,7 @@ p{
 h2{
     margin: 0 auto;
     color: white;
-    background:black;
+    background:#1c1c1c;
     width: max-content;
     width: 90%;
     text-align: center;

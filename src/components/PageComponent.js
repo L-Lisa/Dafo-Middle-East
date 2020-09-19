@@ -130,6 +130,9 @@ width: 100%;
     justify-content: center;
     padding: 3px;
     align-items:center;
+    @media (min-width: 768px) {
+      height: 70vh;
+  }
     @media (min-width: 1200px) {
   height:100vh;
   display:flex;
@@ -139,7 +142,7 @@ width: 100%;
 `;
 
 const ListItem = styled.ul`
-color:black;
+color:#1c1c1c;
 padding: 14px;
 align-self: flex-start;
 @media (min-width: 1200px) {
@@ -181,7 +184,7 @@ width: 100%;
 height:30px;
 justify-content:center;
 align-items:center;
-color: red;
+color: #ee273e;
 display:none;
     margin-bottom: 20px;
 @media (min-width:1190px){ 

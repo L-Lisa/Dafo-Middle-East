@@ -40,7 +40,7 @@ const Video = styled.video`
 width: 100%;
 height:100%;
 
-    background: black;
+    background: #1c1c1c;
 @media (min-width: 1190px) {
     height: 100vh;
   }

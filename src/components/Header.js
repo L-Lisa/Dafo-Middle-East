@@ -166,7 +166,7 @@ z-index: 10;
 
 const TopHeader = styled.section`
 box-sizing:border-box;
-background:black;
+background:#1c1c1c;
 width:100%;
 padding:10px;
 height:60px;
@@ -316,7 +316,7 @@ transition: transform .2s;
 padding: 0 8px 0 8px;
 color:#626262;
 &:hover{
-        color:black;
+        color:#1c1c1c;
 }}
 li{
     transition: transform .2s;
@@ -355,7 +355,7 @@ transition: transform .2s;
 padding:0 16px 0 0 ;
 color:#626262a3;
 &:hover{
-        color:black;
+        color:#1c1c1c;
 }}
 `;
 const ProductNav = styled.p`

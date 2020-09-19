@@ -129,10 +129,13 @@ const MainText = styled.div`
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
+    -webkit-justify-content: center;height: 70vh;
     -ms-flex-pack: center;
     justify-content: center;
     padding: 3px;
+    @media (min-width: 768px) {
+      height: 70vh;
+  }
     @media (min-width: 1200px) {
   height:100vh;
   padding-left: 30px;
@@ -198,7 +201,7 @@ width: 100%;
 height:30px;
 justify-content:center;
 align-items:center;
-color: red;
+color: #ee273e;
 cursor:pointer;
 display:none;
     margin-bottom: 20px;

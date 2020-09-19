@@ -48,7 +48,7 @@ export const BusPage = () => {
 
 
 const Button = styled.button`
-color:red;
+color:#ee273e;
 margin:10px;
 `
 
