@@ -36,9 +36,9 @@ export const Header = () => {
 
             <Nav>
                 <BurgerBox>
-                    {/*  <LogoHeader>
+                    <LogoHeader>
                         <Link to="/"><img src={DafoRedNoBackground} alt="Dafo Middle East" /></Link>
-                    </LogoHeader> */}
+                    </LogoHeader>
 
                     <Hamburger>
                         <div className="container" onClick={() => setShowMenu(!showMenu)}>
@@ -207,7 +207,7 @@ width: 150px;
 padding: 20px;
 }
 @media(min-width:676px){
-    display:none;
+    /* display:none; */
 }
 `;
 const BurgerBox = styled.section`
@@ -263,7 +263,7 @@ margin-right: 5px;
     width: 100%;
     margin: 15px;
   @media(min-width:676px){
-    display:none;
+    /* display:none; */
 }
 }
 .bar1, .bar2, .bar3 {
@@ -325,7 +325,7 @@ li{
         transform: scale(1.1);
     }}
 @media(min-width:676px){
-    display:inline;
+   /*  display:inline; */
     }
 `;
 const InlineNav2 = styled.ul`

@@ -20,7 +20,7 @@ export const VideoBackground = ({ videoSource, DafoDubaiME }) => {
                     smooth={true}
                     offset={-15}
                     duration={500}
-                    to="sectionMid"><p>V</p></Link></V>
+                    to="sectionMid"><p>&#8595;</p></Link></V>
             </ImgBox>
 
 

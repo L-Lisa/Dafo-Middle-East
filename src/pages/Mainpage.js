@@ -55,7 +55,7 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
           smooth={true}
           offset={-15}
           duration={500}
-          to="sectionEnd"><p>V</p></Link></V>
+          to="sectionEnd"><p>&#8595;</p></Link></V>
       </MainText>
 
       <ContactSection id="sectionEnd" >
