@@ -34,7 +34,7 @@ export const Power = () => {
                 }
             />
 
-
+            {/* 
             <Top> <Link
                 activeClass="active"
                 to="top"
@@ -42,7 +42,7 @@ export const Power = () => {
                 smooth={true}
                 offset={-15}
                 duration={500}> &#8593;
-            </Link></Top>
+            </Link></Top> */}
         </>
     )
 }
