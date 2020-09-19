@@ -107,9 +107,10 @@ export const Header = () => {
                     {/* <li>
                         <NavLink to="/contact-us">Contact</NavLink>
                     </li>
+                    */}
                     <li>
                         <NavLink to="/">Home</NavLink>
-                    </li> */}
+                    </li>
                 </ul>
             </InlineNav>
             {showProducts &&
