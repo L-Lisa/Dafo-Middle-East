@@ -62,7 +62,7 @@ export const Header = () => {
                             <NavLink to="/mining" onClick={() => setShowMenu(false)}>Mining & heavy duty mobile equipment</NavLink>
                         </li>
                         <li>
-                            <NavLink to="#" onClick={() => setShowMenu(false)}>Distributors</NavLink>
+                            <NavLink to="/distributors" onClick={() => setShowMenu(false)}>Distributors</NavLink>
                         </li>
                         {/*  <li>
                             <NavLink to="/certifications" onClick={() => setShowMenu(false)}>Certificates</NavLink>
@@ -92,7 +92,7 @@ export const Header = () => {
                         <NavLink to="#" onClick={() => setShowProducts(!showProducts)}>Products</NavLink>
                     </li>
                     <li>
-                        <NavLink to="#">Distributors</NavLink>
+                        <NavLink to="/distributors">Distributors</NavLink>
                     </li>
                     {/*   <li>
                         <NavLink to="/certifications">Certificates</NavLink>

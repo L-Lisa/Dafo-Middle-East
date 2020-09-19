@@ -9,8 +9,9 @@ export const BuyButton = () => {
 
     return (
         <BtnContainer >
-            <NavLink to="/contact-us">
-                <Link
+            <P>  <a href="mailto:sales@dafo-middle-east.com"> Place Order</a></P>
+            {/*    <NavLink to="/contact-us"> */}
+            {/*  <Link
                     activeClass="active"
                     to="/contact-us"
                     spy={true}
@@ -18,7 +19,7 @@ export const BuyButton = () => {
                     offset={0}
                     duration={500}>
 
-                </Link><P>Place Order</P></NavLink>
+                </Link> */}{/* </NavLink> */}
         </BtnContainer >
     )
 }
@@ -57,22 +58,26 @@ a{
     border-radius: 50%;
     margin-right: 7px;
     text-decoration: none;
+    color: #fff;
 }
 .active {
-      color: red;
+      color: #fff;
     }
 `;
 
 
 const P = styled.p`
-background: red;
+
     color: #fff;
     padding: 6px;
     border-radius: 50px;
     font-size: 1rem;
-background: red;
-    color: #fff;
-    @media (min-width: 750px) {
+background: #ee273e;
+    @media (min-width: 678px) {
+    padding: 12px;
+    font-size: 1.3rem;
+    }
+    @media (min-width: 1200px) {
     padding: 19px;
     font-size: 2rem;
     }

@@ -5,7 +5,7 @@ import Buses from "..//images/ProductImg-Buses.jpg";
 import UnceImage from "..//images/UnceImage.png";
 import Mining from "..//images/ProductImg-Mining.jpg";
 import PowerGen from "..//images/ProductImg-powerGenerator.jpeg";
-import contactUs from "..//images/contactUs.jpg";
+import contactUs from "..//images/sales.jpg"
 import DafoDubaiME from "..//images/dafoMEred.jpg";
 import { Timeline } from "react-twitter-widgets";
 import ReactPlayer from 'react-player/youtube'
@@ -107,7 +107,7 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
         to="top"
         spy={true}
         smooth={true}
-        offset={-15}
+        offset={0}
         duration={500}> &#8593;
             </Link></Top>
     </>

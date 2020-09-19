@@ -12,13 +12,13 @@ export const VscrollerTop = () => {
         smooth={true}
         offset={0}
         duration={500}
-        to="top"><p>V</p>
+        to="top"><P>&#8593;</P>
       </Link>
-    </Vdiv >
+    </Vdiv>
   )
 }
 
-export const VscrollerMid = () => {
+export const VscrollerMidDown = () => {
   return (
     <Vdiv>
       <Link
@@ -26,24 +26,54 @@ export const VscrollerMid = () => {
         smooth={true}
         offset={0}
         duration={500}
-        to="sectionMid"><p>V</p>
+        to="sectionMid"><P>&#8595;</P>
       </Link>
     </Vdiv >
   )
 }
-export const VscrollerEndd = () => {
+export const VscrollerEnd = () => {
   return (
-    <Vdiv>
+    <>
+      < MarginP></MarginP>
+      <Vdiv>
+        <Link
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+          to="sectionEnd"><P>&#8595;</P>
+        </Link>
+      </Vdiv >
+    </>
+  )
+}
+
+export const FootArrow = () => {
+  return (
+    <FootDiv>
       <Link
+        activeClass="active"
+        to="top"
         spy={true}
         smooth={true}
-        offset={0}
-        duration={500}
-        to="sectionEnd"><p>V</p>
-      </Link>
-    </Vdiv >
+        offset={-15}
+        duration={500}> &#8593;
+    </Link>
+    </FootDiv>
   )
 }
+
+const FootDiv = styled.div`
+height:30px;
+color:#fff;
+background:gray;
+display:flex;
+padding: 7px;
+justify-content:center;
+:hover{
+color:gray;
+background:whitesmoke;
+}`;
 
 const Vdiv = styled.div`
 /* z-index: 200;
@@ -76,9 +106,34 @@ justify-content:center;
 align-items:center;
 color: red;
 display:none;
-    margin-bottom: 20px;
+margin-top: 5px;
+    margin-bottom: 5px;
+    margin: 5px;
+  height: 5px;
+  width: 5px;
+  background-image: radial-gradient(fade(#1c1c1c,80%),fade(#ff0000, 70%) 20%, transparent 50%);
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0px 0px 0px rgba(104,69,44, 0.6);
+  animation: pulse 2s infinite alternate ease-out;
+  opacity: 0;
+@keyframes pulse {
+  from {
+     transform: scale(0);
+      opacity: 1;
+  }
+} 
+display:none;
 @media (min-width:1190px){ 
     display:flex;
     bottom: 60px;
     }
+`;
+
+const P = styled.p`
+font-size: 1.5rem;
+`;
+
+const MarginP = styled.div`
+margin:50px;
 `;

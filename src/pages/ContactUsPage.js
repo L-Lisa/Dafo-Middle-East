@@ -1,6 +1,6 @@
 import React from "react"
 import styled from 'styled-components/macro'
-import contactUs from "..//images/contactUs.jpg"
+import contactUs from "..//images/sales.jpg"
 import DafoBlack from "..//images/DafoBlack.jpg"
 import dafoMEred from "..//images/dafoMEred.jpg"
 

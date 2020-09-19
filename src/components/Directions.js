@@ -13,12 +13,15 @@ import { Certifications } from "../pages/Certifications"
 import { Vehicles } from "../pages/Vehicles"
 import { Mining } from "../pages/Mining"
 import { Power } from "../pages/Power"
+import { BuyButton } from "..//components/BuyButton"
+import { Distributors } from "../pages/Distributors"
 
 export const Directions = () => {
     return (
         <BrowserRouter>
 
             <Header />
+            <BuyButton />
             <main>
                 <Switch>
                     <Route path="/" exact>
@@ -39,6 +42,9 @@ export const Directions = () => {
 
                     <Route path="/power" exact>
                         <Power />
+                    </Route>
+                    <Route path="/distributors" exact>
+                        <Distributors />
                     </Route>
 
                     <Route path="/powergenerators" exact>

@@ -7,17 +7,21 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import { VideoBackground } from "..//components/VideoBackground.js"
 
 
-export const Vehicles = ({ videoSource }) => {
+export const Vehicles = ({ }) => {
 
     return (
         <>
             <PageComponent
                 coverImage={BusGirl}
                 ImageText={"vehicles"}
-                headerText={"Automatic fire detection and suppression system for vehicles"}
-                mainText1={"Most bus fires start in the engine compartment and surrounding areas. A tested and certified vehicle fire suppression system in combination with a reliable fire detection system is the best first line of response in case of a thermal incident."}
-                mainText2={"Buses operate in various surroundings and climate types such as desert, tropic, arctic, on highways and in mountain terrain. These environments are very challenging also for a fire suppression system. Dafo fire suppression system are thoroughly tested for fire performance ability and environmental durability such as electromagnetic compatibility (EMC), vibration, corrosion and temperature extremes according to international vehicle standards to ensure the highest performance"}
-                mainText3={"Dafo fire suppression system are approved as a component with regard to UNECE Regulation no. 107 and P-marked in accordance with SPCR 183."}
+                headerText={"Automatic fire detection and suppression system "}
+                mainText1={"Dafo was one of the first companies in the world which started to develop integrated firefighting solutions for vehicles. "}
+                mainText2={"Over the years Dafo has obtained vas experience and knowledge from our end user installations which have been used as a basis for "}
+                listItem1={"Eliminating false alarms"}
+                listItem2={" Eliminating false releases"}
+                mainText3={"As a result of the development Dafo can today proudly present state of the art reliable solutions without vulnerable and pressurized agent containers."}
+                mainText4={"With more than 165000 vehicle systems sold worldwide know-how and experience ensure our customers to have the latest technology combined with proven reliability. "}
+
                 lastElement={
                     <>
                         <PlayerContainer>
@@ -36,14 +40,7 @@ export const Vehicles = ({ videoSource }) => {
             />
 
 
-            <Top> <Link
-                activeClass="active"
-                to="top"
-                spy={true}
-                smooth={true}
-                offset={-15}
-                duration={500}> &#8593;
-            </Link></Top>
+
         </>
     )
 }
@@ -73,14 +70,3 @@ margin: 0 auto;
 margin-top: 40px;
 `;
 
-const Top = styled.div`
-height:30px;
-color:#fff;
-background:gray;
-display:flex;
-padding: 7px;
-justify-content:center;
-:hover{
-color:gray;
-background:whitesmoke;
-}`;

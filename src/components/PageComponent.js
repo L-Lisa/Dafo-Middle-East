@@ -2,12 +2,15 @@ import React from "react"
 import styled from 'styled-components/macro'
 import { Link, animateScroll as scroll } from "react-scroll";
 import { ScrollLink } from "components/ScrollButton"
+import { VscrollerTop, FootArrow, VscrollerMidDown, VscrollerEnd } from "components/Vscroller"
 
-export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, mainText2, mainText3, lastElement }) => {
+
+export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, mainText2, mainText3, lastElement, listItem1, listItem2, listItem3, mainText4 }) => {
 
     return (
 
         <PageWrapper>
+
             <ScrollLink />
 
             <TopSection id="top">
@@ -15,34 +18,40 @@ export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, ma
                 {coverImage && <CoverImage src={coverImage} />}
                 <TopText>
                     {ImageText && <p>{ImageText}</p>}
+
                 </TopText>
-                <V><Link activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}
-                    to="sectionMid"><p>&#8595;</p>
-                </Link></V>
+                <VscrollerMidDown />
             </TopSection>
+
 
             <MidSection id="sectionMid">
                 {headerText && <HeaderText>{headerText}</HeaderText>}
                 {mainText1 && <MainText>{mainText1}</MainText>}
                 <Line></Line>
                 {mainText2 && <MainText>{mainText2}</MainText>}
+                {listItem1 && <ListItem>
+                    <ul>
+                        <li>{listItem1}</li>
+                        {listItem2 && <li>{listItem2}</li>}
+                        {listItem3 && <li>{listItem3}</li>}
+                    </ul>
+                </ListItem>}
                 <Line></Line>
-                {mainText3 && <MainText>{mainText2}</MainText>}
-                <VEnd><Link activeClass="active"
+                {mainText3 && <MainText>{mainText3}</MainText>}
+                {mainText4 && <MainText>{mainText4}</MainText>}
+                {/*   <VEnd><Link activeClass="active"
                     spy={true}
                     smooth={true}
                     offset={0}
                     duration={500}
                     to="sectionEnd"><p>&#8595;</p></Link></VEnd>
+                    */}
+                <VscrollerEnd />
             </MidSection>
             <EndSection id="sectionEnd">
                 {lastElement && <LastDiv>{lastElement}</LastDiv>}
-
             </EndSection>
+            < FootArrow />
         </PageWrapper>
     )
 }
@@ -67,7 +76,11 @@ height:auto;
 `;
 const CoverImage = styled.img`
 width: 100%;
-height:auto;
+object-fit: contain;
+@media (min-width: 1200px) {
+  height:90vh;
+  object-fit: cover;
+  }
 `;
 
 const TopText = styled.h1`
@@ -79,6 +92,8 @@ font-size: 2rem;
     justify-content: center;
     align-items: center;
     display:none;
+    top: 123px;
+    left: 15px;
     p{
         background: #f5f5f566;
     border-radius: 2px;
@@ -86,8 +101,12 @@ font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 670px) {
         display: flex;
+  }
+  @media (min-width: 1200px) {
+    top: unset;
+    left:unset;
   }
 `;
 const Line = styled.div`
@@ -110,26 +129,37 @@ width: 100%;
     -ms-flex-pack: center;
     justify-content: center;
     padding: 3px;
+    align-items:center;
     @media (min-width: 1200px) {
   height:100vh;
   display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
   padding-left: 30px;
   font-size: 1.3rem;
   }
 `;
 
-
+const ListItem = styled.ul`
+color:black;
+padding: 14px;
+align-self: flex-start;
+@media (min-width: 1200px) {
+ margin-left:140px;
+  }
+`;
 const HeaderText = styled.h2`
 font-size:1.2rem;
+margin-top: 50px;
 
 `;
 
 const MainText = styled.article`
-width:100%;
+width: 100%;
 line-height: 1.5rem;
+padding: 0 10px 0 10px;
+@media (min-width: 1200px) {
+padding: 0 40px 0 40px;
+  }
+
 `;
 
 const EndSection = styled.section`
@@ -140,7 +170,6 @@ display: flex;
     align-items: center;
 @media (min-width: 1200px) {
   height:100vh;
-  
   }
 `;
 
@@ -159,7 +188,7 @@ display:none;
     display:flex;
     }
 `;
-const VEnd = styled.div`
+/* const VEnd = styled.div`
 width: 100%;
 height: 30vh;
 height:max-content;
@@ -168,7 +197,8 @@ align-items:center;
 color: red;
 display:none;
     margin-bottom: 20px;
-@media (min-width:1190px){ 
+@media (min-width:1190px){
     display:flex;
     }
 `;
+ */
