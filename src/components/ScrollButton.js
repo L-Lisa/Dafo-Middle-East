@@ -15,7 +15,7 @@ export const ScrollLink = () => {
                 to="top"
                 spy={true}
                 smooth={true}
-                offset={-15}
+                offset={-100}
                 duration={500}>
                 &#9678;
             </Link>
@@ -83,7 +83,7 @@ a{
     margin-right: 7px;
 }
 .active {
-      color: red;
+      color: #ee273e;
     }
 `;
 

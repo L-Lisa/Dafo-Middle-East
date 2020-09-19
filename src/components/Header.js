@@ -118,7 +118,6 @@ export const Header = () => {
                     <ProductNav>Automatic fire detection and suppression system for:</ProductNav>
                     <Li2>
                         <NavLink to="/vehicles" onClick={() => setShowProducts(false)}> <Link
-
                             to="top"
                             spy={true}
                             smooth={true}
@@ -128,7 +127,6 @@ export const Header = () => {
                     </Li2>
                     <Li2>
                         <NavLink to="/power" onClick={() => setShowProducts(false)}><Link
-
                             to="top"
                             spy={true}
                             smooth={true}

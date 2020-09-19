@@ -26,7 +26,7 @@ import { BuyButton } from "..//components/BuyButton"
 export const MainPage = () => {
 
   return (
-    <>
+    <MainPgWrapper>
       <ScrollLink />
       <BuyButton />
       <VideoContainer id="top">
@@ -110,11 +110,13 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
         offset={0}
         duration={500}> &#8593;
             </Link></Top>
-    </>
+    </MainPgWrapper>
   )
 }
 
-
+const MainPgWrapper = styled.main`
+width:100%;
+`;
 const MainText = styled.div`
  width: 100%;
     background: #f5f5f5;
@@ -175,6 +177,11 @@ flex-direction:column;
 
 const VideoContainer = styled.section`
 background:#fff;
+margin-top: -90px;
+@media (min-width: 1200px) {
+  height:100vh;
+  margin-top: -140px;
+  }
 @media (min-width: 1200px) {
   height:100vh;
   }
