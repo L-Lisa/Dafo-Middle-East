@@ -2,7 +2,7 @@ import React from "react"
 import styled from 'styled-components/macro'
 import { PageComponent } from "components/PageComponent.js"
 import { Link, animateScroll as scroll } from "react-scroll"
-
+import DafoLogga from "../images/DafoMeNoBack.png";
 import aboutImg from "..//images/aboutImg.jpg"
 
 
@@ -10,6 +10,10 @@ export const About = () => {
 
     return (
         <>
+            <ImgBox>
+                <img src={DafoLogga} alt="Dafo" />
+
+            </ImgBox>
             <PageComponent
                 coverImage={aboutImg}
                 ImageText={""}
@@ -83,3 +87,42 @@ justify-content:center;
 color:gray;
 background:whitesmoke;
 }`;
+const ImgBox = styled.div`
+position: absolute;
+    top: 0;
+    /* color:#f1f1f1;
+    background-color: rgba(0, 0, 0, 0.3); */
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    @media (min-width: 400px) {
+        height: 350px;
+  }
+  @media (min-width: 550px) {
+  height:500px;
+  }
+  @media (min-width: 900px) {
+  height:900px;
+  }
+  @media (min-width: 1200px) {
+  height:1200px;
+  }
+    img {
+    width: 200px;
+    height: auto;
+    display: block;
+    position: absolute;
+    @media (min-width: 550px) {
+        width: 300px;
+  }
+  @media (min-width: 750px) {
+        width: 400px;
+  }
+  @media (min-width: 1200px) {
+        width: 500px;
+  }
+  }
+`;
