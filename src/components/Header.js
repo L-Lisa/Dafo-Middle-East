@@ -68,7 +68,7 @@ export const Header = () => {
                             <NavLink to="/certifications" onClick={() => setShowMenu(false)}>Certificates</NavLink>
                         </li> */}
                         <li>
-                            <NavLink to="#" onClick={() => setShowMenu(false)}>About Dafo</NavLink>
+                            <NavLink to="/about" onClick={() => setShowMenu(false)}>About Dafo</NavLink>
                         </li>
                         <li>
                             <NavLink to="/downloads" onClick={() => setShowMenu(false)}>Downloads</NavLink>
@@ -102,7 +102,7 @@ export const Header = () => {
                         <NavLink to="/downloads">Downloads</NavLink>
                     </li>
                     <li>
-                        <NavLink to="#">About</NavLink>
+                        <NavLink to="/about">About</NavLink>
                     </li>
                     {/* <li>
                         <NavLink to="/contact-us">Contact</NavLink>
