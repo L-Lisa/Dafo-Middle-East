@@ -77,7 +77,7 @@ const BtnContainer = styled.div`
 a{
     padding: 6px;
     cursor: pointer;
-    background: #fff;
+    background: #ffffff0a;
     /* border: 1px solid black; */
     border-radius: 50%;
     margin-right: 7px;
