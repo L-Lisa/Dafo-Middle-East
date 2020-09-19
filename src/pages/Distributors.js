@@ -13,7 +13,7 @@ export const Distributors = () => {
             <PageComponent
                 coverImage={DistributorImg}
                 ImageText={"Distributors"}
-                headerText={""}
+                headerText={"Dafo Middle East authorized distributors and service providers "}
                 mainText1={""}
 
                 mainText2={""}

@@ -2,16 +2,19 @@ import React, { useState } from 'react'
 import styled from "styled-components/macro"
 import { Link, animateScroll as scroll } from "react-scroll";
 import { NavLink } from "react-router-dom"
-
+import { Vscroll400 } from "components/Vscroller"
 
 export const BuyButton = () => {
 
 
     return (
-        <BtnContainer >
-            <P>  <a href="mailto:sales@dafo-middle-east.com"> Place Order</a></P>
-            {/*    <NavLink to="/contact-us"> */}
-            {/*  <Link
+        <>
+
+            <BtnContainer >
+
+                <P>  <a href="mailto:sales@dafo-middle-east.com"> Place Order</a></P>
+                {/*    <NavLink to="/contact-us"> */}
+                {/*  <Link
                     activeClass="active"
                     to="/contact-us"
                     spy={true}
@@ -20,7 +23,9 @@ export const BuyButton = () => {
                     duration={500}>
 
                 </Link> */}{/* </NavLink> */}
-        </BtnContainer >
+                < Vscroll400 />
+            </BtnContainer >
+        </>
     )
 }
 

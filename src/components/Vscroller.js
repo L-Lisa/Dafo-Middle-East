@@ -4,6 +4,17 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 
 
+export const Vscroll400 = () => {
+  function scrollMoreDown300() {
+    scroll.scrollMore(400);
+  }
+  return (
+    <Div400>
+      <Btn400 onClick={scrollMoreDown300}>&#8595;</Btn400>
+    </Div400>
+  )
+}
+
 export const VscrollerTop = () => {
   return (
     <Vdiv>
@@ -104,7 +115,7 @@ width: 100%;
 height:30px;
 justify-content:center;
 align-items:center;
-color: red;
+color: #ee273e;
 display:none;
 margin-top: 5px;
     margin-bottom: 5px;
@@ -137,3 +148,20 @@ font-size: 1.5rem;
 const MarginP = styled.div`
 margin:50px;
 `;
+
+const Div400 = styled.div`
+    align-self: center;
+    margin-top: -40px;
+`;
+
+const Btn400 = styled.button`
+width: auto;
+    color: #ee273e;
+    background: #fff;
+    border-radius: 50%;
+    padding: 4px;
+    border: none;
+    :focus{
+      color:none;
+    }
+`
