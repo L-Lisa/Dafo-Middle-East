@@ -66,9 +66,11 @@ width:100%;
 const TopSection = styled.section`
 width:100%;
 height:auto;
+margin-top: -90px;
   @media (min-width: 1200px) {
   height:100vh;
   display:flex;
+  margin-top: -140px;
   flex-direction:column;
   justify-content:center;
   align-items:center;
