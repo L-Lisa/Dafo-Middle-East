@@ -58,7 +58,7 @@ height:280px;
 display:flex;
 align-items:center;
 justify-content:center;
-`
+`;
 
 export const ContactsBox = ({ title, secondaryText, coverImage, children, className, supportingText, buttonText }) => {
     return (

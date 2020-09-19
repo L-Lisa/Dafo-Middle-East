@@ -62,20 +62,20 @@ export const Header = () => {
                             <NavLink to="/mining" onClick={() => setShowMenu(false)}>Mining & heavy duty mobile equipment</NavLink>
                         </li>
                         <li>
-                            <NavLink to="#" onClick={() => setShowMenu(false)}>Services</NavLink>
+                            <NavLink to="#" onClick={() => setShowMenu(false)}>Distributors</NavLink>
                         </li>
-                        <li>
+                        {/*  <li>
                             <NavLink to="/certifications" onClick={() => setShowMenu(false)}>Certificates</NavLink>
-                        </li>
+                        </li> */}
                         <li>
                             <NavLink to="#" onClick={() => setShowMenu(false)}>About Dafo</NavLink>
                         </li>
                         <li>
                             <NavLink to="/downloads" onClick={() => setShowMenu(false)}>Downloads</NavLink>
                         </li>
-                        <li>
+                        {/*   <li>
                             <NavLink to="/contact-us" onClick={() => setShowMenu(false)}>Contact</NavLink>
-                        </li>
+                        </li> */}
                         <li>
                             <NavLink to="/site-map" onClick={() => setShowMenu(false)}>Site Map</NavLink>
                         </li>
@@ -92,23 +92,24 @@ export const Header = () => {
                         <NavLink to="#" onClick={() => setShowProducts(!showProducts)}>Products</NavLink>
                     </li>
                     <li>
-                        <NavLink to="#">Services</NavLink>
+                        <NavLink to="#">Distributors</NavLink>
                     </li>
-                    <li>
+                    {/*   <li>
                         <NavLink to="/certifications">Certificates</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to="#">About</NavLink>
-                    </li>
+                    </li> */}
+
                     <li>
                         <NavLink to="/downloads">Downloads</NavLink>
                     </li>
                     <li>
+                        <NavLink to="#">About</NavLink>
+                    </li>
+                    {/* <li>
                         <NavLink to="/contact-us">Contact</NavLink>
                     </li>
                     <li>
                         <NavLink to="/">Home</NavLink>
-                    </li>
+                    </li> */}
                 </ul>
             </InlineNav>
             {showProducts &&
