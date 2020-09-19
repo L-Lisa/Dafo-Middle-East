@@ -65,8 +65,15 @@ position: absolute;
     height: auto;
     display: block;
     position: absolute;
-   /*  border: #f1f1f1 1px solid;
-    border-radius: 50%; */
+    @media (min-width: 550px) {
+        width: 300px;
+  }
+  @media (min-width: 750px) {
+        width: 400px;
+  }
+  @media (min-width: 1200px) {
+        width: 500px;
+  }
   }
 `;
 
