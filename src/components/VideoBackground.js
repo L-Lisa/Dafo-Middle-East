@@ -11,7 +11,7 @@ export const VideoBackground = ({ videoSource, DafoDubaiME }) => {
     return (
         <Container>
             <Video autoPlay="autoplay" loop="loop" muted
-                poster={FilmText}
+            /*  poster={FilmText} */
             >
                 <source src={videoSource} type="video/mp4" />
             </Video>

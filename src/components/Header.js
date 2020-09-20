@@ -51,14 +51,14 @@ export const Header = () => {
                         <Link to="/"><img src={DafoRedNoBackground} alt="Dafo Middle East" /></Link>
                     </LogoHeader> */}
                     <NavLink to="/" onClick={() => setShowProducts(false)} > <Link
-
                         to="top"
                         spy={true}
                         smooth={true}
                         offset={0}
                         duration={50}>
-                    </Link><VehicleImg src={dafoMEred} alt="Dafo Middle East" /></NavLink>
+                    </Link><BurgerLogo src={dafoMEred} alt="Dafo Middle East" /></NavLink>
                     <Hamburger>
+
                         <div className="container" onClick={() => setShowMenu(!showMenu)}>
 
                             <div className={showMenu ? `xclose1` : `bar1`}></div>
@@ -107,6 +107,15 @@ export const Header = () => {
             <InlineNav>
                 <ul>
                     <li>
+                        <NavLink to="/" onClick={() => setShowProducts(false)} > <Link
+                            to="top"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={50}>
+                        </Link><NavListLogo src={dafoMEred} alt="Dafo Middle East" /></NavLink>
+                    </li>
+                    <li>
                         <NavLink to="#" onClick={() => setShowProducts(!showProducts)}>Products</NavLink>
                     </li>
                     <li>
@@ -126,9 +135,7 @@ export const Header = () => {
                         <NavLink to="/contact-us">Contact</NavLink>
                     </li>
                     */}
-                    <li>
-                        <NavLink to="/">Home</NavLink>
-                    </li>
+
                 </ul>
             </InlineNav>
             {showProducts &&
@@ -314,7 +321,13 @@ left:-7px;
 transform: scale(0.5) rotate(45deg);  
 }
 `;
-
+const BurgerLogo = styled.img`
+    padding: 3px 2px 2px 3px;
+    height: 55px;
+ @media(min-width:676px){
+    display:none;
+}
+`;
 const InlineNav = styled.ul`
 display:none;
 background:white;
@@ -323,7 +336,7 @@ ul{
     list-style:none;
     display:flex;
     justify-content: center;
-    padding:20px 10px;
+    padding: 13px 0px 0 0;
 }
 a{
 text-decoration:none;
@@ -390,7 +403,17 @@ list-style:none;
     }
 `;
 
+
 const VehicleImg = styled.img`
 height: 55px;
 margin-left: 5px;
-`
+`;
+const NavListLogo = styled.img`
+  padding: 3px 2px 2px 3px;
+    height: 55px;
+    margin: -40px 0 0 0;
+    display:none;
+ @media(min-width:676px){
+    display:flex;
+}
+`;
