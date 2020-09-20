@@ -11,12 +11,23 @@ import DafoRedNoBackground from "..//images/DafoVehicleLogoNoBackground.png"
 import DafoRedFlame from "../images/DafoRedFlame.jpg"
 import { ScrollLink } from "components/ScrollButton"
 
+
 export const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
     const [showProducts, setShowProducts] = useState(false)
     const [showMenuX, setShowMenuX] = useState(false)
     return (
         < HeaderWrapper >
+
+            {/*  <NavLink to="/" onClick={() => setShowProducts(false)} > <Link
+
+                to="top"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={50}>
+            </Link><VehicleImg src={dafoMEred} alt="Dafo Middle East" /></NavLink> */}
+
             {/*  <TopHeader>
                 <SocialMediaBox>
                     <a href="https://www.youtube.com/channel/UCnnPIlXaWwE-wY3X-l3nTXw" target="_blank" rel="noopener noreferrer"><LogoIcon src={youtubeicon} alt="Dafo Youtube link" /></a>
@@ -39,7 +50,14 @@ export const Header = () => {
                     {/*  <LogoHeader>
                         <Link to="/"><img src={DafoRedNoBackground} alt="Dafo Middle East" /></Link>
                     </LogoHeader> */}
+                    <NavLink to="/" onClick={() => setShowProducts(false)} > <Link
 
+                        to="top"
+                        spy={true}
+                        smooth={true}
+                        offset={0}
+                        duration={50}>
+                    </Link><VehicleImg src={dafoMEred} alt="Dafo Middle East" /></NavLink>
                     <Hamburger>
                         <div className="container" onClick={() => setShowMenu(!showMenu)}>
 
@@ -159,7 +177,7 @@ width:100%;
 position: -webkit-sticky;
 position: sticky;
 top: 0;
-z-index: 10;
+z-index: 1000;
 `;
 
 const TopHeader = styled.section`
@@ -210,7 +228,6 @@ padding: 20px;
 `;
 const BurgerBox = styled.section`
 display:flex;
-flex-direction:column;
 align-items: center;
 background:#fff;
 justify-content:space-between;
@@ -267,7 +284,7 @@ margin-right: 5px;
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #eb0e0c;
+  background-color: #ee273c;
   margin: 6px 0;
   transition: 0.4s;
   border-radius:2px;
@@ -275,7 +292,7 @@ margin-right: 5px;
 .xclose1 {
 width: 70px;
   height: 10px;
-  background-color: #eb0e0c;
+  background-color: #ee273c;
   margin: 6px 10px 0 0;
   border-radius:2px;
   top:  19px;
@@ -288,7 +305,7 @@ width: 70px;
 .xclose3{
     width: 70px;
   height: 10px;
-  background-color: #eb0e0c;
+  background-color: #ee273c;
   margin: -10px 0;
   transition: 0.4s;
   border-radius:2px;

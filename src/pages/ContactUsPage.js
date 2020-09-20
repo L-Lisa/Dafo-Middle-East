@@ -159,7 +159,7 @@ h4{
 h2{
      color: white;
     font-weight:bold;
-    background:black;
+    background:#1c1c1c;
     width: max-content;
     width: 100%;
     text-align: center;

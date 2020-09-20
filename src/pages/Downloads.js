@@ -3,6 +3,7 @@ import styled from 'styled-components/macro'
 import { Mailinglist } from "../components/Mailinglist"
 import foldericon from "../images/foldericon.png"
 import WhiteFlame from "../images/White-dafo-flame.png"
+import DafoRedFlame from "../images/DafoRedFlame.jpg"
 
 export const Downloads = () => {
     const [email, setEmail] = useState("");
@@ -126,7 +127,18 @@ div{
 ` */
 const Color = styled.div`
 background-color:lightgray;
-`
+height:100vh;
+display:flex;
+align-content:center;
+justify-items:center;
+@media only screen and (min-width : 767px) {
+   /*  background-image: url(${DafoRedFlame});
+    background-position: center;
+background-repeat: no-repeat;
+    background-size: contain; */
+}
+
+`;
 const DownloadsWrapper = styled.main`
 /* background-image: url(${WhiteFlame}); */
 background-position: center;
@@ -145,6 +157,7 @@ align-content:center;
 @media only screen and (min-width : 450px) {
   width:80%;
 }
+
 `;
 const Main = styled.div`
 display:flex;
@@ -154,8 +167,12 @@ padding: 30px;
 align-items: center;
 background: white;
     margin: 25px;
-@media only screen and (min-width : 676px) {
-  
+   /*  background-image: url(${DafoRedFlame});
+    background-position: center;
+background-repeat: no-repeat;
+    background-size: contain; */
+@media only screen and (min-width : 768px) {
+    background-image:unset;
 }
 `
 const FormBox = styled.section`
@@ -179,13 +196,15 @@ p{
     width:90%;
     max-width:250px;
     margin: 10px 10px 40px 15px;
+    background: #ffffff5c;
+    border-radius: 5px;
 }
 h2{
     margin: 0 auto;
     color: white;
     background:#1c1c1c;
     width: max-content;
-    width: 90%;
+    
     text-align: center;
     padding: 5px;
     max-width: 250px;
@@ -196,6 +215,7 @@ h2{
     @media (min-width:676px){
         padding-bottom: 5px;
         max-width:250px;
+        width: 90%;
 }}
 `;
 

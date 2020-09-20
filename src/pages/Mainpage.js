@@ -182,9 +182,6 @@ margin-top: -90px;
   height:100vh;
   margin-top: -140px;
   }
-@media (min-width: 1200px) {
-  height:100vh;
-  }
 `;
 const Space = styled.span`
 height:30px;
