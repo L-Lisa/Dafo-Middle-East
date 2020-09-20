@@ -4,31 +4,50 @@ import styled from "styled-components/macro"
 
 
 const Container = styled.div`
-box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),0px 1px 1px 0px rgba(0, 0, 0, 0.14),0px 1px 3px 0px rgba(0,0,0,.12);
+/* box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),0px 1px 1px 0px rgba(0, 0, 0, 0.14),0px 1px 3px 0px rgba(0,0,0,.12);
 margin-bottom: 20px;
 border-radius: 3px;
-background: whitesmoke;
 width: 200px;
-margin: 8px;
+margin: 8px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    margin: 15px 0 0 0;
+    justify-content: flex-start;
+    @media(min-width:410px){
+    width:50%;
+    }
+    @media(min-width:630px){
+        width:30%;
+}
 `;
 
 const Title = styled.h1`
-font-size: 1.1rem;
+width: 100%;
+    margin: 0px;
+    font-size: 20px;
+    font-weight: 500;
 `;
 const SecondaryText = styled.h2`
-font-size: 1rem;
+width: 100%;
+    margin: 0px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: medium;
+    padding-top: 9px;
 `;
 
-const TitleBar = styled.div`
-display: flex;
-align-items: center;
-margin:10px;
-height: 30px;
-`;
 
 const CoverImage = styled.img`
-width: 100%;
-height:auto;
+width: auto;
+    height: 200px;
+    @media (min-width: 1200px) {
+        width: auto;
+    height: 270px;
+  }
 `;
 
 const Content = styled.div`
@@ -36,16 +55,11 @@ padding:20px;
 `;
 
 const ChildrenContent = styled.div`
-border: 1px solid slategrey;
-margin:20px;
-padding:20px;
+width:100%;
 `;
 const SupportingTextBox = styled.div`
 width:100%;
-padding:10px;
-background:ghostwhite;
-height: 150px;
-`
+`;
 const Button = styled.button`
 width: max-content;
 background: slategrey;
@@ -54,25 +68,49 @@ margin: 20px;
 font-size: 1rem;
 ` ;
 const ImageDiv = styled.div`
-height:280px;
-display:flex;
-align-items:center;
-justify-content:center;
+width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    @media (min-width: 1200px) {
+ height:auto;
+  }
+`;
+const MailLink = styled.a`
+color:#1c1c1c;
+padding: 2px;
+font-size: 0.9em;
+`;
+const Phone = styled.div`
+padding: 2px;
+font-size: 0.9em;
 `;
 
-export const ContactsBox = ({ title, secondaryText, coverImage, children, className, supportingText, buttonText }) => {
+const ContactList = styled.ul`
+list-style: none;
+    line-height: normal;
+    color: #1c1c1c;
+    padding: 04px;
+    width: 90%;
+`;
+
+export const ContactsBox = ({ title, secondaryText, secondaryText2, coverImage, children, className, supportingText, buttonText, email1, mailto1, email2, mailto2, phone1, phone2, phone3, phone4 }) => {
     return (
 
         <Container className={className}>
-            <TitleBar>
-
-                <div>
-                    {title && <Title>{title}</Title>}
-                    {secondaryText && <SecondaryText>{secondaryText}</SecondaryText>}
-                </div>
-            </TitleBar>
-
             {coverImage && <ImageDiv><CoverImage src={coverImage} /></ImageDiv>}
+            <ContactList>
+                <li>{title && <Title>{title}</Title>}</li>
+                <li>  {secondaryText && <SecondaryText>{secondaryText}</SecondaryText>}</li>
+                <li>  {phone1 && <Phone>{phone1}</Phone>} </li>
+                <li> {email1 && <MailLink href={mailto1}>{email1}</MailLink>}</li>
+                <li>  {secondaryText2 && <SecondaryText>{secondaryText2}</SecondaryText>}</li>
+                <li> {email2 && <MailLink href={mailto2}>{email2}</MailLink>}</li>
+            </ContactList>
 
             {supportingText && <SupportingTextBox>{supportingText}</SupportingTextBox>}
 

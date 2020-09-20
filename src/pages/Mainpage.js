@@ -21,7 +21,9 @@ import JohanDafo from "..//images/JohanDafo.jpg"
 import { Vscroller } from "components/Vscroller"
 import { Link, animateScroll as scroll } from "react-scroll";
 import { BuyButton } from "..//components/BuyButton"
-
+import dafoMEred from "..//images/dafoMEred.jpg"
+import DafoRedFlame from "../images/DafoRedFlame.jpg"
+import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg"
 
 export const MainPage = () => {
 
@@ -35,7 +37,7 @@ export const MainPage = () => {
       </VideoContainer>
 
       <MainText id="sectionMid" >
-        <h1>Automatic fire detection and suppression system </h1>
+        <Mainh1>Automatic fire detection and suppression system </Mainh1>
         <p>
           Dafo was one of the first companies in the world which started to develop intergrated firefighting solutions for vehicles.
               <br /><br />
@@ -64,41 +66,60 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
           <ContactsBox
             coverImage={JohanDafo}
             title="General Manager"
-            supportingText={"Johan Larsson Email address +971 4 232 3957"}
+            secondaryText={"Johan Larsson"}
+            email1="johan.larsson@dafo-middle-east.com"
+            mailto1="mailto:johan.larsson@dafo-middle-east.com"
+            phone1="+971 55 143 6088"
           />
 
           <ContactsBox
             coverImage={Shadi}
             title="Regional Manager"
-            supportingText={"Abdulah Shadi Email adress+971 55 800 5509 "}
+            secondaryText={"Abdulah Shadi"}
+            email1="abdullah.shadi@dafo-middle-east.com"
+            mailto1="mailto:abdullah.shadi@dafo-middle-east.com"
+            phone1="+971 55 800 5509"
+
           />
-          <span ></span>
+
           <ContactsBox
             coverImage={contactUs}
-            title="Sales & General inquires"
-            supportingText={"Dafo sales team: sales@dafo-middle-east.com +971 4 232 3957 General inquires: info@dafo-middle-east.com +971 4 232 3957"}
+            title="Sales & Inquires"
+            secondaryText={"Dafo sales team"}
+            email1="sales@dafo-middle-east.com"
+            mailto1="mailto:sales@dafo-middle-east.com"
+            phone1=" +971 4 232 3957"
+            secondaryText2="General inquires"
+            email2="info@dafo-middle-east.com"
+            mailto2="info@dafo-middle-east.com"
+            phone2="+971 4 232 3957"
           />
         </ContactDiv>
         <InfoDiv >
+
           <ContactInfoCard
-            title={" Info Rutor"}
+            title={" Dubai office"}
             p1={"Clover Bay Tower"}
             p2={"Office 1106, Business Bay"}
             p3="Dubai, UAE"
+            secondaryText="Opening Hours"
+            p5="Sunday - Thursday"
+            p6="9am-6pm"
           />
 
           <ContactInfoCard
-            title={"Dubai Office"}
-            p1={"Clover Bay Tower"}
-            p2={"Office 1106, Business Bay"}
-            p3="Dubai, UAE"
+            title="Warehouse &
+            delivery address"
+            p1={"Dry dock world"}
+            p2={"Warehouse no 118"}
+            p3="Jadaf, near Creek metro"
+            p4="Dubai, UAE"
+            secondaryText="Opening Hours"
+            p5="Sunday - Thursday"
+            p6="8am-6pm"
+            p7="Lunchbreak 1pm - 2pm"
           />
-          <ContactInfoCard
-            title={"Dubai Office"}
-            p1={"Clover Bay Tower"}
-            p2={"Office 1106, Business Bay"}
-            p3="Dubai, UAE"
-          />
+
         </InfoDiv>
 
       </ContactSection>
@@ -122,7 +143,6 @@ const MainText = styled.div`
     background: #f5f5f5;
     margin: 0 auto;
     font-size: 1rem;
-    
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -131,7 +151,7 @@ const MainText = styled.div`
     -ms-flex-direction: column;
     flex-direction: column;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;height: 70vh;
+    -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
     padding: 3px;
@@ -143,8 +163,22 @@ const MainText = styled.div`
   padding-left: 30px;
   font-size: 1.2rem;
   }
+  p{  
+    width: 70%;
+    margin: 0 auto;
+    padding-left:10px;
+  }
 `;
-
+const Mainh1 = styled.h1`
+text-align:center;
+@media (min-width: 400px) {
+  text-align:left;
+  }
+  @media (min-width: 1200px) {
+    width: 70%;
+    margin: 0 auto;
+  }
+`
 
 const ContactSection = styled.section`
 width:100%;
@@ -154,24 +188,59 @@ justify-content: center;
 align-items: center;
 @media (min-width: 1190px) {
   height:100vh;
+  background-image: url(${DafoRedFlameFade});
+  background-position: center;
+background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: flex-end;
+  }
+  @media (min-width: 1500px) {
+    justify-content: center;
   }
 `;
 
 const ContactDiv = styled.div`
 display:flex;
 height:min-content;
-flex-direction:column;
+margin-top: 30px;
+justify-content: space-around;
+flex-wrap: wrap;
+    margin-top: 30px;
 @media (min-width: 500px) {
   flex-direction: row;
     flex-wrap: wrap;
   }
+  @media (min-width: 1200px) {
+  width:70%;
+  }
+  @media (min-width: 1500px) {
+    width: 50%;
+  }
+  @media (min-width: 1800px) {
+    width: 36%;
+  }
 `;
 const InfoDiv = styled.div`
-display:flex;
-flex-direction:column;
+width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: baseline;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    flex-direction: column;
+    align-items: baseline;
 @media (min-width: 500px) {
   flex-direction: row;
     flex-wrap: wrap;
+  }
+  @media (min-width: 1500px) {
+    width: 50%;
   }
 `;
 
@@ -213,6 +282,21 @@ display:none;
     display:flex;
     }
 `;
+
+const InfoBox1 = styled.article`
+display:flex;
+flex-direction:column;
+`;
+const InfoBox2 = styled.article`
+display:flex;
+flex-direction:column;
+`;
+const InfoContact = styled.article`
+display:flex;
+flex-direction:column;
+`;
+
+
 /* const TwitterBox = styled.div`
   overflow: scroll;
   height: auto;

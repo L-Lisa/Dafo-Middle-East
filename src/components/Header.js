@@ -283,7 +283,7 @@ margin-right: 5px;
   cursor: pointer;
   height: 32px;
     width: 100%;
-    margin: 15px;
+    
   @media(min-width:676px){
     display:none;
 }
