@@ -182,6 +182,7 @@ text-align:center;
 
 const ContactSection = styled.section`
 width:100%;
+padding-top:15px;
 display:flex;
 flex-direction:column;
 justify-content: center;

@@ -3,7 +3,7 @@ import styled from 'styled-components/macro'
 import { PageComponent } from "components/PageComponent.js"
 import { Link, animateScroll as scroll } from "react-scroll";
 import MiningImg from "..//images/catepillar.jpg"
-
+import ReactPlayer from 'react-player/youtube'
 
 export const Mining = () => {
 
@@ -20,19 +20,20 @@ export const Mining = () => {
 
                 mainText3={"Dafo supply systems approved by SBF in accordance with SBF 127 & SBF 128. Agents as Forrex, the unique non-corrosive freeze protected Wet Chemical is used. We have more than 30 years’ experience of vehicle fire suppression systems, adapted to suit the most demanding conditions."}
 
-                lastElement={""
-                    /*  <>
-                         <PlayerContainer>
-                             <EmbedPlayer>
-                                 <ReactPlayer
-                                     url="https://www.youtube.com/watch?v=yFrJz5tydMQ&t=50s" width='100%'
-                                     height='100%'
-                                     playing
-                                     muted
-                                 />
-                             </EmbedPlayer>
-                         </PlayerContainer>
-                     </> */
+                lastElement={
+                    <>
+                        <PlayerContainer>
+                            <EmbedPlayer>
+                                <ReactPlayer
+                                    url="https://www.youtube.com/embed/hISlc88HhKQ" width='100%'
+                                    height='100%'
+                                    playing
+                                    muted
+                                />
+                            </EmbedPlayer>
+                        </PlayerContainer>
+
+                    </>
                 }
             />
 

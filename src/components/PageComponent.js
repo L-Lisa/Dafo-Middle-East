@@ -5,7 +5,7 @@ import { ScrollLink } from "components/ScrollButton"
 import { VscrollerTop, FootArrow, VscrollerMidDown, VscrollerEnd } from "components/Vscroller"
 
 
-export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, mainText2, mainText3, lastElement, listItem1, listItem2, listItem3, mainText4 }) => {
+export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, mainText2, mainText3, lastElement, listItem1, listItem2, listItem3, mainText4, EndHeader1, EndHeader2, lastElementColRow }) => {
 
     return (
 
@@ -49,7 +49,10 @@ export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, ma
                 <VscrollerEnd />
             </MidSection>
             <EndSection id="sectionEnd">
+                {EndHeader1 && <EndH1>{EndHeader1} </EndH1>}
+                {EndHeader2 && <EndH2>{EndHeader2} </EndH2>}
                 {lastElement && <LastDiv>{lastElement}</LastDiv>}
+                {lastElementColRow && <LastElementColRow>{lastElementColRow}</LastElementColRow>}
             </EndSection>
             < FootArrow />
         </PageWrapper>
@@ -131,6 +134,7 @@ width: 100%;
     -ms-flex-pack: center;
     justify-content: center;
     padding: 3px;
+    margin-top: -3px;
     align-items:center;
     @media (min-width: 768px) {
       height: 70vh;
@@ -153,8 +157,7 @@ align-self: flex-start;
 `;
 const HeaderText = styled.h2`
 font-size:1.2rem;
-margin-top: 50px;
-
+/* margin-top: 50px; */
 `;
 
 const MainText = styled.article`
@@ -171,8 +174,10 @@ const EndSection = styled.section`
 width:100%;
 height:auto;
 display: flex;
+flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
 @media (min-width: 1200px) {
   height:100vh;
   }
@@ -193,6 +198,19 @@ display:none;
     display:flex;
     }
 `;
+
+const LastElementColRow = styled.div`
+height: auto;
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+@media (min-width:500px){ 
+    flex-direction:row;
+    width: inherit;
+    }
+`;
 /* const VEnd = styled.div`
 width: 100%;
 height: 30vh;
@@ -207,3 +225,31 @@ display:none;
     }
 `;
  */
+
+const EndH1 = styled.h1`
+font-size: 26px;
+ margin: 0 auto;
+    color: white;
+    background: #1c1c1c;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+    padding: 5px;
+  max-width: 250px; 
+    text-transform: uppercase;
+    -webkit-letter-spacing: 2px;
+    -moz-letter-spacing: 2px;
+    -ms-letter-spacing: 2px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-block-start: 0; 
+    @media(min-width:630px){
+        font-size: 36px;
+        max-width:unset;
+}
+`;
+
+const EndH2 = styled.h2`
+font-size:20px;
+`;

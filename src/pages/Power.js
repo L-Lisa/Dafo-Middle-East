@@ -2,7 +2,7 @@ import React from "react"
 import styled from 'styled-components/macro'
 import { PageComponent } from "components/PageComponent.js"
 import { Link, animateScroll as scroll } from "react-scroll"
-
+import ReactPlayer from 'react-player/youtube'
 import PowerGenMainImage from "..//images/Kompressor.JPG"
 
 
@@ -18,19 +18,21 @@ export const Power = () => {
 
                 mainText2={"Dafo Forrex Fire Suppression Systems response rapidly to any increase in temperature. The Dafo system is developed to use worldwide in both cold and hot climate. It ensures maximum protection while being much more economical than previously available solutions like water sprinkler, dry chemical or CO2-systems"}
                 mainText3={""}
-                lastElement={""
-                    /*  <>
-                         <PlayerContainer>
-                             <EmbedPlayer>
-                                 <ReactPlayer
-                                     url="https://www.youtube.com/watch?v=yFrJz5tydMQ&t=50s" width='100%'
-                                     height='100%'
-                                     playing
-                                     muted
-                                 />
-                             </EmbedPlayer>
-                         </PlayerContainer>
-                     </> */
+                videoHeader={"Placeholder video"}
+                lastElement={
+                    <>
+                        <PlayerContainer>
+                            <EmbedPlayer>
+                                <ReactPlayer
+                                    url="https://www.youtube.com/embed/hISlc88HhKQ" width='100%'
+                                    height='100%'
+                                    playing
+                                    muted
+                                />
+                            </EmbedPlayer>
+                        </PlayerContainer>
+
+                    </>
                 }
             />
 
