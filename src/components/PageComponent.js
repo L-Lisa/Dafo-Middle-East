@@ -111,7 +111,12 @@ font-size: 2rem;
   }
   @media (min-width: 1200px) {
     top: unset;
-    left:unset;
+    left: 30px;
+    font-size: 50px;
+  }
+  @media (min-width: 1800px) {
+    left: 60px;
+    font-size: 60px;
   }
 `;
 const Line = styled.div`
@@ -151,13 +156,22 @@ const ListItem = styled.ul`
 color:#1c1c1c;
 padding: 14px;
 align-self: flex-start;
+li{
+    @media (min-width: 400px) {
+    margin-left: 4rem;
+  }}
 @media (min-width: 1200px) {
- margin-left:140px;
+    margin: inherit;
+    padding: 25px;
+    
   }
 `;
 const HeaderText = styled.h2`
 font-size:1.2rem;
 /* margin-top: 50px; */
+@media (min-width: 1200px) {
+    font-size: 2.2rem;
+  }
 `;
 
 const MainText = styled.article`
@@ -166,6 +180,14 @@ line-height: 1.5rem;
 padding: 0 10px 0 10px;
 @media (min-width: 1200px) {
 padding: 0 40px 0 40px;
+width: 70%;
+    margin: 0 auto;
+    padding-left:10px;
+  }
+  @media (min-width: 1500px) {
+width: 70%;
+    margin: 0 auto;
+    padding-left:10px;
   }
 
 `;

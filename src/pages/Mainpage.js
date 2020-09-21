@@ -160,7 +160,6 @@ const MainText = styled.div`
   }
     @media (min-width: 1200px) {
   height:100vh;
-  padding-left: 30px;
   font-size: 1.2rem;
   }
   p{  
@@ -173,6 +172,9 @@ const Mainh1 = styled.h1`
 text-align:center;
 @media (min-width: 400px) {
   text-align:left;
+  text-align: left;
+    padding-left: 5px;
+
   }
   @media (min-width: 1200px) {
     width: 70%;
@@ -223,6 +225,7 @@ flex-wrap: wrap;
 `;
 const InfoDiv = styled.div`
 width: 100%;
+background: whitesmoke;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
