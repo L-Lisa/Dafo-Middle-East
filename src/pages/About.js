@@ -4,7 +4,7 @@ import { PageComponent } from "components/PageComponent.js"
 import { Link, animateScroll as scroll } from "react-scroll"
 import DafoLogga from "../images/DafoMeNoBack.png";
 import aboutImg from "..//images/aboutImg.jpg"
-
+import ReactPlayer from 'react-player/youtube'
 
 export const About = () => {
 
@@ -17,24 +17,24 @@ export const About = () => {
             <PageComponent
                 coverImage={aboutImg}
                 ImageText={""}
-                headerText={""}
-                mainText1={""}
+                headerText={"Rubrik?"}
+                mainText1={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum "}
 
                 mainText2={""}
                 mainText3={""}
-                lastElement={""
-                    /*  <>
-                         <PlayerContainer>
-                             <EmbedPlayer>
-                                 <ReactPlayer
-                                     url="https://www.youtube.com/watch?v=yFrJz5tydMQ&t=50s" width='100%'
-                                     height='100%'
-                                     playing
-                                     muted
-                                 />
-                             </EmbedPlayer>
-                         </PlayerContainer>
-                     </> */
+                lastElement={
+                    <>
+                        <PlayerContainer>
+                            <EmbedPlayer>
+                                <ReactPlayer
+                                    url="https://www.youtube.com/watch?v=yFrJz5tydMQ&t=50s" width='100%'
+                                    height='100%'
+                                    playing
+                                    muted
+                                />
+                            </EmbedPlayer>
+                        </PlayerContainer>
+                    </>
                 }
             />
 
@@ -105,7 +105,7 @@ position: absolute;
   height:500px;
   }
   @media (min-width: 900px) {
-  height:900px;
+    height: 890px;
   }
   @media (min-width: 1200px) {
   height:1200px;
