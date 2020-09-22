@@ -16,6 +16,7 @@ import { Power } from "../pages/Power"
 import { BuyButton } from "..//components/BuyButton"
 import { Distributors } from "../pages/Distributors"
 import { About } from "../pages/About"
+import { VscrollerTop, FootArrow, VscrollerMidDown, VscrollerEnd } from "components/Vscroller"
 
 export const Directions = () => {
     return (
@@ -76,7 +77,7 @@ export const Directions = () => {
                     </Route>
                 </Switch>
             </main>
-
+            < FootArrow />
         </BrowserRouter>
     )
 }

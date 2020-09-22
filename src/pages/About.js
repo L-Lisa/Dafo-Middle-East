@@ -6,27 +6,11 @@ import DafoLogga from "../images/DafoMeNoBack.png";
 import aboutImg from "..//images/aboutImg.jpg"
 import ReactPlayer from 'react-player/youtube'
 import { Timeline } from "react-twitter-widgets";
-
+import { TwitterFeed } from "components/Twitter"
 
 export const About = () => {
 
-    const [twitterLoaded, settwitterLoaded] = useState(false);
-    useEffect(() => {
-        if (twitterLoaded) {
-            const scrollingCss =
-                " div.timeline-Viewport {overflow: hidden;} div.timeline-Viewport ol {position:relative; top:0;animation: scroll 120s linear 0.5s infinite;} @keyframes scroll {95% { top: -1000%; } 100%{top:0;}}";
 
-            const iframes = document.querySelectorAll("[id^=twitter-widget]");
-            for (let index = 0; index < iframes.length; index++) {
-                const iframe = iframes[index];
-                const innerDoc =
-                    iframe.contentDocument || iframe.contentWindow.document;
-                const styleElement = document.createElement("style");
-                styleElement.innerText = scrollingCss;
-                innerDoc.head.appendChild(styleElement);
-            }
-        }
-    }, [twitterLoaded]);
 
     return (
         <>
@@ -57,20 +41,7 @@ export const About = () => {
                     </>
                 }
             />
-            <TwitterBox>
-                <Timeline
-                    renderError={(_err) => <p>Could not load Twitter</p>}
-                    dataSource={{
-                        sourceType: "profile",
-                        screenName: "Dafovehicle",
-                        width: "100%",
-                    }}
-                    options={{
-                        height: "700",
-                    }}
-                    onLoad={() => settwitterLoaded(true)}
-                />
-            </TwitterBox>
+            <TwitterFeed />
             {/* 
             <Top> <Link
                 activeClass="active"
@@ -80,6 +51,7 @@ export const About = () => {
                 offset={-15}
                 duration={500}> &#8593;
             </Link></Top> */}
+
         </>
     )
 }

@@ -54,7 +54,7 @@ export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, ma
         {lastElement && <LastDiv>{lastElement}</LastDiv>}
         {lastElementColRow && <LastElementColRow>{lastElementColRow}</LastElementColRow>}
       </EndSection>
-      < FootArrow />
+
     </PageWrapper>
   )
 }
