@@ -191,14 +191,15 @@ justify-content: center;
 align-items: center;
 @media (min-width: 1190px) {
   height:100vh;
+  justify-content: flex-end;
   background-image: url(${DafoRedFlameFade});
   background-position: center;
 background-repeat: no-repeat;
     background-size: contain;
-    justify-content: flex-end;
+  
   }
   @media (min-width: 1500px) {
-    justify-content: center;
+    
   }
 `;
 

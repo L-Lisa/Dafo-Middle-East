@@ -7,11 +7,12 @@ const Container = styled.div`
 width:250px;
 margin:15px;
 border-top: solid 2px red;
+background:#ffff;
     @media(min-width:410px){
   
     }
     @media(min-width:700px){
-        margin: 40px;
+       width: calc(100% / 5);
 }
 `;
 

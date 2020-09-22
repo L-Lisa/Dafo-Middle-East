@@ -348,6 +348,7 @@ color:#626262;
 }}
 li{
     transition: transform .2s;
+    font-size: calc(9px + 1vw);
     &:hover{
         border-radius:5%;
         transform: scale(1.1);

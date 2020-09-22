@@ -1,12 +1,32 @@
-import React from "react"
+import React, { useState, useEffect } from "react";
 import styled from 'styled-components/macro'
 import { PageComponent } from "components/PageComponent.js"
 import { Link, animateScroll as scroll } from "react-scroll"
 import DafoLogga from "../images/DafoMeNoBack.png";
 import aboutImg from "..//images/aboutImg.jpg"
 import ReactPlayer from 'react-player/youtube'
+import { Timeline } from "react-twitter-widgets";
+
 
 export const About = () => {
+
+    const [twitterLoaded, settwitterLoaded] = useState(false);
+    useEffect(() => {
+        if (twitterLoaded) {
+            const scrollingCss =
+                " div.timeline-Viewport {overflow: hidden;} div.timeline-Viewport ol {position:relative; top:0;animation: scroll 120s linear 0.5s infinite;} @keyframes scroll {95% { top: -1000%; } 100%{top:0;}}";
+
+            const iframes = document.querySelectorAll("[id^=twitter-widget]");
+            for (let index = 0; index < iframes.length; index++) {
+                const iframe = iframes[index];
+                const innerDoc =
+                    iframe.contentDocument || iframe.contentWindow.document;
+                const styleElement = document.createElement("style");
+                styleElement.innerText = scrollingCss;
+                innerDoc.head.appendChild(styleElement);
+            }
+        }
+    }, [twitterLoaded]);
 
     return (
         <>
@@ -37,7 +57,20 @@ export const About = () => {
                     </>
                 }
             />
-
+            <TwitterBox>
+                <Timeline
+                    renderError={(_err) => <p>Could not load Twitter</p>}
+                    dataSource={{
+                        sourceType: "profile",
+                        screenName: "Dafovehicle",
+                        width: "100%",
+                    }}
+                    options={{
+                        height: "700",
+                    }}
+                    onLoad={() => settwitterLoaded(true)}
+                />
+            </TwitterBox>
             {/* 
             <Top> <Link
                 activeClass="active"
@@ -124,5 +157,46 @@ position: absolute;
   @media (min-width: 1200px) {
         width: 500px;
   }
+  }
+`;
+
+const TwitterBox = styled.div`
+  overflow: scroll;
+  height: auto;
+  @media (min-width: 676px) {
+          height: 300px;
+  }
+  @media (min-width: 800px) {
+          height: 350px;
+  }
+  @media (min-width: 900px) {
+          height: 380px;
+  }
+  @media (min-width: 1000px) {
+          height: 410px;
+  }
+  @media (min-width: 1100px) {
+          height: 480px;
+  }
+  @media (min-width: 1200px) {
+          height: 520px;
+  }
+  @media (min-width: 1300px) {
+          height: 570px;
+  }
+  @media (min-width: 1400px) {
+          height: 620px;
+  }
+  @media (min-width: 1500px) {
+          height: 670px;
+  }
+  @media (min-width: 1500px) {
+          height: 690px;
+  }
+  @media (min-width: 1500px) {
+          height: 670px;
+  }
+  @media (min-width: 1500px) {
+          height: auto;
   }
 `;
