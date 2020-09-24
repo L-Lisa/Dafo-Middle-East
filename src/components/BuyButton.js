@@ -83,7 +83,7 @@ background: #ee273e;
     font-size: 1.3rem;
     }
     @media (min-width: 1200px) {
-    padding: 19px;
+    padding: 12px;
     font-size: 2rem;
     }
 `;

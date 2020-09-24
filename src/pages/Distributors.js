@@ -14,7 +14,6 @@ export const Distributors = () => {
     return (
         <>
             <PageComponent
-                background="rebeccapurple"
                 coverImage={DistributorImg}
                 ImageText={"Distributors"}
                 headerText={"Dafo Middle East authorized distributors and service providers "}

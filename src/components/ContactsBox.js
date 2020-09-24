@@ -28,7 +28,7 @@ margin: 8px; */
 const Title = styled.h1`
 width: 100%;
     margin: 0px;
-    font-size: 20px;
+   /*  font-size: 20px; */
     font-weight: 500;
 `;
 const SecondaryText = styled.h2`
@@ -36,7 +36,7 @@ width: 100%;
     margin: 0px;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: medium;
+ /*    font-size: medium; */
     padding-top: 9px;
 `;
 

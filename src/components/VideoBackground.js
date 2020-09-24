@@ -25,7 +25,6 @@ export const VideoBackground = ({ videoSource, DafoDubaiME }) => {
                     to="sectionMid"><p>&#8595;</p></Link></V>
             </ImgBox>
 
-
         </Container>
     )
 }

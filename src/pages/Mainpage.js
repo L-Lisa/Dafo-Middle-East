@@ -190,8 +190,9 @@ display:flex;
 flex-direction:column;
 justify-content: center;
 align-items: center;
+height:auto;
 @media (min-width: 1190px) {
-  height: 110vh;
+  height: 120vh;
   justify-content: flex-end;
   background-image: url(${DafoRedFlameFade});
   background-position: center;
