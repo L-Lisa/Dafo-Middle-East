@@ -62,7 +62,7 @@ const P1 = styled.p`
 text-align: left;
     margin-block-end: 0;
     margin-block-start: 0;
-    font-size: 0.9em;
+   /*  font-size: 0.9em; */
 `;
 
 const SecondaryText = styled.h2`
@@ -70,6 +70,6 @@ width: 100%;
     margin: 0px;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: medium;
+   /*  font-size: medium; */
     padding-top: 9px;
 `;

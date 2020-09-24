@@ -36,7 +36,7 @@ export const ScrollLink = () => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={30}
+                offset={40}
                 duration={500}
                 to="sectionEnd">
                 &#9678;

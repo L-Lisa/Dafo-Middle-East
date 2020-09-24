@@ -59,7 +59,7 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
           duration={500}
           to="sectionEnd"><p>&#8595;</p></Link></V>
       </MainText>
-      <RedLine></RedLine>
+
       <ContactSection id="sectionEnd" >
 
         <ContactDiv >
@@ -97,7 +97,7 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
         </ContactDiv>
 
         <InfoDiv >
-          <RedLine></RedLine>
+
           <ContactInfoCard
             title={" Dubai office"}
             p1={"Clover Bay Tower"}
@@ -191,7 +191,7 @@ flex-direction:column;
 justify-content: center;
 align-items: center;
 @media (min-width: 1190px) {
-  height:100vh;
+  height: 110vh;
   justify-content: flex-end;
   background-image: url(${DafoRedFlameFade});
   background-position: center;
@@ -240,10 +240,14 @@ background: whitesmoke;
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
 @media (min-width: 500px) {
-  flex-direction: row;
+  border-top: red 2px solid;
+  }
+  @media (min-width: 800px) {
+    flex-direction: row;
     flex-wrap: wrap;
+    align-items: baseline;
   }
   @media (min-width: 1500px) {
     width: 50%;
