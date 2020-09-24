@@ -23,7 +23,7 @@ export const BuyButton = () => {
                     duration={500}>
 
                 </Link> */}{/* </NavLink> */}
-                < Vscroll400 />
+                {/*    < Vscroll400 /> */}
             </BtnContainer >
         </>
     )

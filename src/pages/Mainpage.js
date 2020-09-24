@@ -55,11 +55,11 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
         <V><Link activeClass="active"
           spy={true}
           smooth={true}
-          offset={-15}
+          offset={30}
           duration={500}
           to="sectionEnd"><p>&#8595;</p></Link></V>
       </MainText>
-
+      <RedLine></RedLine>
       <ContactSection id="sectionEnd" >
 
         <ContactDiv >
@@ -95,8 +95,9 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
             phone2="+971 4 232 3957"
           />
         </ContactDiv>
-        <InfoDiv >
 
+        <InfoDiv >
+          <RedLine></RedLine>
           <ContactInfoCard
             title={" Dubai office"}
             p1={"Clover Bay Tower"}
@@ -123,14 +124,14 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
         </InfoDiv>
 
       </ContactSection>
-      <Top> <Link
+      {/*   <Top> <Link
         activeClass="active"
         to="top"
         spy={true}
         smooth={true}
         offset={0}
         duration={500}> &#8593;
-            </Link></Top>
+            </Link></Top> */}
     </MainPgWrapper>
   )
 }
@@ -358,3 +359,7 @@ margin: 0 auto;
 margin-top: 40px;
 `;
 
+const RedLine = styled.span`
+height:1rem;
+width:40vw;
+`

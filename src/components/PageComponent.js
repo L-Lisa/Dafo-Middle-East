@@ -18,7 +18,6 @@ export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, ma
         {coverImage && <CoverImage src={coverImage} />}
         <TopText>
           {ImageText && <p>{ImageText}</p>}
-
         </TopText>
         <VscrollerMidDown />
       </TopSection>
