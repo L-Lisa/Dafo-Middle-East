@@ -17,6 +17,12 @@ margin: 8px; */
     align-content: center;
     margin: 15px 0 0 0;
     justify-content: flex-start;
+    height: auto;
+    background: #fff;
+    padding-top: 5px;
+    -webkit-box-shadow: 0 0 5px 2px #fff;
+    -moz-box-shadow: 0 0 5px 2px #fff;
+    box-shadow: 0 0 35px 26px #fff;
     @media(min-width:410px){
     width:50%;
     }
