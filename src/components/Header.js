@@ -106,15 +106,7 @@ export const Header = () => {
             </Nav>
             <InlineNav>
                 <ul>
-                    <li>
-                        <NavLink to="/" onClick={() => setShowProducts(false)} > <Link
-                            to="top"
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration={50}>
-                        </Link><NavListLogo src={dafoMEred} alt="Dafo Middle East" /></NavLink>
-                    </li>
+
                     <li>
                         <NavLink to="#" onClick={() => setShowProducts(!showProducts)}>Products</NavLink>
                     </li>
@@ -124,7 +116,15 @@ export const Header = () => {
                     {/*   <li>
                         <NavLink to="/certifications">Certificates</NavLink>
                     </li> */}
-
+                    <li>
+                        <NavLink to="/" onClick={() => setShowProducts(false)} > <Link
+                            to="top"
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={50}>
+                        </Link><NavListLogo src={DafoRedNoBackground} alt="Dafo Middle East" /></NavLink>
+                    </li>
                     <li>
                         <NavLink to="/downloads">Downloads</NavLink>
                     </li>
@@ -178,13 +178,14 @@ export const Header = () => {
 }
 
 const HeaderWrapper = styled.main`
-background:white;
+background:#1c1c1c;
 box-sizing:border-box;
 width:100%;
 position: -webkit-sticky;
 position: sticky;
 top: 0;
 z-index: 1000;
+margin-bottom: -14px;
 `;
 
 const TopHeader = styled.section`
@@ -236,7 +237,7 @@ padding: 20px;
 const BurgerBox = styled.section`
 display:flex;
 align-items: center;
-background:#fff;
+background:#1c1c1c;
 justify-content:space-between;
 @media(min-width:319px){
     flex-direction:row;
@@ -268,6 +269,7 @@ li{
 a{
     text-decoration:none;
     color: #ffff;
+   
     &:hover{
         color:gray;
     }
@@ -330,19 +332,20 @@ const BurgerLogo = styled.img`
 `;
 const InlineNav = styled.ul`
 display:none;
-background:white;
+background:#1c1c1c;
 box-sizing: border-box;
 ul{
     list-style:none;
     display:flex;
     justify-content: center;
-    padding: 13px 0px 0 0;
+    /* padding: 13px 0px 0 0; */
 }
 a{
 text-decoration:none;
 transition: transform .2s;
 padding: 0 8px 0 8px;
-color:#626262;
+color:#fff;
+text-transform: uppercase;
 &:hover{
         color:#1c1c1c;
 }}

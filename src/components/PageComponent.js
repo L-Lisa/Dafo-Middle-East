@@ -30,7 +30,7 @@ export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, ma
         {mainText2 && <MainText>{mainText2}</MainText>}
         {listItem1 && <ListItem>
           <ul>
-            <li>{listItem1}</li>
+            <li><RedLine></RedLine>{listItem1}</li>
             {listItem2 && <li>{listItem2}</li>}
             {listItem3 && <li>{listItem3}</li>}
           </ul>
@@ -275,4 +275,11 @@ const EndH1 = styled.h1`
 
 const EndH2 = styled.h2`
 /* font-size:20px; */
+`;
+
+
+const RedLine = styled.span`
+color:red;
+width:6px;
+height:2px;
 `;

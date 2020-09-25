@@ -24,6 +24,8 @@ import { BuyButton } from "..//components/BuyButton"
 import dafoMEred from "..//images/dafoMEred.jpg"
 import DafoRedFlame from "../images/DafoRedFlame.jpg"
 import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg"
+import { RedLine } from "../components/RedLine"
+
 
 export const MainPage = () => {
 
@@ -38,19 +40,19 @@ export const MainPage = () => {
 
       <MainText id="sectionMid" >
         <Mainh1>Automatic fire detection and suppression system </Mainh1>
-        <p>
+        <Para>
           Dafo was one of the first companies in the world which started to develop intergrated firefighting solutions for vehicles.
               <br /><br />
               Over the years Dafo has obtained vas experience and knowledge from our end user installations which have been used as a basis for
-            <ul>
-            <li>Eliminating false alarms</li>
-            <li>Eliminating false releases</li>
-          </ul>
+            <Points>
+            <PointRow><RedLine />Eliminating false alarms</PointRow>
+            <PointRow> <RedLine />Eliminating false releases</PointRow>
+          </Points>
 
  As a result of the development Dafo can today proudly present state of the art reliable solutions without vulnerable and pressurized agent containers.
  <br /><br />
 With more than 165000 vehicle systems sold worldwide know-how and experience ensure our customers to have the latest technology combined with proven reliability.
-            </p>
+            </Para>
         <Space></Space>
         <V><Link activeClass="active"
           spy={true}
@@ -163,10 +165,10 @@ const MainText = styled.div`
   height:100vh;
   font-size: 1.2rem;
   }
-  p{  
-    width: 70%;
-    margin: 0 auto;
-    padding-left:10px;
+  li span{
+    height:4px;
+width:5px;
+color:red;
   }
 `;
 const Mainh1 = styled.h1`
@@ -197,7 +199,7 @@ height:auto;
   background-image: url(${DafoRedFlameFade});
   background-position: center;
 background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
   
   }
   @media (min-width: 1500px) {
@@ -228,7 +230,7 @@ flex-wrap: wrap;
 `;
 const InfoDiv = styled.div`
 width: 100%;
-background: whitesmoke;
+/* background: whitesmoke; */
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -243,7 +245,7 @@ background: whitesmoke;
     flex-direction: column;
     align-items: center;
 @media (min-width: 500px) {
-  border-top: red 2px solid;
+  /* border-top: red 2px solid; */
   }
   @media (min-width: 800px) {
     flex-direction: row;
@@ -307,6 +309,22 @@ display:flex;
 flex-direction:column;
 `;
 
+const Points = styled.div`
+width:auto;
+margin:unset;
+`;
+const PointRow = styled.p`
+width:auto;
+display:flex;
+`;
+
+const Para = styled.div`
+height:auto;
+width: 70%;
+    margin: 0 auto;
+    padding-left:10px;
+`
+
 
 /* const TwitterBox = styled.div`
   overflow: scroll;
@@ -364,7 +382,3 @@ margin: 0 auto;
 margin-top: 40px;
 `;
 
-const RedLine = styled.span`
-height:1rem;
-width:40vw;
-`

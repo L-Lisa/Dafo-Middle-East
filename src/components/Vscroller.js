@@ -83,7 +83,7 @@ padding: 7px;
 justify-content:center;
 :hover{
 color:gray;
-background:whitesmoke;
+background:#e9e9ea;
 }`;
 
 const Vdiv = styled.div`

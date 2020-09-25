@@ -36,6 +36,7 @@ width: 100%;
     margin: 0px;
     font-weight: 400;
     text-transform: uppercase;
+    font-size: 1.3em;
  /*    font-size: medium; */
     padding-top: 9px;
 `;
