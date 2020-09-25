@@ -142,32 +142,32 @@ export const Header = () => {
                 <InlineNav2 id="close" >
                     <ProductNav>Automatic fire detection and suppression system for:</ProductNav>
                     <Li2>
-                        <NavLink to="/vehicles" onClick={() => setShowProducts(false)}> <Link
+                        <NavLink to="/vehicles" onClick={() => setShowProducts(false)}> {/* <Link
                             to="top"
                             spy={true}
                             smooth={true}
                             offset={0}
                             duration={500}>
-                        </Link>Vehicles</NavLink>
+                        </Link> */}Vehicles</NavLink>
                     </Li2>
                     <Li2>
-                        <NavLink to="/power" onClick={() => setShowProducts(false)}><Link
+                        <NavLink to="/power" onClick={() => setShowProducts(false)}>{/* <Link
                             to="top"
                             spy={true}
                             smooth={true}
                             offset={0}
                             duration={500}>
-                        </Link>Powergenerators</NavLink>
+                        </Link> */}Powergenerators</NavLink>
                     </Li2>
                     <Li2>
-                        <NavLink to="/mining" onClick={() => setShowProducts(false)} > <Link
+                        <NavLink to="/mining" onClick={() => setShowProducts(false)} > {/* <Link
 
                             to="top"
                             spy={true}
                             smooth={true}
                             offset={0}
                             duration={500}>
-                        </Link>Mining & heavy duty mobile equipment</NavLink>
+                        </Link> */}Mining & heavy duty mobile equipment</NavLink>
                     </Li2>
                 </InlineNav2>
             }
