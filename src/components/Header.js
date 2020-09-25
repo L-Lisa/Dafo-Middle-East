@@ -346,15 +346,18 @@ transition: transform .2s;
 padding: 0 8px 0 8px;
 color:#fff;
 text-transform: uppercase;
+margin-bottom: -12px;
 &:hover{
-        color:#1c1c1c;
+        color:red;
 }}
 li{
     transition: transform .2s;
     font-size: calc(9px + 1vw);
+    
     &:hover{
         border-radius:5%;
         transform: scale(1.1);
+        color:red;
     }}
 @media(min-width:676px){
     display:inline;

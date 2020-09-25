@@ -25,7 +25,7 @@ import dafoMEred from "..//images/dafoMEred.jpg"
 import DafoRedFlame from "../images/DafoRedFlame.jpg"
 import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg"
 import { RedLine } from "../components/RedLine"
-
+import BlackNWhite from "../images/DafoDubaiBlackNWhite.jpg"
 
 export const MainPage = () => {
 
@@ -196,7 +196,7 @@ height:auto;
 @media (min-width: 1190px) {
   height: 120vh;
   justify-content: flex-end;
-  background-image: url(${DafoRedFlameFade});
+  background-image: url(${BlackNWhite});
   background-position: center;
 background-repeat: no-repeat;
     background-size: cover;
