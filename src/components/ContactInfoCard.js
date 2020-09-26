@@ -37,7 +37,7 @@ export const ContactInfoCard = ({ title, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10
 }
 
 const Container = styled.section`
-width: 200px;
+width: 208px;
     height: auto;
     margin: 20px;
     padding-bottom: 10px;
@@ -49,10 +49,13 @@ text-align:center;
 `;
 
 const Title = styled.h1`
-    width: 100%;
-    margin: 0px;
-    font-weight: 500;
+  width: 100%;
+    margin-bottom: 6px;
     text-align: left;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    padding-top: 9px;
 `;
 const TextDiv = styled.div`
 margin-left:3px;
@@ -62,7 +65,8 @@ const P1 = styled.p`
 text-align: left;
     margin-block-end: 0;
     margin-block-start: 0;
-   /*  font-size: 0.9em; */
+    /* padding: 2px; */
+    font-size: 0.9em;
 `;
 
 const SecondaryText = styled.h2`
@@ -70,6 +74,6 @@ width: 100%;
     margin: 0px;
     font-weight: 400;
     text-transform: uppercase;
-   /*  font-size: medium; */
-    padding-top: 9px;
+    font-size: 1.1em;
+    margin-top:2px;   
 `;

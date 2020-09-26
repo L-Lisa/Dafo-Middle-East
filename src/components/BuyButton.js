@@ -77,7 +77,7 @@ margin-right: 6px;
     padding: 6px;
     border-radius: 50px;
     font-size: 1rem;
-background: #ee273e;
+background: #ee0201;
     @media (min-width: 678px) {
     padding: 12px;
     font-size: 1.3rem;

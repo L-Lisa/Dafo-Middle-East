@@ -34,7 +34,7 @@ const Container = styled.section`
 position: relative;
     overflow: hidden;
     @media (min-width: 1190px) {
-  height:100vh;
+  height:auto;
   }
 `;
 const Video = styled.video`
@@ -43,7 +43,7 @@ height:100%;
 
     background: #1c1c1c;
 @media (min-width: 1190px) {
-    height: 100vh;
+    height:auto;
   }
 `;
 

@@ -112,7 +112,7 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
 
           <ContactInfoCard
             title="Warehouse &
-            delivery address"
+            delivery"
             p1={"Dry dock world"}
             p2={"Warehouse no 118"}
             p3="Jadaf, near Creek metro"
@@ -193,14 +193,16 @@ flex-direction:column;
 justify-content: center;
 align-items: center;
 height:auto;
-@media (min-width: 1190px) {
-  height: 120vh;
-  justify-content: flex-end;
-  background-image: url(${BlackNWhite});
+background-color: #c8c8c8;
+@media (min-width:677px){
+  background-image: url(${DafoRedFlameFade});
   background-position: center;
 background-repeat: no-repeat;
-    background-size: cover;
-  
+    background-size: contain;
+}
+@media (min-width: 1190px) {
+  height: 100vh;
+  justify-content: flex-end;
   }
   @media (min-width: 1500px) {
     
@@ -213,7 +215,6 @@ height:min-content;
 margin-top: 30px;
 justify-content: space-around;
 flex-wrap: wrap;
-    margin-top: 30px;
 @media (min-width: 500px) {
   flex-direction: row;
     flex-wrap: wrap;
@@ -245,7 +246,8 @@ width: 100%;
     flex-direction: column;
     align-items: center;
 @media (min-width: 500px) {
-  /* border-top: red 2px solid; */
+  flex-direction:row;
+  align-items: baseline;
   }
   @media (min-width: 800px) {
     flex-direction: row;
@@ -263,6 +265,7 @@ margin-top: -90px;
 @media (min-width: 1200px) {
   height:100vh;
   margin-top: -140px;
+  background:#1c1c1c;
   }
 `;
 const Space = styled.span`

@@ -8,6 +8,9 @@ import Linkedin from "..//images/Linkedin.png"
 import Vehicle from "..//images/Vehicle.jpg"
 import redNblack from "..//images/redNblackLogo.png"
 import DafoRedNoBackground from "..//images/DafoVehicleLogoNoBackground.png"
+
+import REDFireProtLogo from "..//images/REDFireProtectionLogo.png"
+import REDVehicle from "../images/RED-VehicleLogo.png"
 import DafoRedFlame from "../images/DafoRedFlame.jpg"
 import { ScrollLink } from "components/ScrollButton"
 
@@ -56,8 +59,13 @@ export const Header = () => {
                         smooth={true}
                         offset={0}
                         duration={50}>
-                    </Link><BurgerLogo src={dafoMEred} alt="Dafo Middle East" /></NavLink>
+
+                    </Link><BurgerLogo src={REDFireProtLogo} alt="Dafo Middle East" />
+                        <BurgerLogo src={REDVehicle} alt="Dafo Middle East" />
+
+                    </NavLink>
                     <Hamburger>
+
 
                         <div className="container" onClick={() => setShowMenu(!showMenu)}>
 
@@ -256,7 +264,7 @@ ul{
     background: #1c1c1c;
     padding-bottom: 10px;
     li:nth-child(odd) {
-        background: #3f3e3e;
+        background: green;
     display: inline;
     padding: 0 6px;
     border-radius: 2px;   
@@ -293,7 +301,7 @@ margin-right: 5px;
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
-  background-color: #ee273c;
+  background-color: #ee0201;
   margin: 6px 0;
   transition: 0.4s;
   border-radius:2px;
@@ -301,7 +309,7 @@ margin-right: 5px;
 .xclose1 {
 width: 70px;
   height: 10px;
-  background-color: #ee273c;
+  background-color: #ee0201;
   margin: 6px 10px 0 0;
   border-radius:2px;
   top:  19px;
@@ -314,7 +322,7 @@ width: 70px;
 .xclose3{
     width: 70px;
   height: 10px;
-  background-color: #ee273c;
+  background-color: #ee0201;
   margin: -10px 0;
   transition: 0.4s;
   border-radius:2px;
@@ -357,7 +365,7 @@ li{
     &:hover{
         border-radius:5%;
         transform: scale(1.1);
-        color:red;
+        color:#ee0201;
     }}
 @media(min-width:676px){
     display:inline;
@@ -375,7 +383,7 @@ box-sizing: border-box;
     -ms-flex-pack: center;
     justify-content: center;
     padding: 20px 10px;
-    margin-top:-25px;
+    margin-bottom: -25px;
     flex-direction: column;
     text-align: left;
     margin-left: 20%;

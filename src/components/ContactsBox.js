@@ -10,19 +10,20 @@ border-radius: 3px;
 width: 200px;
 margin: 8px; */
     display: flex;
+    min-width: 221px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     justify-items: center;
     align-content: center;
-    margin: 15px 0 0 0;
+    margin: 15px 2px 2px 2px;
     justify-content: flex-start;
     height: auto;
-    background: #fff;
+    background: none;
     padding-top: 5px;
-    -webkit-box-shadow: 0 0 5px 2px #fff;
-    -moz-box-shadow: 0 0 5px 2px #fff;
-    box-shadow: 0 0 35px 26px #fff;
+    -webkit-box-shadow: 0 0 5px 2px #e8dcdc;
+    -moz-box-shadow: 0 0 5px 2px #e8dcdc;
+    box-shadow: 0 0 35px 7px #e8dcdc;
     @media(min-width:410px){
     width:50%;
     }
@@ -42,7 +43,7 @@ width: 100%;
     margin: 0px;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 1.3em;
+    font-size: 1.1em;
  /*    font-size: medium; */
     padding-top: 9px;
 `;
@@ -53,12 +54,11 @@ width: auto;
     height: 200px;
     @media (min-width: 1200px) {
         width: auto;
-    height: 270px;
   }
 `;
 
 const Content = styled.div`
-padding:20px;
+padding:2px;
 `;
 
 const ChildrenContent = styled.div`
@@ -102,7 +102,14 @@ list-style: none;
     line-height: normal;
     color: #1c1c1c;
     padding: 04px;
-    width: 90%;
+    width: 95%;
+    margin-top: 0;
+    @media (min-width: 446px) {
+        width: 70%;
+  }
+  @media (min-width: 630px) {
+        width: 95%;
+  }
 `;
 
 export const ContactsBox = ({ title, secondaryText, secondaryText2, coverImage, children, className, supportingText, buttonText, email1, mailto1, email2, mailto2, phone1, phone2, phone3, phone4 }) => {
