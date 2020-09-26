@@ -8,7 +8,6 @@ import Linkedin from "..//images/Linkedin.png"
 import Vehicle from "..//images/Vehicle.jpg"
 import redNblack from "..//images/redNblackLogo.png"
 import DafoRedNoBackground from "..//images/DafoVehicleLogoNoBackground.png"
-
 import REDFireProtLogo from "..//images/REDFireProtectionLogo.png"
 import REDVehicle from "../images/RED_VEHICLE_LOGO.png"
 import DafoRedFlame from "../images/DafoRedFlame.jpg"
