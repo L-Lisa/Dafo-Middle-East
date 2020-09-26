@@ -11,6 +11,7 @@ width: 200px;
 margin: 8px; */
     display: flex;
     min-width: 221px;
+    width: min-content;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -19,7 +20,7 @@ margin: 8px; */
     margin: 15px 2px 2px 2px;
     justify-content: flex-start;
     height: auto;
-    background: none;
+    background: #fff;
     padding-top: 5px;
     -webkit-box-shadow: 0 0 5px 2px #e8dcdc;
     -moz-box-shadow: 0 0 5px 2px #e8dcdc;
@@ -29,6 +30,7 @@ margin: 8px; */
     }
     @media(min-width:630px){
         width:30%;
+        background:none;
 }
 `;
 
@@ -105,10 +107,11 @@ list-style: none;
     width: 95%;
     margin-top: 0;
     @media (min-width: 446px) {
-        width: 70%;
+       text-align:center
   }
   @media (min-width: 630px) {
         width: 95%;
+        text-align:left;
   }
 `;
 

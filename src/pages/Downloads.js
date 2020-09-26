@@ -4,6 +4,7 @@ import { Mailinglist } from "../components/Mailinglist"
 import foldericon from "../images/foldericon.png"
 import WhiteFlame from "../images/White-dafo-flame.png"
 import DafoRedFlame from "../images/DafoRedFlame.jpg"
+import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg"
 
 export const Downloads = () => {
     const [email, setEmail] = useState("");
@@ -126,16 +127,17 @@ div{
 }
 ` */
 const Color = styled.div`
-background-color:lightgray;
+background-color:#fff;
 height:100vh;
+margin-top: -38px;
 display:flex;
 align-content:center;
 justify-items:center;
 @media only screen and (min-width : 767px) {
-   /*  background-image: url(${DafoRedFlame});
+ background-image: url(${DafoRedFlameFade});
     background-position: center;
 background-repeat: no-repeat;
-    background-size: contain; */
+    background-size: contain;
 }
 
 `;
@@ -165,7 +167,11 @@ margin: 0 auto;
 flex-direction: column;
 padding: 30px;
 align-items: center;
-background: white;
+background:#ffffff5c;
+box-shadow: 0 0 35px 7px #fff;
+-webkit-box-shadow: 0 0 5px 2px #fff;
+    -moz-box-shadow: 0 0 5px 2px #fff;
+    box-shadow: 0 0 35px 7px #fff;
     margin: 25px;
    /*  background-image: url(${DafoRedFlame});
     background-position: center;

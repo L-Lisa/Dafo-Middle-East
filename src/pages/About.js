@@ -7,10 +7,16 @@ import aboutImg from "..//images/aboutImg.jpg"
 import ReactPlayer from 'react-player/youtube'
 import { Timeline } from "react-twitter-widgets";
 import { TwitterFeed } from "components/Twitter"
+import { ContactsBox } from "../components/ContactsBox"
+import Shadi from "..//images/Shadi.jpg"
+import JohanDafo from "..//images/JohanDafo.jpg"
+import contactUs from "..//images/sales.jpg"
+import { ContactInfoCard } from "../components/ContactInfoCard"
+import youtubeicon from "..//images/youtubeicon.png"
+import twittericon from "..//images/twittericon.png"
+import Linkedin from "..//images/Linkedin.png"
 
 export const About = () => {
-
-
 
     return (
         <>
@@ -28,20 +34,92 @@ export const About = () => {
                 mainText3={""}
                 lastElement={
                     <>
-                        <PlayerContainer>
-                            <EmbedPlayer>
-                                <ReactPlayer
-                                    url="https://www.youtube.com/watch?v=yFrJz5tydMQ&t=50s" width='100%'
-                                    height='100%'
-                                    playing
-                                    muted
+                        <LastContainer>
+                            <ContactDiv >
+                                <ContactsBox
+                                    coverImage={JohanDafo}
+                                    title="General Manager"
+                                    secondaryText={"Johan Larsson"}
+                                    email1="johan.larsson@dafo-middle-east.com"
+                                    mailto1="mailto:johan.larsson@dafo-middle-east.com"
+                                    phone1="+971 55 143 6088"
                                 />
-                            </EmbedPlayer>
-                        </PlayerContainer>
+
+                                <ContactsBox
+                                    coverImage={Shadi}
+                                    title="Regional Manager"
+                                    secondaryText={"Abdulah Shadi"}
+                                    email1="abdullah.shadi@dafo-middle-east.com"
+                                    mailto1="mailto:abdullah.shadi@dafo-middle-east.com"
+                                    phone1="+971 55 800 5509"
+
+                                />
+
+                                <ContactsBox
+                                    coverImage={contactUs}
+                                    title="Sales & Inquires"
+                                    secondaryText={"Dafo sales team"}
+                                    email1="sales@dafo-middle-east.com"
+                                    mailto1="mailto:sales@dafo-middle-east.com"
+                                    phone1=" +971 4 232 3957"
+                                    secondaryText2="General inquires"
+                                    email2="info@dafo-middle-east.com"
+                                    mailto2="info@dafo-middle-east.com"
+                                    phone2="+971 4 232 3957"
+                                />
+                            </ContactDiv>
+                            <TwitterInfoBox>
+                                <InfoDiv >
+
+                                    <ContactInfoCard
+                                        title={" Dubai office"}
+                                        p1={"Clover Bay Tower"}
+                                        p2={"Office 1106, Business Bay"}
+                                        p3="Dubai, UAE"
+                                        secondaryText="Opening Hours"
+                                        p5="Sunday - Thursday"
+                                        p6="9am-6pm"
+                                    />
+
+                                    <ContactInfoCard
+                                        title="Warehouse &
+  delivery"
+                                        p1={"Dry dock world"}
+                                        p2={"Warehouse no 118"}
+                                        p3="Jadaf, near Creek metro"
+                                        p4="Dubai, UAE"
+                                        secondaryText="Opening Hours"
+                                        p5="Sunday - Thursday"
+                                        p6="8am-6pm"
+                                        p7="Lunchbreak 1pm - 2pm"
+                                    />
+
+                                    <ContactInfoCard
+                                        socialHead="Follow Dafo"
+                                        socialHeadBox={<SocialMediaBox>
+                                            <a href="https://www.youtube.com/channel/UCnnPIlXaWwE-wY3X-l3nTXw" target="_blank" rel="noopener noreferrer"><LogoIcon src={youtubeicon} alt="Dafo Youtube link" /></a>
+                                            < a href="https://www.linkedin.com/company/dafo-middle-east" target="_blank" rel="noopener noreferrer"><LogoIcon src={Linkedin} alt="Dafo youtube link" /></a>
+                                            < a href="https://twitter.com/Dafovehicle" target="_blank" rel="noopener noreferrer"><LogoIcon src={twittericon} alt="Dafo twitter link" /></a> </SocialMediaBox>}
+                                        p2={""}
+                                        p3=""
+                                        p4=""
+
+                                    />
+
+                                </InfoDiv>
+                                <TwitterCont>
+                                    <H1>Latest News</H1>
+                                    <TwitterFeed />
+                                </TwitterCont>
+                            </TwitterInfoBox>
+
+
+                        </LastContainer>
+
                     </>
                 }
             />
-            <TwitterFeed />
+
             {/* 
             <Top> <Link
                 activeClass="active"
@@ -110,7 +188,7 @@ position: absolute;
   height:500px;
   }
   @media (min-width: 900px) {
-    height: 890px;
+    height: 866px;
   }
   @media (min-width: 1200px) {
   height:1200px;
@@ -132,43 +210,53 @@ position: absolute;
   }
 `;
 
-const TwitterBox = styled.div`
-  overflow: scroll;
-  height: auto;
-  @media (min-width: 676px) {
-          height: 300px;
-  }
-  @media (min-width: 800px) {
-          height: 350px;
-  }
-  @media (min-width: 900px) {
-          height: 380px;
-  }
-  @media (min-width: 1000px) {
-          height: 410px;
-  }
-  @media (min-width: 1100px) {
-          height: 480px;
-  }
-  @media (min-width: 1200px) {
-          height: 520px;
-  }
-  @media (min-width: 1300px) {
-          height: 570px;
-  }
-  @media (min-width: 1400px) {
-          height: 620px;
-  }
-  @media (min-width: 1500px) {
-          height: 670px;
-  }
-  @media (min-width: 1500px) {
-          height: 690px;
-  }
-  @media (min-width: 1500px) {
-          height: 670px;
-  }
-  @media (min-width: 1500px) {
-          height: auto;
-  }
+
+const LastContainer = styled.section`
+width:100%;
+display:flex;
+flex-direction: column;
+align-items: center;
 `;
+
+const ContactDiv = styled.div`
+display:flex;
+flex-wrap:wrap;
+justify-content: center;
+`;
+
+const TwitterCont = styled.div`
+    width: 50%;
+    min-width: 225px;
+`;
+
+const LogoIcon = styled.img`
+height:30px;
+margin-right:3px;
+`;
+
+const SocialMediaBox = styled.span`
+  
+    display: flex;
+    align-items: center;
+`;
+
+const InfoDiv = styled.section`
+width:50%;
+min-width: 200px;
+`;
+const TwitterInfoBox = styled.article`
+display: flex;
+align-items: baseline;
+flex-wrap: wrap;
+    justify-content: center;
+`;
+
+const H1 = styled.h1`
+  width: 100%;
+    margin-bottom: 6px;
+    text-align: left;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    padding-top: 9px;
+`

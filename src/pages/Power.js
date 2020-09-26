@@ -11,6 +11,7 @@ export const Power = () => {
     return (
         <>
             <PageComponent
+                background={"green"}
                 coverImage={PowerGenMainImage}
                 ImageText={"Kompressors"}
                 headerText={"Special applications"}
@@ -24,7 +25,7 @@ export const Power = () => {
                         <PlayerContainer>
                             <EmbedPlayer>
                                 <ReactPlayer
-                                    url="https://www.youtube.com/embed/hISlc88HhKQ" width='100%'
+                                    url="https://youtu.be/5ZCgbGgA-_8" width='100%'
                                     height='100%'
                                     playing
                                     muted

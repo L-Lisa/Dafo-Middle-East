@@ -26,12 +26,22 @@ export const Distributors = () => {
                         <DistributorCard
                             titleD="Example Title Name"
                             coverImageD={DistributorLogo}
-                            secondaryTextD={"Names and more info about the company"}
+                            p1="Dubai, United Arab Emirates:Mombasa, Kenya: 
+
+                            Tebra General TradingMaverick Digital 
+                            
+                            1st floor, BMTC building5th floor, Suite W5.2 
+                            
+                            P.O. Box 1247Kose Heights, Argwings Kodhek rd. 
+                            
+                            Dubai, UAENairobi, Kenya 
+                            
+                            info@tebratrading.cominfo@maverickdigital.co.ke "
                         />
                         <DistributorCard
                             titleD="Example Title Name"
                             coverImageD={DistributorLogo}
-                            secondaryTextD={"Names and more info about the company"}
+                            secondaryTextD={"Vad är infon till distributor?"}
                         />
                     </>}
             />

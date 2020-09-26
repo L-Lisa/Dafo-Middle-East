@@ -10,7 +10,7 @@ import redNblack from "..//images/redNblackLogo.png"
 import DafoRedNoBackground from "..//images/DafoVehicleLogoNoBackground.png"
 
 import REDFireProtLogo from "..//images/REDFireProtectionLogo.png"
-import REDVehicle from "../images/RED-VehicleLogo.png"
+import REDVehicle from "../images/RED_VEHICLE_LOGO.png"
 import DafoRedFlame from "../images/DafoRedFlame.jpg"
 import { ScrollLink } from "components/ScrollButton"
 
@@ -119,7 +119,7 @@ export const Header = () => {
                         <NavLink to="#" onClick={() => setShowProducts(!showProducts)}>Products</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/distributors">Distributors</NavLink>
+                        <NavLink to="/distributors" onClick={() => setShowProducts(false)}>Distributors</NavLink>
                     </li>
                     {/*   <li>
                         <NavLink to="/certifications">Certificates</NavLink>
@@ -134,10 +134,10 @@ export const Header = () => {
                         </Link><NavListLogo src={DafoRedNoBackground} alt="Dafo Middle East" /></NavLink>
                     </li>
                     <li>
-                        <NavLink to="/downloads">Downloads</NavLink>
+                        <NavLink to="/downloads" onClick={() => setShowProducts(false)}>Downloads</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/about">About</NavLink>
+                        <NavLink to="/about" onClick={() => setShowProducts(false)}>About</NavLink>
                     </li>
                     {/* <li>
                         <NavLink to="/contact-us">Contact</NavLink>
@@ -150,7 +150,7 @@ export const Header = () => {
                 <InlineNav2 id="close" >
                     <ProductNav>Automatic fire detection and suppression system for:</ProductNav>
                     <Li2>
-                        <NavLink to="/vehicles" onClick={() => setShowProducts(false)}> {/* <Link
+                        <NavLink to="/vehicles" > {/* <Link
                             to="top"
                             spy={true}
                             smooth={true}
@@ -159,7 +159,7 @@ export const Header = () => {
                         </Link> */}Vehicles</NavLink>
                     </Li2>
                     <Li2>
-                        <NavLink to="/power" onClick={() => setShowProducts(false)}>{/* <Link
+                        <NavLink to="/power">{/* <Link
                             to="top"
                             spy={true}
                             smooth={true}
@@ -168,7 +168,7 @@ export const Header = () => {
                         </Link> */}Powergenerators</NavLink>
                     </Li2>
                     <Li2>
-                        <NavLink to="/mining" onClick={() => setShowProducts(false)} > {/* <Link
+                        <NavLink to="/mining" > {/* <Link
 
                             to="top"
                             spy={true}
@@ -397,8 +397,10 @@ text-decoration:none;
 transition: transform .2s;
 padding:0 16px 0 0 ;
 color:#626262a3;
+color:#fff;
 &:hover{
-        color:#1c1c1c;
+        color:#ee0201;
+        
 }}
 `;
 const ProductNav = styled.p`

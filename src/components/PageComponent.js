@@ -3,7 +3,7 @@ import styled from 'styled-components/macro'
 import { Link, animateScroll as scroll } from "react-scroll";
 import { ScrollLink } from "components/ScrollButton"
 import { VscrollerTop, FootArrow, VscrollerMidDown, VscrollerEnd } from "components/Vscroller"
-
+import { RedLine } from "../components/RedLine"
 
 export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, mainText2, mainText3, lastElement, listItem1, listItem2, listItem3, mainText4, EndHeader1, EndHeader2, lastElementColRow }) => {
 
@@ -30,9 +30,9 @@ export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, ma
         {mainText2 && <MainText>{mainText2}</MainText>}
         {listItem1 && <ListItem>
           <ul>
-            <li><RedLine></RedLine>{listItem1}</li>
-            {listItem2 && <li>{listItem2}</li>}
-            {listItem3 && <li>{listItem3}</li>}
+            {listItem1 && <li><RedLine />{listItem1}</li>}
+            {listItem2 && <li><RedLine />{listItem2}</li>}
+            {listItem3 && <li><RedLine />{listItem3}</li>}
           </ul>
         </ListItem>}
         <Line></Line>
@@ -69,6 +69,7 @@ const TopSection = styled.section`
 width:100%;
 height:auto;
 margin-top: -90px;
+background: #1c1c1c;
   @media (min-width: 1200px) {
   height:100vh;
   display:flex;
@@ -154,16 +155,19 @@ width: 100%;
 
 const ListItem = styled.ul`
 color:#1c1c1c;
-padding: 14px;
+padding: 14px 0px;
 align-self: flex-start;
 li{
-    @media (min-width: 400px) {
-    margin-left: 4rem;
-  }}
+  list-style:none;
+  @media (min-width: 400px) { 
+  }
+}
 @media (min-width: 1200px) {
-    margin: inherit;
-    padding: 25px;
-    
+    padding: 25px 0px;
+    padding: 0 40px 0 40px;
+    width: 70%;
+    margin: 0 auto;
+    padding-left: 10px;
   }
 `;
 const HeaderText = styled.h2`
@@ -277,9 +281,9 @@ const EndH2 = styled.h2`
 /* font-size:20px; */
 `;
 
-
+/*
 const RedLine = styled.span`
 color:red;
 width:6px;
 height:2px;
-`;
+`; */

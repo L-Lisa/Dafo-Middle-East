@@ -6,13 +6,11 @@ import UnceImage from "..//images/UnceImage.png";
 import Mining from "..//images/ProductImg-Mining.jpg";
 import PowerGen from "..//images/ProductImg-powerGenerator.jpeg";
 import contactUs from "..//images/sales.jpg"
-import DafoDubaiME from "..//images/dafoMEred.jpg";
 import { Timeline } from "react-twitter-widgets";
 import ReactPlayer from 'react-player/youtube'
 import { VideoBackground } from "..//components/VideoBackground.js"
-import Dafo400 from "images/DafoDubai400.png"
+
 import HeroLogo from "images/DafoMeNoBackTransp.png"
-import DafoDubai from "images/DafoDubai.jpg"
 import { ContactsBox } from "../components/ContactsBox"
 import { ContactInfoCard } from "../components/ContactInfoCard"
 import Shadi from "..//images/Shadi.jpg"
@@ -25,7 +23,9 @@ import dafoMEred from "..//images/dafoMEred.jpg"
 import DafoRedFlame from "../images/DafoRedFlame.jpg"
 import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg"
 import { RedLine } from "../components/RedLine"
-import BlackNWhite from "../images/DafoDubaiBlackNWhite.jpg"
+import youtubeicon from "..//images/youtubeicon.png"
+import twittericon from "..//images/twittericon.png"
+import Linkedin from "..//images/Linkedin.png"
 
 export const MainPage = () => {
 
@@ -98,6 +98,12 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
           />
         </ContactDiv>
 
+        <Hide400>
+          <RedLine
+            width="300px"
+          />
+        </Hide400>
+
         <InfoDiv >
 
           <ContactInfoCard
@@ -121,6 +127,18 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
             p5="Sunday - Thursday"
             p6="8am-6pm"
             p7="Lunchbreak 1pm - 2pm"
+          />
+
+          <ContactInfoCard
+            socialHead="Follow Dafo"
+            socialHeadBox={<SocialMediaBox>
+              <a href="https://www.youtube.com/channel/UCnnPIlXaWwE-wY3X-l3nTXw" target="_blank" rel="noopener noreferrer"><LogoIcon src={youtubeicon} alt="Dafo Youtube link" /></a>
+              < a href="https://www.linkedin.com/company/dafo-middle-east" target="_blank" rel="noopener noreferrer"><LogoIcon src={Linkedin} alt="Dafo youtube link" /></a>
+              < a href="https://twitter.com/Dafovehicle" target="_blank" rel="noopener noreferrer"><LogoIcon src={twittericon} alt="Dafo twitter link" /></a> </SocialMediaBox>}
+            p2={""}
+            p3=""
+            p4=""
+
           />
 
         </InfoDiv>
@@ -158,8 +176,8 @@ const MainText = styled.div`
     -ms-flex-pack: center;
     justify-content: center;
     padding: 3px;
+    height: auto;
     @media (min-width: 768px) {
-      height: 70vh;
   }
     @media (min-width: 1200px) {
   height:100vh;
@@ -172,12 +190,16 @@ color:red;
   }
 `;
 const Mainh1 = styled.h1`
-text-align:center;
-@media (min-width: 400px) {
-  text-align:left;
-  text-align: left;
-    padding-left: 5px;
+text-align: center;
 
+    width: 80%;
+    display: flex;
+    align-self: center;
+    font-size: 1.3rem;
+    font-weight: 800;
+    justify-content: center;
+@media (min-width: 400px) {
+ 
   }
   @media (min-width: 1200px) {
     width: 70%;
@@ -193,8 +215,9 @@ flex-direction:column;
 justify-content: center;
 align-items: center;
 height:auto;
-background-color: #c8c8c8;
+background-color: #fff;
 @media (min-width:677px){
+  background-color: none;
   background-image: url(${DafoRedFlameFade});
   background-position: center;
 background-repeat: no-repeat;
@@ -202,7 +225,7 @@ background-repeat: no-repeat;
 }
 @media (min-width: 1190px) {
   height: 100vh;
-  justify-content: flex-end;
+  justify-content: center;
   }
   @media (min-width: 1500px) {
     
@@ -236,6 +259,7 @@ width: 100%;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -328,7 +352,15 @@ width: 70%;
     padding-left:10px;
 `
 
-
+const SocialMediaBox = styled.span`
+    width: 35%;
+    display: flex;
+    align-items: center;
+`
+const LogoIcon = styled.img`
+height:30px;
+margin-right:3px;
+`;
 /* const TwitterBox = styled.div`
   overflow: scroll;
   height: auto;
@@ -385,3 +417,9 @@ margin: 0 auto;
 margin-top: 40px;
 `;
 
+const Hide400 = styled.div`
+    padding-top: 55px;
+@media (min-width: 500px) {
+  display:none;
+  }
+`

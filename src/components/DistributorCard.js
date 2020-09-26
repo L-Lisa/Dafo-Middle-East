@@ -9,7 +9,6 @@ margin:15px;
 border-top: solid 2px red;
 background:#ffff;
     @media(min-width:410px){
-  
     }
     @media(min-width:700px){
        width: calc(100% / 5);
@@ -42,6 +41,9 @@ width: inherit;
 
 const Content = styled.div`
 
+`;
+const P1 = styled.p`
+width:100%;
 `;
 
 const ChildrenDchildrenDContent = styled.div`
@@ -77,7 +79,7 @@ list-style: none;
     padding-inline-start: 0px;
 `;
 
-export const DistributorCard = ({ titleD, secondaryTextD, secondaryTextD2, coverImageD, childrenD, classNameD, supportingTextD, buttonTextD, email1D, mailto1D, email2D, mailto2D, phone1D, phone2D, phone3D, phone4D }) => {
+export const DistributorCard = ({ titleD, secondaryTextD, secondaryTextD2, coverImageD, childrenD, classNameD, supportingTextD, buttonTextD, email1D, mailto1D, email2D, mailto2D, phone1D, phone2D, phone3D, phone4D, p1, p2, p3 }) => {
     return (
 
         <Container classNameD={classNameD}>
@@ -86,7 +88,9 @@ export const DistributorCard = ({ titleD, secondaryTextD, secondaryTextD2, cover
                 <li>{titleD && <TitleDtitleD>{titleD}</TitleDtitleD>}</li>
 
                 <li>  {secondaryTextD && <SecondaryTextD>{secondaryTextD}</SecondaryTextD>}</li>
-
+                {p1 && <P1>{p1}</P1 >}
+                {p2 && <P1>{p2}</P1 >}
+                {p3 && <P1>{p3}</P1 >}
                 <li>  {phone1D && <Phone>{phone1D}</Phone>} </li>
 
                 <li> {email1D && <MailLink href={mailto1D}>{email1D}</MailLink>}</li>

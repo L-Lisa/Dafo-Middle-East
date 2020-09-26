@@ -3,10 +3,12 @@ import React from "react"
 import styled from "styled-components/macro"
 
 
-export const ContactInfoCard = ({ title, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, secondaryText, secondaryText2, secondaryText3 }) => {
+export const ContactInfoCard = ({ socialHeadBox, socialHead, title, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, secondaryText, secondaryText2, secondaryText3 }) => {
     return (
 
         <Container >
+
+
             <TitleBar>
 
                 {title && <Title>{title}</Title>}
@@ -21,6 +23,8 @@ export const ContactInfoCard = ({ title, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10
                 {secondaryText && <SecondaryText>{secondaryText}</SecondaryText>}
                 {p5 && <P1>{p5} </P1 >}
                 {p6 && <P1>{p6}</P1>}
+                {socialHead && <SocialHead>{socialHead}</SocialHead>}
+                {socialHeadBox && <SocialHeadBox>{socialHeadBox}</SocialHeadBox>}
                 {secondaryText2 && <SecondaryText>{secondaryText2}</SecondaryText>}
             </TextDiv>
             <TextDiv>
@@ -37,7 +41,7 @@ export const ContactInfoCard = ({ title, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10
 }
 
 const Container = styled.section`
-width: 208px;
+min-width: 208px;
     height: auto;
     margin: 20px;
     padding-bottom: 10px;
@@ -77,3 +81,24 @@ width: 100%;
     font-size: 1.1em;
     margin-top:2px;   
 `;
+
+const SocialHead = styled.h2`
+width: 100%;
+    margin-bottom: 6px;
+    text-align: left;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    padding-top: 9px;
+    text-align: center;
+`;
+
+const SocialHeadBox = styled.div`
+display:flex;
+justify-content:center;
+width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+`
