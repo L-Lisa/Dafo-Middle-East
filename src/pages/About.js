@@ -68,7 +68,7 @@ export const About = () => {
                                     phone2="+971 4 232 3957"
                                 />
                             </ContactDiv>
-                            <TwitterInfoBox>
+                            <TwitterInfoBoxLRG>
                                 <InfoDiv >
 
                                     <ContactInfoCard
@@ -111,15 +111,56 @@ export const About = () => {
                                     <H1>Latest News</H1>
                                     <TwitterFeed />
                                 </TwitterCont>
-                            </TwitterInfoBox>
-
-
+                            </TwitterInfoBoxLRG>
                         </LastContainer>
 
                     </>
                 }
             />
+            <TwitterInfoBox>
+                <InfoDiv >
 
+                    <ContactInfoCard
+                        title={" Dubai office"}
+                        p1={"Clover Bay Tower"}
+                        p2={"Office 1106, Business Bay"}
+                        p3="Dubai, UAE"
+                        secondaryText="Opening Hours"
+                        p5="Sunday - Thursday"
+                        p6="9am-6pm"
+                    />
+
+                    <ContactInfoCard
+                        title="Warehouse &
+  delivery"
+                        p1={"Dry dock world"}
+                        p2={"Warehouse no 118"}
+                        p3="Jadaf, near Creek metro"
+                        p4="Dubai, UAE"
+                        secondaryText="Opening Hours"
+                        p5="Sunday - Thursday"
+                        p6="8am-6pm"
+                        p7="Lunchbreak 1pm - 2pm"
+                    />
+
+                    <ContactInfoCard
+                        socialHead="Follow Dafo"
+                        socialHeadBox={<SocialMediaBox>
+                            <a href="https://www.youtube.com/channel/UCnnPIlXaWwE-wY3X-l3nTXw" target="_blank" rel="noopener noreferrer"><LogoIcon src={youtubeicon} alt="Dafo Youtube link" /></a>
+                            < a href="https://www.linkedin.com/company/dafo-middle-east" target="_blank" rel="noopener noreferrer"><LogoIcon src={Linkedin} alt="Dafo youtube link" /></a>
+                            < a href="https://twitter.com/Dafovehicle" target="_blank" rel="noopener noreferrer"><LogoIcon src={twittericon} alt="Dafo twitter link" /></a> </SocialMediaBox>}
+                        p2={""}
+                        p3=""
+                        p4=""
+
+                    />
+
+                </InfoDiv>
+                <TwitterCont>
+                    <H1>Latest News</H1>
+                    <TwitterFeed />
+                </TwitterCont>
+            </TwitterInfoBox>
             {/* 
             <Top> <Link
                 activeClass="active"
@@ -227,6 +268,11 @@ justify-content: center;
 const TwitterCont = styled.div`
     width: 50%;
     min-width: 225px;
+    @media(min-width:1400px){
+        width: 65%;
+min-width: 225px;
+max-height: 50vh;
+}
 `;
 
 const LogoIcon = styled.img`
@@ -241,7 +287,7 @@ const SocialMediaBox = styled.span`
 `;
 
 const InfoDiv = styled.section`
-width:50%;
+width:30%;
 min-width: 200px;
 `;
 const TwitterInfoBox = styled.article`
@@ -249,6 +295,25 @@ display: flex;
 align-items: baseline;
 flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @media(min-width:630px){
+        flex-direction: row;
+        justify-content: center;
+    align-items: baseline;
+}
+@media(min-width:1400px){
+    display:none;
+}
+`;
+const TwitterInfoBoxLRG = styled.section`
+display:none;
+ @media(min-width:1400px){
+       display:flex;
+       flex-direction: row;
+        justify-content: center;
+    align-items: baseline;
+}
 `;
 
 const H1 = styled.h1`

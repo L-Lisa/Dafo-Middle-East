@@ -71,9 +71,11 @@ const TwitterBox = styled.div`
   }
   @media (min-width: 1400px) {
           height: 620px;
+          max-height: 50vh;
   }
   @media (min-width: 1500px) {
           height: 670px;
+         
   }
   @media (min-width: 1500px) {
           height: 690px;
