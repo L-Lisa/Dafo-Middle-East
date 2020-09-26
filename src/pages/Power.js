@@ -11,7 +11,7 @@ export const Power = () => {
     return (
         <>
             <PageComponent
-                background={"green"}
+
                 coverImage={PowerGenMainImage}
                 ImageText={"Kompressors"}
                 headerText={"Special applications"}

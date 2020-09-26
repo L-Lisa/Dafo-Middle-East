@@ -15,7 +15,6 @@ export const ContactInfoCard = ({ socialHeadBox, socialHead, title, p1, p2, p3, 
 
             </TitleBar>
             <TextDiv>
-
                 {p1 && <P1>{p1}</P1>}
                 {p2 && <P1 >{p2}</P1 >}
                 {p3 && <P1>{p3}</P1 >}
