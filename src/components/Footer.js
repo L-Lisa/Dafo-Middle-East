@@ -1,6 +1,6 @@
 import React from "react"
 import styled from 'styled-components/macro'
-import DafoBlack from "..//images/DafoBlack.jpg"
+
 import { Link } from "react-router-dom"
 import smeDxbTxt from "..//images/smeDbxTxt.jpg"
 import DafoWhite from "..//images/White-dafo-logo.png"

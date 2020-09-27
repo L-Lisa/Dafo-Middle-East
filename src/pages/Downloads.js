@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import styled from 'styled-components/macro'
 import { Mailinglist } from "../components/Mailinglist"
 import foldericon from "../images/foldericon.png"
-import WhiteFlame from "../images/White-dafo-flame.png"
+
 import DafoRedFlame from "../images/DafoRedFlame.jpg"
 import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg"
 
@@ -142,7 +142,7 @@ background-repeat: no-repeat;
 
 `;
 const DownloadsWrapper = styled.main`
-/* background-image: url(${WhiteFlame}); */
+/* background-image: url(${""}); */
 background-position: center;
 background-repeat: no-repeat;
     background-size: contain;

@@ -8,7 +8,7 @@ import Linkedin from "..//images/Linkedin.png"
 import Vehicle from "..//images/Vehicle.jpg"
 import redNblack from "..//images/redNblackLogo.png"
 import DafoRedNoBackground from "..//images/DafoVehicleLogoNoBackground.png"
-import REDFireProtLogo from "..//images/REDFireProtectionLogo.png"
+
 import REDVehicle from "../images/RED_VEHICLE_LOGO.png"
 import DafoRedFlame from "../images/DafoRedFlame.jpg"
 import { ScrollLink } from "components/ScrollButton"
@@ -59,7 +59,7 @@ export const Header = () => {
                         offset={0}
                         duration={50}>
 
-                    </Link><BurgerLogo src={REDFireProtLogo} alt="Dafo Middle East" />
+                    </Link>
                         <BurgerLogo src={REDVehicle} alt="Dafo Middle East" />
 
                     </NavLink>
@@ -381,7 +381,7 @@ box-sizing: border-box;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 20px 10px;
+    padding: 0px 0 10px 0;
     margin-bottom: -25px;
     flex-direction: column;
     text-align: left;
@@ -406,9 +406,11 @@ const ProductNav = styled.p`
 margin-top: 0px;
 padding-right: 12px;
 color:#eb141b;
+margin-top: -14px;
 `;
 
 const Li2 = styled.li`
+margin-top: -14px;
 list-style:none;
     text-decoration:none;
     transition: transform .2s;

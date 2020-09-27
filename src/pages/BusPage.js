@@ -1,6 +1,6 @@
 import React from "react"
 import styled from 'styled-components/macro'
-import BusPageMainImage from "..//images/BusPageMainImage.jpg"
+
 import ReactPlayer from 'react-player/youtube'
 import { Sidebar } from "components/Sidebar"
 import UnceImage from "..//images/UnceImage.png"

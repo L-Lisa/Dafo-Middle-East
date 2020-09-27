@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components/macro";
-import MainImgSml from "..//images/MainImgSml.jpg";
-import Buses from "..//images/ProductImg-Buses.jpg";
+
 import UnceImage from "..//images/UnceImage.png";
-import Mining from "..//images/ProductImg-Mining.jpg";
-import PowerGen from "..//images/ProductImg-powerGenerator.jpeg";
+
+
 import contactUs from "..//images/sales.jpg"
 import { Timeline } from "react-twitter-widgets";
 import ReactPlayer from 'react-player/youtube'
@@ -123,10 +122,6 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
             p2={"Warehouse no 118"}
             p3="Jadaf, near Creek metro"
             p4="Dubai, UAE"
-            secondaryText="Opening Hours"
-            p5="Sunday - Thursday"
-            p6="8am-6pm"
-            p7="Lunchbreak 1pm - 2pm"
           />
 
           <ContactInfoCard
