@@ -4,10 +4,10 @@ import styled from "styled-components/macro"
 
 
 const Container = styled.div`
-width:250px;
-margin:15px;
-border-top: solid 2px red;
-background:#ffff;
+    margin: 35px;
+    border-top: solid 2px #ee0201;
+    background: #ffff;
+    padding: 30px 3px;
     @media(min-width:410px){
     }
     @media(min-width:700px){
@@ -16,18 +16,18 @@ background:#ffff;
 `;
 
 const TitleDtitleD = styled.h1`
-      width: 100%;
+    width: 100%;
     margin: 0px;
     font-size: 23px;
     font-weight: 600;
     text-transform: capitalize;
-   
 `;
+
 const SecondaryTextD = styled.h2`
 width: 100%;
-    padding: 0 4px;
-    font-size: 20px;
-    font-weight: 400;   
+padding: 0 4px;
+font-size: 20px;
+font-weight: 400;   
 `;
 
 

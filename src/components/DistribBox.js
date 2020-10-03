@@ -22,9 +22,12 @@ margin: 8px; */
     height: auto;
     background: #fff;
     padding-top: 5px;
-    -webkit-box-shadow: 0 0 5px 2px #e8dcdc;
-    -moz-box-shadow: 0 0 5px 2px #e8dcdc;
-    box-shadow: 0 0 35px 7px #e8dcdc;
+    -webkit-box-shadow: 0 0 5px 2px #9e9e9e69;
+    -moz-box-shadow: 0 0 5px 2px #9e9e9e69;
+    box-shadow: 0 0 35px 7px #9e9e9e69;
+    width: 30%;
+    max-width: 315px;
+    background: none;
     @media(min-width:410px){
     width:50%;
     }
@@ -115,7 +118,7 @@ list-style: none;
   }
 `;
 
-export const ContactsBox = ({ title, secondaryText, secondaryText2, coverImage, children, className, supportingText, buttonText, email1, mailto1, email2, mailto2, phone1, phone2, phone3, phone4 }) => {
+export const DistribBox = ({ title, secondaryText, secondaryText2, coverImage, children, className, supportingText, buttonText, email1, mailto1, email2, mailto2, phone1, phone2, phone3, phone4 }) => {
     return (
 
         <Container className={className}>

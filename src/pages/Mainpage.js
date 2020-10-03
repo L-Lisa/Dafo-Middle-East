@@ -31,7 +31,7 @@ export const MainPage = () => {
   return (
     <MainPgWrapper>
       <ScrollLink />
-      <BuyButton />
+      {/*     <BuyButton /> */}
       <VideoContainer id="top">
         <VideoBackground videoSource={"https://res.cloudinary.com/dnjk2bwkp/video/upload/v1600437742/18eMainVid_yok0cm.mp4"} ImgFront={"DafoDubaiME"}
         ></VideoBackground>

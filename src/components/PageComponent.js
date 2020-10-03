@@ -212,6 +212,7 @@ background: ${props => props.background || "white"};
 
 const LastDiv = styled.div`
 height:auto;
+width: 100%;
 `;
 const V = styled.div`
 width: 100%;
@@ -253,11 +254,10 @@ display:none;
 `;
  */
 
-const EndH1 = styled.h1`
+export const EndH1 = styled.h1`
 /* font-size: 26px; */
  margin: 0 auto;
-    color: white;
-    background: #1c1c1c;
+    color: #ee0201;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
