@@ -13,7 +13,7 @@ export const Vehicles = ({ }) => {
         <>
             <PageComponent
                 coverImage={BusGirl}
-                ImageText={"vehicles"}
+                ImageText={"vehicles & fire safety"}
                 headerText={"Automatic fire detection and suppression system "}
                 mainText1={"Dafo was one of the first companies in the world which started to develop integrated firefighting solutions for vehicles. "}
                 mainText2={"Over the years Dafo has obtained vas experience and knowledge from our end user installations which have been used as a basis for "}

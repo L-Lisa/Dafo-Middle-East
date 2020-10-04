@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import styled from 'styled-components/macro'
 import { Mailinglist } from "../components/Mailinglist"
 import foldericon from "../images/foldericon.png"
-
+import { RedLine } from "../components/RedLine"
 import DafoRedFlame from "../images/DafoRedFlame.jpg"
 import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg"
 
@@ -101,8 +101,11 @@ export const Downloads = () => {
                 ) : (
                         <DownloadsBox>
                             <FolderBox href=" https://dafomiddleeast.sharepoint.com/sites/download/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Fdownload%2FShared%20Documents%2FDafo%20files&p=true&originalPath=aHR0cHM6Ly9kYWZvbWlkZGxlZWFzdC5zaGFyZXBvaW50LmNvbS86Zjovcy9kb3dubG9hZC9FazdGSm03ZE1EeEVnZURrc1ZwX21ud0JWdnotMmROWldOdE5xUVpzcVQzVElnP3J0aW1lPTdSbUh5enM4MkVn">
-                                <Thanks>Welcome, please follow this link to brows the downloadable files
-                            <AccessButton><img src={foldericon} alt="Dafo downloads" />Download Library</AccessButton>
+                                <Thanks><H2>Welcome, follow the link to request access the downloadable files</H2>
+                                    <ul><RedLine /> Certificates</ul>
+                                    <ul><RedLine />  Instructions</ul>
+                                    <ul> <RedLine /> And more..</ul>
+                                    <AccessButton><img src={foldericon} alt="Dafo downloads" />Download Library</AccessButton>
                                 </Thanks>
 
                             </FolderBox>
@@ -270,7 +273,7 @@ img{
     height: 30px;
 }
 `;
-const Thanks = styled.h2`
+const Thanks = styled.article`
 padding: 30px;
 margin: 0 auto;
     border: 1px solid #1c1c1c0f;
@@ -291,7 +294,11 @@ margin: 0 auto;
     max-width: 500px;
     margin: 0 auto;
     @media(min-width:676px){
-    flex-direction:row;
-    height:200px;
+        flex-direction: column;
+    height: 400px;
+    width: auto;
 }
+`;
+const H2 = styled.h2`
+font-size:1.2rem;
 `;

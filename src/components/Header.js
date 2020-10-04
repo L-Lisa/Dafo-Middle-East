@@ -8,7 +8,7 @@ import Linkedin from "..//images/Linkedin.png"
 import Vehicle from "..//images/Vehicle.jpg"
 import redNblack from "..//images/redNblackLogo.png"
 import DafoRedNoBackground from "..//images/DafoVehicleLogoNoBackground.png"
-
+import { RedLine } from "../components/RedLine"
 import REDVehicle from "../images/RED_VEHICLE_LOGO.png"
 import DafoRedFlame from "../images/DafoRedFlame.jpg"
 import { ScrollLink } from "components/ScrollButton"
@@ -78,34 +78,35 @@ export const Header = () => {
                 {showMenu &&
                     <ul>
                         <li>
-                            <NavLink to="/vehicles" onClick={() => setShowMenu(false)}>Vehicles</NavLink>
+                            <StyledBurgerLink to="/vehicles" onClick={() => setShowMenu(false)}>Vehicles</StyledBurgerLink>
+
                         </li>
                         <li>
-                            <NavLink to="/power" onClick={() => setShowMenu(false)}>Power generators </NavLink>
+                            <StyledBurgerLink to="/power" onClick={() => setShowMenu(false)}>Power generators </StyledBurgerLink>
                         </li>
                         <li>
-                            <NavLink to="/mining" onClick={() => setShowMenu(false)}>Mining & heavy duty mobile equipment</NavLink>
+                            <StyledBurgerLink to="/mining" onClick={() => setShowMenu(false)}>Mining & heavy duty  equipment</StyledBurgerLink>
                         </li>
                         <li>
-                            <NavLink to="/distributors" onClick={() => setShowMenu(false)}>Distributors</NavLink>
+                            <StyledBurgerLink to="/distributors" onClick={() => setShowMenu(false)}>Distributors</StyledBurgerLink>
                         </li>
                         {/*  <li>
                             <NavLink to="/certifications" onClick={() => setShowMenu(false)}>Certificates</NavLink>
                         </li> */}
                         <li>
-                            <NavLink to="/about" onClick={() => setShowMenu(false)}>About Dafo</NavLink>
+                            <StyledBurgerLink to="/about" onClick={() => setShowMenu(false)}>About Dafo</StyledBurgerLink>
                         </li>
                         <li>
-                            <NavLink to="/downloads" onClick={() => setShowMenu(false)}>Downloads</NavLink>
+                            <StyledBurgerLink to="/downloads" onClick={() => setShowMenu(false)}>Downloads</StyledBurgerLink>
                         </li>
                         {/*   <li>
                             <NavLink to="/contact-us" onClick={() => setShowMenu(false)}>Contact</NavLink>
                         </li> */}
                         <li>
-                            <NavLink to="/site-map" onClick={() => setShowMenu(false)}>Site Map</NavLink>
+                            <StyledBurgerLink to="/site-map" onClick={() => setShowMenu(false)}>Site Map</StyledBurgerLink>
                         </li>
                         <li>
-                            <NavLink to="/" onClick={() => setShowMenu(false)}>Home</NavLink>
+                            <StyledBurgerLink to="/" onClick={() => setShowMenu(false)}>Home</StyledBurgerLink>
                         </li>
                         {/* <img src={DafoRedFlame} alt="Dafo Middle East" /> */}
                     </ul>
@@ -254,33 +255,29 @@ justify-content:space-between;
 const Nav = styled.nav`
 background:white;
 ul{
-    
+   
     list-style:none;
     text-decoration:none;
     width: auto;
-    margin-left: 20%;
-    margin-top: -1px;
     background: #1c1c1c;
-    padding-bottom: 10px;
-    li:nth-child(odd) {
-        background: green;
-    display: inline;
-    padding: 0 6px;
-    border-radius: 2px;   
+    padding: 10px 6px;
+margin: 0px 0px;
+    li:nth-child(odd) {  
 }
 }
 li{
-    line-height: 1.7rem;
-    
+    line-height: 1.8rem;
+    margin-left: 10%;
 }
-a{
-    text-decoration:none;
-    color: #ffff;
-   
-    &:hover{
-        color:gray;
+`;
+const StyledBurgerLink = styled(NavLink)`
+ text-decoration: none;
+color: #ffff;
+border-bottom: 1px solid #eb0f1a;
+&:hover{
+    color: lightgrey;
+    border-bottom: 2px solid #eb0f1a;
     }
-}
 `;
 const Hamburger = styled.div`
 margin-right: 5px;
@@ -383,6 +380,7 @@ box-sizing: border-box;
     justify-content: center;
     padding: 0px 0 10px 0;
     margin-bottom: -25px;
+    margin-top: -14px;
     flex-direction: column;
     text-align: left;
     margin-left: 20%;
@@ -406,14 +404,15 @@ const ProductNav = styled.p`
 margin-top: 0px;
 padding-right: 12px;
 color:#eb141b;
-margin-top: -14px;
 `;
 
 const Li2 = styled.li`
-margin-top: -14px;
 list-style:none;
     text-decoration:none;
     transition: transform .2s;
+    @media only screen and (min-width : 1000px) {
+        margin-top: 1px;
+}
     &:hover{
         border-radius:5%;
         transform: scale(1.1);
