@@ -31,7 +31,7 @@ export const VscrollerTop = () => {
 
 export const VscrollerMidDown = () => {
   return (
-    <Vdiv>
+    <VscrollerMidDownDiv>
       <Link
         spy={true}
         smooth={true}
@@ -39,7 +39,7 @@ export const VscrollerMidDown = () => {
         duration={500}
         to="sectionMid"><P>&#8595;</P>
       </Link>
-    </Vdiv >
+    </VscrollerMidDownDiv >
   )
 }
 export const VscrollerEnd = () => {
@@ -122,23 +122,31 @@ margin-top: 5px;
     margin: 5px;
   height: 5px;
   width: 5px;
-  background-image: radial-gradient(fade(#1c1c1c,80%),fade(#ff0000, 70%) 20%, transparent 50%);
   border-radius: 50%;
-  display: inline-block;
-  box-shadow: 0px 0px 0px rgba(104,69,44, 0.6);
-  animation: pulse 2s infinite alternate ease-out;
-  opacity: 0;
-@keyframes pulse {
-  from {
-     transform: scale(0);
-      opacity: 1;
-  }
-} 
-display:none;
+  
 @media (min-width:1190px){ 
     display:flex;
     bottom: 60px;
     }
+`;
+
+export const VscrollerMidDownDiv = styled.div`
+width:100%;
+position: absolute;
+z-index: 9;
+display: none;
+bottom:8px;
+color: #ee273e;
+height:30px;
+@media (min-width: 1200px) {
+  display: flex;
+  justify-content: center;
+align-items: center;
+a{
+  width: 20px;
+  cursor: pointer;
+}
+}
 `;
 
 const P = styled.p`

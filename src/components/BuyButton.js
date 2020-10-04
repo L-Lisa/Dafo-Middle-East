@@ -31,7 +31,7 @@ export const BuyButton = () => {
 
 
 const BtnContainer = styled.div`
-   z-index: 200;
+  z-index: 5;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;

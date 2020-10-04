@@ -14,14 +14,13 @@ export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, ma
       <ScrollLink />
 
       <TopSection id="top">
-
         {coverImage && <CoverImage src={coverImage} />}
+        <VscrollerMidDown />
         <TopText>
           {ImageText && <p>{ImageText}</p>}
         </TopText>
-        <VscrollerMidDown />
-      </TopSection>
 
+      </TopSection>
 
       <MidSection id="sectionMid">
         {headerText && <HeaderText>{headerText}</HeaderText>}
@@ -71,7 +70,7 @@ height:auto;
 margin-top: -90px;
 background: #1c1c1c;
   @media (min-width: 1200px) {
-  height:100vh;
+  height:97vh;
   display:flex;
   margin-top: -140px;
   flex-direction:column;
@@ -83,8 +82,8 @@ const CoverImage = styled.img`
 width: 100%;
 object-fit: contain;
 @media (min-width: 1200px) {
-  height:90vh;
   object-fit: cover;
+  height:100%;
   }
 `;
 
@@ -140,16 +139,13 @@ width: 100%;
     -ms-flex-pack: center;
     justify-content: center;
     padding: 3px;
-    margin-top: -3px;
     align-items:center;
     @media (min-width: 768px) {
       height: 70vh;
   }
     @media (min-width: 1200px) {
   height:100vh;
-  display:flex;
-  padding-left: 30px;
- /*  font-size: 1.3rem; */
+  font-size: 1.3rem;
   }
 `;
 
@@ -179,7 +175,7 @@ const HeaderText = styled.h2`
 `;
 
 const MainText = styled.article`
-width: 100%;
+width: 90%;
 line-height: 1.5rem;
 padding: 0 10px 0 10px;
 @media (min-width: 1200px) {

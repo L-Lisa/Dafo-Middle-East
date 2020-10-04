@@ -15,7 +15,7 @@ export const ScrollLink = () => {
                 to="top"
                 spy={true}
                 smooth={true}
-                offset={-128}
+                offset={-138}
                 duration={500}>
                 &#9678;
             </Link>
@@ -25,7 +25,7 @@ export const ScrollLink = () => {
 
                 spy={true}
                 smooth={true}
-                offset={-15}
+                offset={-103}
                 duration={500}
                 to="sectionMid">
                 &#9678;
@@ -36,7 +36,7 @@ export const ScrollLink = () => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={40}
+                offset={-100}
                 duration={500}
                 to="sectionEnd">
                 &#9678;
