@@ -3,7 +3,7 @@ import styled from 'styled-components/macro'
 import { PageComponent } from "components/PageComponent.js"
 import { Link, animateScroll as scroll } from "react-scroll"
 import ReactPlayer from 'react-player/youtube'
-import PowerGenMainImage from "..//images/Kompressor.JPG"
+import PowerGenMainImage from "..//images/Kompressor1920x1200.jpg"
 
 
 export const Power = () => {

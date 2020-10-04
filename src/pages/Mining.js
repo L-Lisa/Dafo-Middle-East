@@ -2,7 +2,7 @@ import React from "react"
 import styled from 'styled-components/macro'
 import { PageComponent } from "components/PageComponent.js"
 import { Link, animateScroll as scroll } from "react-scroll";
-import MiningImg from "..//images/catepillar.jpg"
+import MiningImg from "..//images/catepillar1920x1200.jpg"
 import ReactPlayer from 'react-player/youtube'
 
 export const Mining = () => {

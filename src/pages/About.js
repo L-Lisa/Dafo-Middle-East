@@ -3,7 +3,7 @@ import styled from 'styled-components/macro'
 import { PageComponent } from "components/PageComponent.js"
 import { Link, animateScroll as scroll } from "react-scroll"
 import DafoLogga from "../images/DafoMeNoBack.png";
-import aboutImg from "..//images/aboutImg.jpg"
+import aboutImg from "../images/About-Dafo-1.jpg"
 import ReactPlayer from 'react-player/youtube'
 import { Timeline } from "react-twitter-widgets";
 import { TwitterFeed } from "components/Twitter"

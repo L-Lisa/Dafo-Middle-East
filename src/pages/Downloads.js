@@ -139,8 +139,8 @@ justify-items:center;
 background-repeat: no-repeat;
     background-size: contain;
 }
-
 `;
+
 const DownloadsWrapper = styled.main`
 /* background-image: url(${""}); */
 background-position: center;

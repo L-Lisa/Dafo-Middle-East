@@ -1,7 +1,7 @@
 import React from "react"
 import styled from 'styled-components/macro'
 import { PageComponent } from "components/PageComponent.js"
-import BusGirl from "../images/BusGirl.jpeg"
+import BusGirl from "..//images/BusGirl1920x1200.jpg"
 import ReactPlayer from 'react-player'
 import { Link, animateScroll as scroll } from "react-scroll";
 import { VideoBackground } from "..//components/VideoBackground.js"

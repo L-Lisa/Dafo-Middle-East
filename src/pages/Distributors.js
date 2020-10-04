@@ -3,7 +3,7 @@ import styled from 'styled-components/macro'
 import { PageComponent } from "components/PageComponent.js"
 import { Link, animateScroll as scroll } from "react-scroll"
 import { DistribBox } from "../components/DistribBox"
-import DistributorImg from "..//images/distributors.jpg"
+import DistributorImg from "..//images/distributors1920x1200.jpg"
 import contactUs from "..//images/sales.jpg"
 import ReactPlayer from 'react-player/youtube'
 import DistributorLogo from "images/DafoMeNoBackTransp.png"
