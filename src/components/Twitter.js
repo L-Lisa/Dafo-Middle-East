@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import styled from 'styled-components/macro'
 import { Timeline } from "react-twitter-widgets";
+import { TwittrImg } from "..//images/newspaper-23613.svg"
+
 
 export const TwitterFeed = () => {
         const [twitterLoaded, settwitterLoaded] = useState(false);
@@ -48,6 +50,7 @@ export const TwitterFeed = () => {
 const TwitterBox = styled.div`
   overflow: scroll;
   height: auto;
+  background-image: url(${TwittrImg});
   @media (min-width: 676px) {
           height: 300px;
   }

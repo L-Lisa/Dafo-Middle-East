@@ -32,9 +32,11 @@ export const About = () => {
 
                 mainText2={""}
                 mainText3={""}
+                EndHeader1={"Contact Dafo Middle East"}
                 lastElement={
                     <>
                         <LastContainer>
+
                             <ContactDiv >
                                 <ContactsBox
                                     coverImage={JohanDafo}
@@ -69,6 +71,7 @@ export const About = () => {
                                 />
                             </ContactDiv>
                             <TwitterInfoBoxLRG>
+
                                 <InfoDiv >
 
                                     <ContactInfoCard
