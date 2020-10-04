@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import styled from 'styled-components/macro'
 import { Mailinglist } from "../components/Mailinglist"
-import foldericon from "../images/foldericon.png"
+import foldericon from "../images/fileImg.jpg"
 import { RedLine } from "../components/RedLine"
 import DafoRedFlame from "../images/DafoRedFlame.jpg"
 import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg"
@@ -23,7 +23,7 @@ export const Downloads = () => {
                 {!showInfo ? (
                     <Main>
                         <IntroDiv>
-                            <h2>Downloads</h2> <p>Enter your details here to proceed to our download library and join our mailing list.</p>
+                            <H2>Downloads</H2><P>Enter your details here to proceed to our download library and join our mailing list.</P>
                         </IntroDiv>
                         <FormBox>
                             <div id="mc_embed_signup">
@@ -40,7 +40,7 @@ export const Downloads = () => {
                                                 value={email}
                                                 type="email"
                                                 required
-                                                placeholder="Email Address"
+                                                placeholder="EMAIL ADRESS"
                                                 name="EMAIL"
                                                 className="required email"
                                                 id="mce-EMAIL"
@@ -51,7 +51,7 @@ export const Downloads = () => {
                                             <label htmlFor="mce-FNAME"></label>
                                             <input
                                                 type="text"
-                                                placeholder="First Name"
+                                                placeholder="FIRST NAME"
                                                 required
                                                 value={fName}
                                                 name="FNAME"
@@ -63,7 +63,7 @@ export const Downloads = () => {
                                         <div className="mc-field-group">
                                             <label htmlFor="mce-LNAME"> </label>
                                             <input
-                                                placeholder="Last Name"
+                                                placeholder="LAST NAME"
                                                 type="text"
                                                 value={lName}
                                                 name="LNAME"
@@ -101,7 +101,7 @@ export const Downloads = () => {
                 ) : (
                         <DownloadsBox>
                             <FolderBox href=" https://dafomiddleeast.sharepoint.com/sites/download/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Fdownload%2FShared%20Documents%2FDafo%20files&p=true&originalPath=aHR0cHM6Ly9kYWZvbWlkZGxlZWFzdC5zaGFyZXBvaW50LmNvbS86Zjovcy9kb3dubG9hZC9FazdGSm03ZE1EeEVnZURrc1ZwX21ud0JWdnotMmROWldOdE5xUVpzcVQzVElnP3J0aW1lPTdSbUh5enM4MkVn">
-                                <Thanks><H2>Welcome, follow the link to request access the downloadable files</H2>
+                                <Thanks><H2>Welcome,</H2> <P> follow the link to request access the downloadable files</P>
                                     <ul><RedLine /> Certificates</ul>
                                     <ul><RedLine />  Instructions</ul>
                                     <ul> <RedLine /> And more..</ul>
@@ -198,26 +198,23 @@ box-shadow: 2px 2px 10px 2px rgb(207 204 204 / 70%);
   max-width: 550px;
 }
 `;
-
-const IntroDiv = styled.div`
-
-p{
-    width:90%;
+const P = styled.p`
+ width:90%;
     max-width:250px;
     margin: 10px 10px 40px 15px;
     background: #ffffff5c;
     border-radius: 5px;
-}
+`;
+const IntroDiv = styled.div`
 h2{
     margin: 0 auto;
     color: white;
     background:#1c1c1c;
     width: max-content;
-    
     text-align: center;
     padding: 5px;
     max-width: 250px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 2px;
     font-weight: 700;
     margin-block-start: 0;
@@ -245,7 +242,7 @@ input{
     border: none;
     background: lightgray;
     height: 2rem;
-    text-transform: uppercase;
+    text-transform: capitalize;
     padding-left: 5px;
 }
 input.button{
@@ -267,8 +264,10 @@ color:#1c1c1c;
 
 const AccessButton = styled.button`
 width: 6.2rem;
-height:5.5rem;
-margin:15px;
+height: 5.5rem;
+margin: 15px;
+padding: 9px;
+box-shadow: 2px 2px 10px 2px rgb(178 172 172 / 98%);
 img{
     height: 30px;
 }
