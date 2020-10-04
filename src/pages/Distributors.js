@@ -11,8 +11,9 @@ import Tebra from "images/Tebra-Logo.jpg"
 import { DistributorCard } from "../components/DistributorCard"
 import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg"
 
-export const Distributors = () => {
 
+export const Distributors = () => {
+    s
     return (
         <>
             <PageComponent
