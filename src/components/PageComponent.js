@@ -12,19 +12,19 @@ export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, ma
     <PageWrapper>
 
       <ScrollLink />
+      {coverImage &&
+        <TopSection id="top">
+          <CoverImage src={coverImage} />
+          <VscrollerMidDown />
+          <TopText>
+            {ImageText && <p>{ImageText}</p>}
+          </TopText>
 
-      <TopSection id="top">
-        {coverImage && <CoverImage src={coverImage} />}
-        <VscrollerMidDown />
-        <TopText>
-          {ImageText && <p>{ImageText}</p>}
-        </TopText>
+        </TopSection>}
 
-      </TopSection>
-
-      <MidSection id="sectionMid">
+      <MidSection id="sectionMid" >
         {headerText && <HeaderText>{headerText}</HeaderText>}
-        {mainText1 && <MainText>{mainText1}</MainText>}
+        {mainText1 && <MainText >{mainText1}</MainText>}
         <Line></Line>
         {mainText2 && <MainText>{mainText2}</MainText>}
         {listItem1 && <ListItem>
@@ -156,6 +156,8 @@ align-self: flex-start;
 li{
   list-style:none;
   @media (min-width: 400px) { 
+    line-height: 3rem;
+    margin-left: 6rem;
   }
 }
 @media (min-width: 1200px) {
@@ -168,9 +170,10 @@ li{
 `;
 const HeaderText = styled.h2`
 /* font-size:1.2rem; */
-/* margin-top: 50px; */
+ margin-top: 50px;
 @media (min-width: 1200px) {
   /*   font-size: 2.2rem; */
+padding-bottom: 60px;
   }
 `;
 
@@ -264,7 +267,7 @@ export const EndH1 = styled.h1`
     -webkit-letter-spacing: 2px;
     -moz-letter-spacing: 2px;
     -ms-letter-spacing: 2px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 700;
     margin-block-start: 0; 
     @media(min-width:630px){

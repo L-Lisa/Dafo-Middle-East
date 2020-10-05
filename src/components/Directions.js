@@ -17,11 +17,13 @@ import { BuyButton } from "..//components/BuyButton"
 import { Distributors } from "../pages/Distributors"
 import { About } from "../pages/About"
 import { VscrollerTop, FootArrow, VscrollerMidDown, VscrollerEnd } from "components/Vscroller"
+import { ScrollToTop } from "../components/ScrollToTop"
+
 
 export const Directions = () => {
     return (
         <BrowserRouter>
-
+            <ScrollToTop />
             <Header />
             <BuyButton />
             <main>

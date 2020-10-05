@@ -113,6 +113,9 @@ list-style: none;
         width: 95%;
         text-align:left;
   }
+  @media (min-width: 1200px) {
+    width: 84%;
+  }
 `;
 
 export const ContactsBox = ({ title, secondaryText, secondaryText2, coverImage, children, className, supportingText, buttonText, email1, mailto1, email2, mailto2, phone1, phone2, phone3, phone4 }) => {

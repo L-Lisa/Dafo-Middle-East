@@ -25,6 +25,7 @@ export const TwitterFeed = () => {
 
         return (
                 <TwitterBox>
+                        <EndH1 />
                         <Timeline
                                 renderError={(_err) => <p>Could not load Twitter</p>}
                                 dataSource={{
@@ -89,4 +90,27 @@ const TwitterBox = styled.div`
   @media (min-width: 1500px) {
           height: auto;
   }
+`;
+
+export const EndH1 = styled.h1`
+/* font-size: 26px; */
+ margin: 0 auto;
+    color: #ee0201;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+    padding: 5px;
+  max-width: 250px; 
+    text-transform: uppercase;
+    -webkit-letter-spacing: 2px;
+    -moz-letter-spacing: 2px;
+    -ms-letter-spacing: 2px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-block-start: 0; 
+    @media(min-width:630px){
+      /*   font-size: 30px; */
+        max-width:unset;
+}
 `;

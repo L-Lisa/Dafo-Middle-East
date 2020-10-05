@@ -13,7 +13,6 @@ import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg"
 
 
 export const Distributors = () => {
-    s
     return (
         <>
             <PageComponent

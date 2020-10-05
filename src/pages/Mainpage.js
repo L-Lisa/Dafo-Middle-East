@@ -39,13 +39,13 @@ export const MainPage = () => {
 
       <MainText id="sectionMid" >
         <Mainh1>Automatic fire detection and suppression system </Mainh1>
-        <Para>
+        <Para >
           Dafo was one of the first companies in the world which started to develop intergrated firefighting solutions for vehicles.
               <br /><br />
               Over the years Dafo has obtained vas experience and knowledge from our end user installations which have been used as a basis for
             <Points>
             <PointRow><RedLine />Eliminating false alarms</PointRow>
-            <PointRow> <RedLine />Eliminating false releases</PointRow>
+            <PointRow > <RedLine />Eliminating false releases</PointRow>
           </Points>
 
  As a result of the development Dafo can today proudly present state of the art reliable solutions without vulnerable and pressurized agent containers.
@@ -170,7 +170,7 @@ const MainText = styled.div`
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 3px;
+   
     height: auto;
     @media (min-width: 768px) {
   }

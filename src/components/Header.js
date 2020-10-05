@@ -125,13 +125,13 @@ export const Header = () => {
                         <NavLink to="/certifications">Certificates</NavLink>
                     </li> */}
                     <li>
-                        <NavLink to="/" onClick={() => setShowProducts(false)} > <Link
+                        <NavLink to="/" onClick={() => setShowProducts(false)} > {/* <Link
                             to="top"
                             spy={true}
                             smooth={true}
                             offset={0}
                             duration={50}>
-                        </Link><NavListLogo src={DafoRedNoBackground} alt="Dafo Middle East" /></NavLink>
+                        </Link> */}<NavListLogo src={DafoRedNoBackground} alt="Dafo Middle East" /></NavLink>
                     </li>
                     <li>
                         <NavLink to="/downloads" onClick={() => setShowProducts(false)}>Downloads</NavLink>
