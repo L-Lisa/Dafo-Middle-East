@@ -28,19 +28,34 @@ export const About = () => {
             <ScrollLink />
 
             <MainText id="sectionMid" >
-                <Mainh1>Rubrik?</Mainh1>
+                <Mainh1>Dafo Middle East </Mainh1>
                 <Para >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              <br /><br />
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            <Points>
-                        <PointRow><RedLine />eiusmod tempor incididunt ut labore</PointRow>
-                        <PointRow > <RedLine />eiusmod tempor incididunt ut labore</PointRow>
+                    From our base in Business bay we operate throughout middle east as exclusive distributor for Dafo vehicle fire protection AB.
+                    <br /><br />
+                    <QouteBox>
+                        <Qoute>
+                            The middle eastern market is huge and have lots of potential. Under the past 2-3 years we have seen a raising demand of fire detection and suppression systems in different types of applications. We are continuously working on bringing awareness of fire risks in vehicles and have under the past years attended several workshops, delegations and exhibitions to reach out to the public, our customers and governments within our territory.
+                        </Qoute> <br /><br />
+                        <QouteRef>– Johan Larsson, General Manager</QouteRef>
+                    </QouteBox>
+                    <Points>
+                        <PointRow>We distribute Dafo as exclusive dealer to the following counties: </PointRow>
+                        <AboutList>
+                            <AboutLiBox1>
+                                <AboutLI>   <RedLine /> United Arab Emirates </AboutLI>
+                                <AboutLI>   <RedLine />     Saudi Arabia  </AboutLI>
+                                <AboutLI>   <RedLine />     Oman  </AboutLI>
+                                <AboutLI>   <RedLine />     Bahrain  </AboutLI>
+                            </AboutLiBox1>
+                            <AboutLiBox2>
+                                <AboutLI>    <RedLine />        Yemen   </AboutLI>
+                                <AboutLI>    <RedLine />    Kuwait  </AboutLI>
+                                <AboutLI>    <RedLine />    Iran  </AboutLI>
+                                <AboutLI>    <RedLine />    Qatar  </AboutLI>
+                            </AboutLiBox2>
+                        </AboutList>
                     </Points>
-
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-
-            </Para>
+                </Para>
                 <Space></Space>
                 <V><Link activeClass="active"
                     spy={true}
@@ -49,132 +64,7 @@ export const About = () => {
                     duration={500}
                     to="sectionEnd"><p>&#8595;</p></Link></V>
             </MainText>
-
-
             <ContactSection id="sectionEnd" >
-                <TwitterInfoBox>
-                    <InfoDiv >
-
-                        <ContactInfoCard
-                            title={" Dubai office"}
-                            p1={"Clover Bay Tower"}
-                            p2={"Office 1106, Business Bay"}
-                            p3="Dubai, UAE"
-                            secondaryText="Opening Hours"
-                            p5="Sunday - Thursday"
-                            p6="9am-6pm"
-                        />
-
-                        <ContactInfoCard
-                            title="Warehouse &
-  delivery"
-                            p1={"Dry dock world"}
-                            p2={"Warehouse no 118"}
-                            p3="Jadaf, near Creek metro"
-                            p4="Dubai, UAE"
-                            secondaryText="Opening Hours"
-                            p5="Sunday - Thursday"
-                            p6="8am-6pm"
-                            p7="Lunchbreak 1pm - 2pm"
-                        />
-
-                        <ContactInfoCard
-                            socialHead="Follow Dafo"
-                            socialHeadBox={<SocialMediaBox>
-                                <a href="https://www.youtube.com/channel/UCnnPIlXaWwE-wY3X-l3nTXw" target="_blank" rel="noopener noreferrer"><LogoIcon src={youtubeicon} alt="Dafo Youtube link" /></a>
-                                < a href="https://www.linkedin.com/company/dafo-middle-east" target="_blank" rel="noopener noreferrer"><LogoIcon src={Linkedin} alt="Dafo youtube link" /></a>
-                                < a href="https://twitter.com/Dafovehicle" target="_blank" rel="noopener noreferrer"><LogoIcon src={twittericon} alt="Dafo twitter link" /></a> </SocialMediaBox>}
-                            p2={""}
-                            p3=""
-                            p4=""
-                        />
-
-                        <ContactDiv >
-                            <ContactsBox
-                                coverImage={JohanDafo}
-                                title="General Manager"
-                                secondaryText={"Johan Larsson"}
-                                email1="johan.larsson@dafo-middle-east.com"
-                                mailto1="mailto:johan.larsson@dafo-middle-east.com"
-                                phone1="+971 55 143 6088"
-                            />
-
-                            <ContactsBox
-                                coverImage={Shadi}
-                                title="Regional Manager"
-                                secondaryText={"Abdulah Shadi"}
-                                email1="abdullah.shadi@dafo-middle-east.com"
-                                mailto1="mailto:abdullah.shadi@dafo-middle-east.com"
-                                phone1="+971 55 800 5509"
-
-                            />
-
-                            <ContactsBox
-                                coverImage={contactUs}
-                                title="Sales & Inquires"
-                                secondaryText={"Dafo sales team"}
-                                email1="sales@dafo-middle-east.com"
-                                mailto1="mailto:sales@dafo-middle-east.com"
-                                phone1=" +971 4 232 3957"
-                                secondaryText2="General inquires"
-                                email2="info@dafo-middle-east.com"
-                                mailto2="info@dafo-middle-east.com"
-                                phone2="+971 4 232 3957"
-                            />
-                        </ContactDiv>
-
-                    </InfoDiv>
-                    <TwitterCont>
-                        <H1>Latest News</H1>
-                        <TwitterFeed />
-                    </TwitterCont>
-                </TwitterInfoBox>
-                {/*  <TwitterInfoBoxLRG>
-
-                    <InfoDiv >
-
-                        <ContactInfoCard
-                            title={" Dubai office"}
-                            p1={"Clover Bay Tower"}
-                            p2={"Office 1106, Business Bay"}
-                            p3="Dubai, UAE"
-                            secondaryText="Opening Hours"
-                            p5="Sunday - Thursday"
-                            p6="9am-6pm"
-                        />
-
-                        <ContactInfoCard
-                            title="Warehouse &
-delivery"
-                            p1={"Dry dock world"}
-                            p2={"Warehouse no 118"}
-                            p3="Jadaf, near Creek metro"
-                            p4="Dubai, UAE"
-                            secondaryText="Opening Hours"
-                            p5="Sunday - Thursday"
-                            p6="8am-6pm"
-                            p7="Lunchbreak 1pm - 2pm"
-                        />
-
-                        <ContactInfoCard
-                            socialHead="Follow Dafo"
-                            socialHeadBox={<SocialMediaBox>
-                                <a href="https://www.youtube.com/channel/UCnnPIlXaWwE-wY3X-l3nTXw" target="_blank" rel="noopener noreferrer"><LogoIcon src={youtubeicon} alt="Dafo Youtube link" /></a>
-                                < a href="https://www.linkedin.com/company/dafo-middle-east" target="_blank" rel="noopener noreferrer"><LogoIcon src={Linkedin} alt="Dafo youtube link" /></a>
-                                < a href="https://twitter.com/Dafovehicle" target="_blank" rel="noopener noreferrer"><LogoIcon src={twittericon} alt="Dafo twitter link" /></a> </SocialMediaBox>}
-                            p2={""}
-                            p3=""
-                            p4=""
-
-                        />
-
-                    </InfoDiv>
-                    <TwitterCont>
-                        <H1>Latest News</H1>
-                        <TwitterFeed />
-                    </TwitterCont>
-
-                </TwitterInfoBoxLRG> */}
                 <ContactDiv >
                     <ContactsBox
                         coverImage={JohanDafo}
@@ -217,7 +107,7 @@ delivery"
 
                 <InfoDiv >
 
-                    {/*   <ContactInfoCard
+                    <ContactInfoCard
                         title={" Dubai office"}
                         p1={"Clover Bay Tower"}
                         p2={"Office 1106, Business Bay"}
@@ -229,7 +119,7 @@ delivery"
 
                     <ContactInfoCard
                         title="Warehouse &
-    delivery"
+            delivery"
                         p1={"Dry dock world"}
                         p2={"Warehouse no 118"}
                         p3="Jadaf, near Creek metro"
@@ -246,72 +136,17 @@ delivery"
                         p3=""
                         p4=""
 
-                    /> */}
+                    />
 
                 </InfoDiv>
 
             </ContactSection>
 
-            {/*  <PageComponent
-                EndHeader1={"Contact Dafo Middle East"}
-                lastElement={
-                    <>
-                        <LastContainer>
 
-                            <TwitterInfoBoxLRG>
-
-                                <InfoDiv >
-
-                                    <ContactInfoCard
-                                        title={" Dubai office"}
-                                        p1={"Clover Bay Tower"}
-                                        p2={"Office 1106, Business Bay"}
-                                        p3="Dubai, UAE"
-                                        secondaryText="Opening Hours"
-                                        p5="Sunday - Thursday"
-                                        p6="9am-6pm"
-                                    />
-
-                                    <ContactInfoCard
-                                        title="Warehouse &
-  delivery"
-                                        p1={"Dry dock world"}
-                                        p2={"Warehouse no 118"}
-                                        p3="Jadaf, near Creek metro"
-                                        p4="Dubai, UAE"
-                                        secondaryText="Opening Hours"
-                                        p5="Sunday - Thursday"
-                                        p6="8am-6pm"
-                                        p7="Lunchbreak 1pm - 2pm"
-                                    />
-
-                                    <ContactInfoCard
-                                        socialHead="Follow Dafo"
-                                        socialHeadBox={<SocialMediaBox>
-                                            <a href="https://www.youtube.com/channel/UCnnPIlXaWwE-wY3X-l3nTXw" target="_blank" rel="noopener noreferrer"><LogoIcon src={youtubeicon} alt="Dafo Youtube link" /></a>
-                                            < a href="https://www.linkedin.com/company/dafo-middle-east" target="_blank" rel="noopener noreferrer"><LogoIcon src={Linkedin} alt="Dafo youtube link" /></a>
-                                            < a href="https://twitter.com/Dafovehicle" target="_blank" rel="noopener noreferrer"><LogoIcon src={twittericon} alt="Dafo twitter link" /></a> </SocialMediaBox>}
-                                        p2={""}
-                                        p3=""
-                                        p4=""
-                                    />
-                                </InfoDiv>
-                        </LastContainer>
-
-                    </>
-                }
-            /> */}
-
-            {/* 
-            <Top> <Link
-                activeClass="active"
-                to="top"
-                spy={true}
-                smooth={true}
-                offset={-15}
-                duration={500}> &#8593;
-            </Link></Top> */}
-
+            {/*     <TwitterCont>
+                <H1>Latest News</H1>
+                <TwitterFeed />
+            </TwitterCont> */}
         </>
     )
 }
@@ -326,7 +161,7 @@ background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -35px;
+    margin-top: -40px;
     img{
         width: 40vw;
     }
@@ -445,7 +280,9 @@ const SocialMediaBox = styled.span`
 `;
 
 const InfoDiv = styled.section`
-width:30%;
+width:inherit;
+display:flex;
+flex-wrap:wrap;
 min-width: 200px;
 `;
 const TwitterInfoBox = styled.article`
@@ -559,7 +396,7 @@ width:auto;
 display:flex;
 `;
 
-const Para = styled.div`
+const Para = styled.article`
 height:auto;
 width: 70%;
     margin: 0 auto;
@@ -594,4 +431,42 @@ const Hide400 = styled.div`
 @media (min-width: 500px) {
   display:none;
   }
+`;
+
+const AboutList = styled.ul`
+font-weight:600;
+display:flex;
+flex-wrap:wrap;
+align-items: center;
+    justify-content: center;
+    padding-inline-start: 0;
+`;
+
+const AboutLI = styled.li`
+font-weight:500;
+list-style: none;
+
+`;
+
+const Qoute = styled.q`
+
+`;
+
+const QouteRef = styled.span`
+color:black;
+font-style: italic;
+`;
+
+const QouteBox = styled.div`
+background:#fff;
+width:100%;
+padding:4px;
+border-radius:2px;
+`;
+
+const AboutLiBox1 = styled.div`
+margin:5px;
+`;
+const AboutLiBox2 = styled.div`
+margin:5px;
 `;

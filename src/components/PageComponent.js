@@ -5,7 +5,7 @@ import { ScrollLink } from "components/ScrollButton"
 import { VscrollerTop, FootArrow, VscrollerMidDown, VscrollerEnd } from "components/Vscroller"
 import { RedLine } from "../components/RedLine"
 
-export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, mainText2, mainText3, lastElement, listItem1, listItem2, listItem3, mainText4, EndHeader1, EndHeader2, lastElementColRow }) => {
+export const PageComponent = ({ logoDiv, coverImage, ImageText, headerText, mainText1, mainText2, mainText3, lastElement, listItem1, listItem2, listItem3, mainText4, EndHeader1, EndHeader2, lastElementColRow }) => {
 
   return (
 
@@ -37,6 +37,7 @@ export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, ma
         <Line></Line>
         {mainText3 && <MainText>{mainText3}</MainText>}
         {mainText4 && <MainText>{mainText4}</MainText>}
+        {logoDiv && <LogoDiv></LogoDiv>}
         {/*   <VEnd><Link activeClass="active"
                     spy={true}
                     smooth={true}
@@ -86,7 +87,10 @@ object-fit: contain;
   height:100%;
   }
 `;
-
+const LogoDiv = styled.div`
+width:100%;
+height:100%;
+`;
 const TopText = styled.h1`
 /* font-size: 2rem;
 font-size: 2rem; */
@@ -210,7 +214,7 @@ background: ${props => props.background || "white"};
 `;
 
 const LastDiv = styled.div`
-height:auto;
+height:100%;
 width: 100%;
 `;
 const V = styled.div`

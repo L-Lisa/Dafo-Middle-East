@@ -5,12 +5,14 @@ import BusGirl from "..//images/BusGirl1920x1200.jpg"
 import ReactPlayer from 'react-player'
 import { Link, animateScroll as scroll } from "react-scroll";
 import { VideoBackground } from "..//components/VideoBackground.js"
+import Unce from "..//images/UnceImage.png"
 
 
 export const Vehicles = ({ }) => {
 
     return (
         <>
+
             <PageComponent
                 coverImage={BusGirl}
                 ImageText={"vehicles & fire safety"}
@@ -21,23 +23,23 @@ export const Vehicles = ({ }) => {
                 listItem2={" Eliminating false releases"}
                 mainText3={"As a result of the development Dafo can today proudly present state of the art reliable solutions without vulnerable and pressurized agent containers."}
                 mainText4={"With more than 165000 vehicle systems sold worldwide know-how and experience ensure our customers to have the latest technology combined with proven reliability. "}
-
-                lastElement={
-                    <>
-                        <PlayerContainer>
-                            <EmbedPlayer>
-                                <ReactPlayer
-                                    url="https://www.youtube.com/watch?v=yFrJz5tydMQ&t=50s" width='100%'
-                                    height='100%'
-                                    playing
-                                    muted
-                                />
-                            </EmbedPlayer>
-                        </PlayerContainer>
-
-                    </>
-                }
             />
+
+            <UNCE></UNCE>
+            <PlayerContainer>
+                <EmbedPlayer>
+                    <ReactPlayer
+                        url="https://www.youtube.com/watch?v=yFrJz5tydMQ&t=50s" width='100%'
+                        height='100%'
+                        playing
+                        muted
+                        loop
+                    />
+                </EmbedPlayer>
+            </PlayerContainer>
+
+
+
         </>
     )
 }
@@ -62,8 +64,24 @@ padding-bottom: 30px;
 `;
 const PlayerContainer = styled.div`
 width: max-content;
-height:auto;
 margin: 0 auto;
-margin-top: 40px;
+background: #1c1c1c;
+    height: 100%;
+    width: 100vw;
+    padding-top: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    @media(min-width:1200px){
+    width: 1200px;
+    height: 100vh;
+}
 `;
 
+const UNCE = styled.div`
+width:200px;
+height:200px;
+background-image: url(${Unce});
+`;
