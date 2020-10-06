@@ -37,7 +37,7 @@ export const Distributors = () => {
                             email2="info@maverickdigital.co.ke"
                             mailto2="info@maverickdigital.co.ke"
                         />
-                        <DistribBox
+                        {/*    <DistribBox
                             coverImage={Tebra}
                             title="Tebra General TradingMaverick Digital"
                             secondaryText={"1st floor, BMTC building5th floor, Suite W5.2"}
@@ -48,7 +48,7 @@ export const Distributors = () => {
                             mailto1="info@tebratrading.com"
                             email2="info@maverickdigital.co.ke"
                             mailto2="info@maverickdigital.co.ke"
-                        />
+                        /> */}
                         {/*   <>
                 <PlayerContainer>
                     <EmbedPlayer>

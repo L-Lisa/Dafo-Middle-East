@@ -5,7 +5,7 @@ import { ScrollLink } from "components/ScrollButton"
 import { VscrollerTop, FootArrow, VscrollerMidDown, VscrollerEnd } from "components/Vscroller"
 import { RedLine } from "../components/RedLine"
 
-export const PageComponent = ({ logoDiv, coverImage, ImageText, headerText, mainText1, mainText2, mainText3, lastElement, listItem1, listItem2, listItem3, mainText4, EndHeader1, EndHeader2, lastElementColRow }) => {
+export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, mainText2, mainText3, lastElement, listItem1, listItem2, listItem3, mainText4, EndHeader1, EndHeader2, lastElementColRow }) => {
 
   return (
 
@@ -37,7 +37,6 @@ export const PageComponent = ({ logoDiv, coverImage, ImageText, headerText, main
         <Line></Line>
         {mainText3 && <MainText>{mainText3}</MainText>}
         {mainText4 && <MainText>{mainText4}</MainText>}
-        {logoDiv && <LogoDiv></LogoDiv>}
         {/*   <VEnd><Link activeClass="active"
                     spy={true}
                     smooth={true}
@@ -68,10 +67,13 @@ width:100%;
 const TopSection = styled.section`
 width:100%;
 height:auto;
-margin-top: -90px;
+margin-top: -45px;
 background: #1c1c1c;
+@media (min-width: 400px) {
+  margin-top: -90px;
+}
   @media (min-width: 1200px) {
-  height:97vh;
+    height: 100vh;
   display:flex;
   margin-top: -140px;
   flex-direction:column;
@@ -87,10 +89,7 @@ object-fit: contain;
   height:100%;
   }
 `;
-const LogoDiv = styled.div`
-width:100%;
-height:100%;
-`;
+
 const TopText = styled.h1`
 /* font-size: 2rem;
 font-size: 2rem; */
@@ -107,7 +106,7 @@ font-size: 2rem; */
     border-radius: 2px;
     padding: 5px;
     text-transform: uppercase;
-    font-size: calc(26px + 1vw);
+    font-size: calc(24px + 1vw);
    /*  letter-spacing: 3px; */
     }
     @media (min-width: 670px) {
@@ -128,24 +127,24 @@ const Line = styled.div`
 `;
 const MidSection = styled.section`
 width: 100%;
-    background: #f5f5f5;
-    margin: 0 auto;
-    /* font-size: 1rem; */
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    padding: 3px;
-    align-items:center;
+background: #f5f5f5;
+margin: 0 auto;
+  /* font-size: 1rem; */
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-flex-direction: column;
+-ms-flex-direction: column;
+flex-direction: column;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: center;
+padding: 3px;
+align-items:center;
+margin-top: -7px;
     @media (min-width: 768px) {
-      height: 70vh;
   }
     @media (min-width: 1200px) {
   height:100vh;
@@ -173,11 +172,19 @@ li{
   }
 `;
 const HeaderText = styled.h2`
-/* font-size:1.2rem; */
- margin-top: 50px;
+margin-top: 35px;
+text-align: center;
+@media (min-width: 400px) {
+text-align: left;
+width: 88%;
+}
+@media (min-width: 400px) {
+  margin-top: 50px;
+}
 @media (min-width: 1200px) {
   /*   font-size: 2.2rem; */
-padding-bottom: 60px;
+padding-bottom: 50px;
+width: 70%;
   }
 `;
 
@@ -188,15 +195,14 @@ padding: 0 10px 0 10px;
 @media (min-width: 1200px) {
 padding: 0 40px 0 40px;
 width: 70%;
-    margin: 0 auto;
-    padding-left:10px;
+margin: 0 auto;
+padding-left:10px;
   }
   @media (min-width: 1500px) {
-width: 70%;
-    margin: 0 auto;
-    padding-left:10px;
+  width: 70%;
+  margin: 0 auto;
+  padding-left:10px;
   }
-
 `;
 
 const EndSection = styled.div`
@@ -205,17 +211,18 @@ height:auto;
 display: flex;
 flex-direction: column;
 background: ${props => props.background || "white"};
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
+justify-content: center;
+align-items: center;
 @media (min-width: 1200px) {
   height:100vh;
+  background: #1c1c1c;
   }
 `;
 
 const LastDiv = styled.div`
-height:100%;
+height:auto;
 width: 100%;
+background:#1c1c1c;
 `;
 const V = styled.div`
 width: 100%;

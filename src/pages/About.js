@@ -21,12 +21,11 @@ import { RedLine } from "../components/RedLine"
 import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg"
 
 export const About = () => {
-
+    const [showTwitter, setShowTwitter] = useState(false)
     return (
         <>
             <AboutHero id="top"> <img src={DafoLogga} alt="Dafo" /> <VscrollerMidDown /></AboutHero>
             <ScrollLink />
-
             <MainText id="sectionMid" >
                 <Mainh1>Dafo Middle East </Mainh1>
                 <Para >
@@ -65,6 +64,7 @@ export const About = () => {
                     to="sectionEnd"><p>&#8595;</p></Link></V>
             </MainText>
             <ContactSection id="sectionEnd" >
+                <EndH1>Contact Dafo Middle East</EndH1>
                 <ContactDiv >
                     <ContactsBox
                         coverImage={JohanDafo}
@@ -140,19 +140,21 @@ export const About = () => {
 
                 </InfoDiv>
 
+                <EndH1 onClick={() => setShowTwitter(!showTwitter)}>Click For News &#8595; </EndH1>
+                {showTwitter && <TwitterCont>
+                    <TwitterFeed />
+                </TwitterCont>
+                }
             </ContactSection>
 
 
-            {/*     <TwitterCont>
-                <H1>Latest News</H1>
-                <TwitterFeed />
-            </TwitterCont> */}
+            {/*     */}
         </>
     )
 }
 
 const AboutHero = styled.section`
-height:70vh;
+height:50vh;
 width:100%;
 background-image: url(${aboutImg});
 background-position: center;
@@ -284,6 +286,9 @@ width:inherit;
 display:flex;
 flex-wrap:wrap;
 min-width: 200px;
+align-items: center;
+    align-content: center;
+    justify-content: center;
 `;
 const TwitterInfoBox = styled.article`
 display: flex;
@@ -333,6 +338,7 @@ text-align: center;
     font-weight: 800;
     justify-content: center;
 @media (min-width: 400px) {
+    margin-top: 35px;
   }
   @media (min-width: 1200px) {
     width: 70%;
@@ -465,8 +471,34 @@ border-radius:2px;
 `;
 
 const AboutLiBox1 = styled.div`
-margin:5px;
+margin: 5px;
+width: 180px;
 `;
 const AboutLiBox2 = styled.div`
-margin:5px;
+margin: 5px;
+width: 180px;
+`;
+
+export const EndH1 = styled.h1`
+/* font-size: 26px; */
+ margin: 0 auto;
+    color: #ee0201;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+    padding: 5px;
+  max-width: 250px; 
+    text-transform: uppercase;
+    -webkit-letter-spacing: 2px;
+    -moz-letter-spacing: 2px;
+    -ms-letter-spacing: 2px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: calc(16px + 1vw);
+    margin-block-start: 0; 
+    @media(min-width:630px){
+      /*   font-size: 30px; */
+        max-width:unset;
+}
 `;

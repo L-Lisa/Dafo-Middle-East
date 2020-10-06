@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled from 'styled-components/macro'
 import { Timeline } from "react-twitter-widgets";
-import { TwittrImg } from "..//images/newspaper-23613.svg"
+
 
 
 export const TwitterFeed = () => {
@@ -25,7 +25,7 @@ export const TwitterFeed = () => {
 
         return (
                 <TwitterBox>
-                        <EndH1 />
+
                         <Timeline
                                 renderError={(_err) => <p>Could not load Twitter</p>}
                                 dataSource={{
@@ -50,8 +50,8 @@ export const TwitterFeed = () => {
 
 const TwitterBox = styled.div`
   overflow: scroll;
-  height: auto;
-  background-image: url(${TwittrImg});
+    margin: 0 auto;
+    width: inherit;
   @media (min-width: 676px) {
           height: 300px;
   }
@@ -70,47 +70,5 @@ const TwitterBox = styled.div`
   @media (min-width: 1200px) {
           height: 520px;
   }
-  @media (min-width: 1300px) {
-          height: 570px;
-  }
-  @media (min-width: 1400px) {
-          height: 620px;
-          max-height: 50vh;
-  }
-  @media (min-width: 1500px) {
-          height: 670px;
-         
-  }
-  @media (min-width: 1500px) {
-          height: 690px;
-  }
-  @media (min-width: 1500px) {
-          height: 670px;
-  }
-  @media (min-width: 1500px) {
-          height: auto;
-  }
 `;
 
-export const EndH1 = styled.h1`
-/* font-size: 26px; */
- margin: 0 auto;
-    color: #ee0201;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    text-align: center;
-    padding: 5px;
-  max-width: 250px; 
-    text-transform: uppercase;
-    -webkit-letter-spacing: 2px;
-    -moz-letter-spacing: 2px;
-    -ms-letter-spacing: 2px;
-    letter-spacing: 1px;
-    font-weight: 700;
-    margin-block-start: 0; 
-    @media(min-width:630px){
-      /*   font-size: 30px; */
-        max-width:unset;
-}
-`;

@@ -1,6 +1,6 @@
 import React from "react"
 import styled from 'styled-components/macro'
-import FilmText from "../images/filmtext.png";
+import FilmText from "../images//NedladdadFilmtext.png";
 import { ScrollLink } from "components/ScrollButton"
 /* import { Vscroller } from "components/Vscroller" */
 import { Link, animateScroll as scroll } from "react-scroll";
@@ -57,12 +57,12 @@ position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    margin-top: 40px;
     @media (min-width: 550px) {
   height:100%;
   }
     img {
-    width: 200px;
+        width: 150px;
     height: auto;
     display: block;
     position: absolute;

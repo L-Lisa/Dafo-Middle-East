@@ -62,7 +62,7 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
       </MainText>
 
       <ContactSection id="sectionEnd" >
-
+        <EndH1>Dafo Middle East</EndH1>
         <ContactDiv >
           <ContactsBox
             coverImage={JohanDafo}
@@ -200,7 +200,7 @@ text-align: center;
     width: 70%;
     margin: 0 auto;
   }
-`
+`;
 
 const ContactSection = styled.section`
 width:100%;
@@ -226,7 +226,29 @@ background-repeat: no-repeat;
     
   }
 `;
-
+export const EndH1 = styled.h1`
+/* font-size: 26px; */
+ margin: 0 auto;
+    color: #ee0201;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    text-align: center;
+    padding: 5px;
+  max-width: 250px; 
+    text-transform: uppercase;
+    -webkit-letter-spacing: 2px;
+    -moz-letter-spacing: 2px;
+    -ms-letter-spacing: 2px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: calc(16px + 1vw);
+    margin-block-start: 0; 
+    @media(min-width:630px){
+      /*   font-size: 30px; */
+        max-width:unset;
+}
+`;
 const ContactDiv = styled.div`
 display:flex;
 height:min-content;
@@ -345,7 +367,7 @@ height:auto;
 width: 70%;
     margin: 0 auto;
     padding-left:10px;
-`
+`;
 
 const SocialMediaBox = styled.span`
     width: 35%;

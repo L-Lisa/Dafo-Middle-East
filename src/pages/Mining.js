@@ -29,6 +29,7 @@ export const Mining = () => {
                                     height='100%'
                                     playing
                                     muted
+                                    loop
                                 />
                             </EmbedPlayer>
                         </PlayerContainer>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from "styled-components/macro"
 import { Link, animateScroll as scroll } from "react-scroll";
-
+import { NavLink } from "react-router-dom"
 
 
 export const Vscroll400 = () => {
@@ -62,6 +62,7 @@ export const VscrollerEnd = () => {
 export const FootArrow = () => {
   return (
     <FootDiv>
+      <FootLink to="/" >Home </FootLink>
       <Link
         activeClass="active"
         to="top"
@@ -70,6 +71,7 @@ export const FootArrow = () => {
         offset={-15}
         duration={500}> &#8593;
     </Link>
+      <FootLink to="/about" >Contact</FootLink>
     </FootDiv>
   )
 }
@@ -79,8 +81,9 @@ height:30px;
 color:#fff;
 background:gray;
 display:flex;
-padding: 7px;
+font-size: 1.3rem;
 justify-content:center;
+align-items: baseline;
 :hover{
 color:gray;
 background:#e9e9ea;
@@ -151,6 +154,7 @@ a{
 
 const P = styled.p`
 font-size: 1.5rem;
+font-weight: 900;
 `;
 
 const MarginP = styled.div`
@@ -172,4 +176,14 @@ width: auto;
     :focus{
       color:none;
     }
-`
+`;
+
+const FootLink = styled(NavLink)`
+ text-decoration: none;
+ color:#fff;
+ font-weight:400;
+ font-size:0.8rem;
+ margin: 0 15px;
+`;
+
+
