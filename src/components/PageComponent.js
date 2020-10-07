@@ -214,7 +214,7 @@ background: ${props => props.background || "white"};
 justify-content: center;
 align-items: center;
 @media (min-width: 1200px) {
-  height:100vh;
+  min-height: 100vh;
   background: #1c1c1c;
   }
 `;

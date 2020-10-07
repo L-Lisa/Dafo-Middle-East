@@ -58,7 +58,6 @@ export const Header = () => {
                         smooth={true}
                         offset={0}
                         duration={50}>
-
                     </Link>
                         <BurgerLogo src={REDVehicle} alt="Dafo Middle East" />
 

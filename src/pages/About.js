@@ -147,8 +147,6 @@ export const About = () => {
                 }
             </ContactSection>
 
-
-            {/*     */}
         </>
     )
 }
@@ -482,6 +480,7 @@ width: 180px;
 export const EndH1 = styled.h1`
 /* font-size: 26px; */
  margin: 0 auto;
+ cursor: pointer;
     color: #ee0201;
     width: -webkit-max-content;
     width: -moz-max-content;
