@@ -170,12 +170,12 @@ const MainText = styled.div`
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-   
     height: auto;
     @media (min-width: 768px) {
   }
     @media (min-width: 1200px) {
   height:100vh;
+  margin-top: 60px;
   font-size: 1.2rem;
   }
   li span{

@@ -76,7 +76,6 @@ background: #1c1c1c;
     align-content: center;
     @media(min-width:1200px){
     width: 1200px;
-    height: 100vh;
 }
 `;
 
