@@ -24,8 +24,9 @@ export const About = () => {
     const [showTwitter, setShowTwitter] = useState(false)
     return (
         <>
-            <AboutHero id="top"> <img src={DafoLogga} alt="Dafo" /> <VscrollerMidDown /></AboutHero>
             <ScrollLink />
+            <AboutHero id="top"> <img src={DafoLogga} alt="Dafo" /> <VscrollerMidDown /></AboutHero>
+
             <MainText id="sectionMid" >
                 <Mainh1>Dafo Middle East </Mainh1>
                 <Para >
@@ -99,52 +100,57 @@ export const About = () => {
                     />
                 </ContactDiv>
 
-                <Hide400>
-                    <RedLine
-                        width="300px"
-                    />
-                </Hide400>
 
-                <InfoDiv >
+                <InfoDiv>
 
-                    <ContactInfoCard
-                        title={" Dubai office"}
-                        p1={"Clover Bay Tower"}
-                        p2={"Office 1106, Business Bay"}
-                        p3="Dubai, UAE"
-                        secondaryText="Opening Hours"
-                        p5="Sunday - Thursday"
-                        p6="9am-6pm"
-                    />
+                    <Flex>
+                        <ContactInfoCard
+                            title={" Dubai office"}
+                            p1={"Clover Bay Tower"}
+                            p2={"Office 1106, Business Bay"}
+                            p3="Dubai, UAE"
+                            secondaryText="Opening Hours"
+                            p5="Sunday - Thursday"
+                            p6="9am-6pm"
+                        />
 
-                    <ContactInfoCard
-                        title="Warehouse &
+                        <ContactInfoCard
+                            title="Warehouse &
             delivery"
-                        p1={"Dry dock world"}
-                        p2={"Warehouse no 118"}
-                        p3="Jadaf, near Creek metro"
-                        p4="Dubai, UAE"
-                    />
+                            p1={"Dry dock world"}
+                            p2={"Warehouse no 118"}
+                            p3="Jadaf, near Creek metro"
+                            p4="Dubai, UAE"
+                        />
 
-                    <ContactInfoCard
-                        socialHead="Follow Dafo"
-                        socialHeadBox={<SocialMediaBox>
-                            <a href="https://www.youtube.com/channel/UCnnPIlXaWwE-wY3X-l3nTXw" target="_blank" rel="noopener noreferrer"><LogoIcon src={youtubeicon} alt="Dafo Youtube link" /></a>
-                            < a href="https://www.linkedin.com/company/dafo-middle-east" target="_blank" rel="noopener noreferrer"><LogoIcon src={Linkedin} alt="Dafo youtube link" /></a>
-                            < a href="https://twitter.com/Dafovehicle" target="_blank" rel="noopener noreferrer"><LogoIcon src={twittericon} alt="Dafo twitter link" /></a> </SocialMediaBox>}
-                        p2={""}
-                        p3=""
-                        p4=""
+                        <ContactInfoCard
+                            socialHead="Follow Dafo"
+                            socialHeadBox={<SocialMediaBox>
+                                <a href="https://www.youtube.com/channel/UCnnPIlXaWwE-wY3X-l3nTXw" target="_blank" rel="noopener noreferrer"><LogoIcon src={youtubeicon} alt="Dafo Youtube link" /></a>
+                                < a href="https://www.linkedin.com/company/dafo-middle-east" target="_blank" rel="noopener noreferrer"><LogoIcon src={Linkedin} alt="Dafo youtube link" /></a>
+                                < a href="https://twitter.com/Dafovehicle" target="_blank" rel="noopener noreferrer"><LogoIcon src={twittericon} alt="Dafo twitter link" /></a> </SocialMediaBox>}
+                            p2={""}
+                            p3=""
+                            p4=""
 
-                    />
+                        />
+                    </Flex>
+                    <EndH1 onClick={() => setShowTwitter(!showTwitter)}>Load the News
+                    <span className={showTwitter ? `showarrow` : `none`}> &#8593; </span>
+                        <span className={showTwitter ? `none` : `showarrow`}>  &#8595;</span>
+                    </EndH1>
+                    {showTwitter &&
+
+                        <TwitterCont>
+                            <EndH1>News </EndH1>
+                            <TwitterFeed />
+                        </TwitterCont>
+                    }
+
 
                 </InfoDiv>
 
-                <EndH1 onClick={() => setShowTwitter(!showTwitter)}>Click For News &#8595; </EndH1>
-                {showTwitter && <TwitterCont>
-                    <TwitterFeed />
-                </TwitterCont>
-                }
+
             </ContactSection>
 
         </>
@@ -152,21 +158,22 @@ export const About = () => {
 }
 
 const AboutHero = styled.section`
-height:50vh;
+height:450px;
 width:100%;
 background-image: url(${aboutImg});
 background-position: center;
 background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -40px;
-    img{
-        width: 40vw;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: -40px;
+img{
+    width: 40vw;
     }
 @media(min-width:1200px){
     height:100vh;
+    margin-top: -90px;
 }
 `;
 const EmbedPlayer = styled.div`
@@ -174,8 +181,8 @@ width: max-content;
 height: max-content;
 padding-bottom: 30px;
 @media(min-width:630px){
-    width: 620px;
-    height: 450px;
+width: 620px;
+height: 450px;
 }
 @media(min-width:876px){
     width: 564px;
@@ -259,8 +266,11 @@ justify-content: center;
 `;
 
 const TwitterCont = styled.div`
-    width: 50%;
+    margin-top: 42px;
     min-width: 225px;
+    @media(min-width:390px){
+    width: 400px;
+    }
     @media(min-width:1400px){
         width: 65%;
 min-width: 225px;
@@ -285,8 +295,10 @@ display:flex;
 flex-wrap:wrap;
 min-width: 200px;
 align-items: center;
-    align-content: center;
-    justify-content: center;
+align-content: center;
+justify-content: center;
+align-items: center;
+flex-direction: column-reverse;
 `;
 const TwitterInfoBox = styled.article`
 display: flex;
@@ -328,8 +340,8 @@ const H1 = styled.h1`
 `;
 
 const Mainh1 = styled.h1`
+width: 100%;
 text-align: center;
-    width: 80%;
     display: flex;
     align-self: center;
     font-size: 1.3rem;
@@ -339,8 +351,7 @@ text-align: center;
     margin-top: 35px;
   }
   @media (min-width: 1200px) {
-    width: 70%;
-    margin: 0 auto;
+
   }
 `;
 const MainText = styled.div`
@@ -359,17 +370,16 @@ const MainText = styled.div`
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-   
     height: auto;
     @media (min-width: 768px) {
   }
     @media (min-width: 1200px) {
-  height:100vh;
+  min-height:100vh;
   font-size: 1.2rem;
-  margin-top: -50px;
+/*   margin-top: -50px; */
   }
   li span{
-    height:4px;
+height:4px;
 width:5px;
 color:red;
   }
@@ -423,27 +433,26 @@ background-repeat: no-repeat;
     background-size: contain;
 }
 @media (min-width: 1190px) {
-  height: 100vh;
+  min-height: 100vh;
   justify-content: center;
   }
   @media (min-width: 1500px) {
     
   }
 `;
-const Hide400 = styled.div`
-    padding-top: 55px;
-@media (min-width: 500px) {
-  display:none;
-  }
-`;
+
 
 const AboutList = styled.ul`
 font-weight:600;
 display:flex;
 flex-wrap:wrap;
 align-items: center;
-    justify-content: center;
-    padding-inline-start: 0;
+justify-content: center;
+padding-inline-start: 0;
+flex-direction:column;
+@media(min-width:640px){
+flex-direction:row;
+}
 `;
 
 const AboutLI = styled.li`
@@ -464,17 +473,21 @@ font-style: italic;
 const QouteBox = styled.div`
 background:#fff;
 width:100%;
-padding:4px;
+padding:10px;
 border-radius:2px;
 `;
 
 const AboutLiBox1 = styled.div`
-margin: 5px;
-width: 180px;
+width: 220px;
+@media(min-width:640px){
+    margin:5px;
+}
 `;
 const AboutLiBox2 = styled.div`
-margin: 5px;
-width: 180px;
+width: 220px;
+@media(min-width:640px){
+    margin:5px;
+}
 `;
 
 export const EndH1 = styled.h1`
@@ -496,8 +509,22 @@ export const EndH1 = styled.h1`
     font-weight: 700;
     font-size: calc(16px + 1vw);
     margin-block-start: 0; 
+    .showarrow{
+        display:inline;
+    }
+    .none{
+        display:none;
+    }
     @media(min-width:630px){
       /*   font-size: 30px; */
         max-width:unset;
 }
+`;
+
+const Flex = styled.div`
+display:flex;
+margin: 0 auto;
+flex-wrap: wrap;
+justify-content: center;
+
 `;

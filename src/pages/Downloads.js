@@ -103,8 +103,8 @@ export const Downloads = () => {
                             <FolderBox href=" https://dafomiddleeast.sharepoint.com/sites/download/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Fdownload%2FShared%20Documents%2FDafo%20files&p=true&originalPath=aHR0cHM6Ly9kYWZvbWlkZGxlZWFzdC5zaGFyZXBvaW50LmNvbS86Zjovcy9kb3dubG9hZC9FazdGSm03ZE1EeEVnZURrc1ZwX21ud0JWdnotMmROWldOdE5xUVpzcVQzVElnP3J0aW1lPTdSbUh5enM4MkVn">
                                 <Thanks><H2>Welcome,</H2> <P> follow the link to request access the downloadable files</P>
                                     <ul><RedLine /> Certificates</ul>
-                                    <ul><RedLine />  Instructions</ul>
-                                    <ul> <RedLine /> And more..</ul>
+                                    <ul><Hide><RedLine /> </Hide> Instructions</ul>
+                                    <ul> <Hide><RedLine /> </Hide> And more..</ul>
                                     <AccessButton><img src={foldericon} alt="Dafo downloads" />Download Library</AccessButton>
                                 </Thanks>
 
@@ -131,7 +131,6 @@ div{
 ` */
 const Color = styled.div`
 background-color:#fff;
-height:100vh;
 margin-top: -38px;
 display:flex;
 align-content:center;
@@ -139,6 +138,7 @@ justify-items:center;
 @media only screen and (min-width : 767px) {
  background-image: url(${DafoRedFlameFade});
     background-position: center;
+    height:100vh;
 background-repeat: no-repeat;
     background-size: contain;
 }
@@ -217,11 +217,11 @@ h2{
     text-transform: capitalize;
     letter-spacing: 2px;
     font-weight: 700;
+    width: 90%;
     margin-block-start: 0;
     @media (min-width:676px){
         padding-bottom: 5px;
         max-width:250px;
-        width: 90%;
 }}
 `;
 
@@ -276,7 +276,7 @@ const Thanks = styled.article`
 padding: 30px;
 margin: 0 auto;
     border: 1px solid #1c1c1c0f;
-    box-shadow: 2px 2px 10px 2px rgb(207 204 204 / 70%);
+    box-shadow: 2px 2px 10px 2px rgb(207 204 204 / 70%);  
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -288,16 +288,23 @@ margin: 0 auto;
     -ms-flex-pack: center;
     justify-content: center;
     margin: 50px 0;
-    height:300px;
-    width: 70%;
     max-width: 500px;
     margin: 0 auto;
     @media(min-width:676px){
+    width: 70%;
         flex-direction: column;
     height: 400px;
     width: auto;
 }
 `;
+
 const H2 = styled.h2`
 font-size:1.2rem;
+`;
+
+const Hide = styled.div`
+display:none;
+@media(min-width: 350px){
+    display:inline;
+}
 `;

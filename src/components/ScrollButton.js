@@ -48,7 +48,7 @@ export const ScrollLink = () => {
 
 
 const BtnContainer = styled.div`
-    z-index: 200;
+    z-index: 2000;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
