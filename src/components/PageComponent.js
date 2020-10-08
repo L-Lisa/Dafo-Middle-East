@@ -147,7 +147,7 @@ margin-top: -7px;
     @media (min-width: 768px) {
   }
     @media (min-width: 1200px) {
-  height:100vh;
+  min-height:100vh;
   font-size: 1.3rem;
   }
 `;

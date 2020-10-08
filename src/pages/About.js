@@ -56,7 +56,7 @@ export const About = () => {
                         </AboutList>
                     </Points>
                 </Para>
-                <Space></Space>
+
                 <V><Link activeClass="active"
                     spy={true}
                     smooth={true}
@@ -384,9 +384,7 @@ width:5px;
 color:red;
   }
 `;
-const Space = styled.span`
-height:30px;
-`;
+
 
 const V = styled.div`
 width: 100%;
@@ -412,9 +410,12 @@ display:flex;
 
 const Para = styled.article`
 height:auto;
-width: 70%;
+width: 97%;
     margin: 0 auto;
     padding-left:10px;
+    @media (min-width:1400px){ 
+        width: 70%;
+    }
 `;
 const ContactSection = styled.section`
 width:100%;
