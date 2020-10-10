@@ -532,8 +532,8 @@ justify-content: center;
 `;
 
 const SME = styled.img`
-width:90px;
-height:90px;
+width:100px;
+height:100px;
 `;
 
 const AboutSocialBox = styled.div`

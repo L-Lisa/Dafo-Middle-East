@@ -19,14 +19,14 @@ export const Distributors = () => {
                 coverImage={coverImage}
                 ImageText={"Distributors"}
                 headerText={"Dafo Middle East authorized distributors and service providers "}
-                mainText1={""}
-                mainText2={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
-                mainText3={" It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."}
+                mainText1={"All our authorized distributors have trained personnel qualified for sales, installation & maintenance. "}
+                mainText2={""}
+                mainText3={""}
                 lastElement={<EndSection id="sectionEnd" >
-                    <EndH1>Meet our distributors</EndH1>
+                    <EndH1>List of Dafo Middle East authorized distributors and service providers </EndH1>
                     <ContactSection>
                         <DistribBox
-                            coverImage={Tebra}
+                            coverImage={Tebra} alt=" Dafo Distributor Tebra"
                             title="Tebra General TradingMaverick Digital"
                             secondaryText={"1st floor, BMTC building5th floor, Suite W5.2"}
                             secondaryText={"P.O. Box 1247Kose Heights, Argwings Kodhek rd."}

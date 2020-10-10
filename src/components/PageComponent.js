@@ -171,7 +171,7 @@ li{
     padding-left: 10px;
   }
 `;
-const HeaderText = styled.h2`
+const HeaderText = styled.h1`
 margin-top: 35px;
 text-align: center;
 @media (min-width: 400px) {
@@ -264,7 +264,7 @@ display:none;
 `;
  */
 
-export const EndH1 = styled.h1`
+export const EndH1 = styled.h2`
 /* font-size: 26px; */
  margin: 0 auto;
     color: #ee0201;
