@@ -4,7 +4,7 @@ import { PageComponent } from "components/PageComponent.js"
 import { Link, animateScroll as scroll } from "react-scroll"
 import ReactPlayer from 'react-player/youtube'
 import PowerGenMainImage from "..//images/Kompressor1920x1200.jpg"
-
+import DafoRedFlameFadeContent from "../images/DafoRedFlameFadeContent.jpg"
 
 export const Power = () => {
 
@@ -25,7 +25,7 @@ export const Power = () => {
                         <PlayerContainer>
                             <EmbedPlayer>
                                 <ReactPlayer
-                                    url="https://youtu.be/5ZCgbGgA-_8" width='100%'
+                                    url="" width='100%'
                                     height='100%'
                                     playing
                                     muted
@@ -52,6 +52,10 @@ export const Power = () => {
 
 
 const EmbedPlayer = styled.div`
+background-image: url(${DafoRedFlameFadeContent});
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
 width: max-content;
 height: max-content;
 padding-bottom: 30px;

@@ -19,6 +19,7 @@ import { VscrollerTop, FootArrow, VscrollerMidDown, VscrollerEnd } from "compone
 import { ScrollLink } from "components/ScrollButton"
 import { RedLine } from "../components/RedLine"
 import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg"
+import { SMElogo } from "..//images/SMElogo.jpg"
 
 export const About = () => {
     const [showTwitter, setShowTwitter] = useState(false)
@@ -128,8 +129,8 @@ export const About = () => {
                             socialHeadBox={<SocialMediaBox>
                                 <a href="https://www.youtube.com/channel/UCnnPIlXaWwE-wY3X-l3nTXw" target="_blank" rel="noopener noreferrer"><LogoIcon src={youtubeicon} alt="Dafo Youtube link" /></a>
                                 < a href="https://www.linkedin.com/company/dafo-middle-east" target="_blank" rel="noopener noreferrer"><LogoIcon src={Linkedin} alt="Dafo youtube link" /></a>
-                                < a href="https://twitter.com/Dafovehicle" target="_blank" rel="noopener noreferrer"><LogoIcon src={twittericon} alt="Dafo twitter link" /></a> </SocialMediaBox>}
-                            p2={""}
+                                < a href="https://twitter.com/Dafovehicle" target="_blank" rel="noopener noreferrer"><LogoIcon src={twittericon} alt="Dafo twitter link" /></a>  <img src={SMElogo} alt="Dafo" /> </SocialMediaBox>}
+                            p2={<SME></SME>}
                             p3=""
                             p4=""
 
@@ -527,5 +528,13 @@ display:flex;
 margin: 0 auto;
 flex-wrap: wrap;
 justify-content: center;
+`;
 
+const SME = styled.div`
+background-image: url(${SMElogo});
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+width:50px;
+height:50px;
 `;

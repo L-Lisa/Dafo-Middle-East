@@ -4,6 +4,7 @@ import { PageComponent } from "components/PageComponent.js"
 import { Link, animateScroll as scroll } from "react-scroll";
 import MiningImg from "..//images/catepillar1920x1200.jpg"
 import ReactPlayer from 'react-player/youtube'
+import DafoRedFlameFadeContent from "../images/DafoRedFlameFadeContent.jpg"
 
 export const Mining = () => {
 
@@ -25,7 +26,7 @@ export const Mining = () => {
                         <PlayerContainer>
                             <EmbedPlayer>
                                 <ReactPlayer
-                                    url="https://www.youtube.com/embed/hISlc88HhKQ" width='100%'
+                                    url="" width='100%'
                                     height='100%'
                                     playing
                                     muted
@@ -53,6 +54,10 @@ export const Mining = () => {
 
 
 const EmbedPlayer = styled.div`
+background-image: url(${DafoRedFlameFadeContent});
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
 width: max-content;
 height: max-content;
 padding-bottom: 30px;
