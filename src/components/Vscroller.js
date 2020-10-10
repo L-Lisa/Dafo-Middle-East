@@ -62,7 +62,7 @@ export const VscrollerEnd = () => {
 export const FootArrow = () => {
   return (
     <FootDiv>
-      <FootLink to="/" >Home </FootLink>
+      {/*     <FootLink to="/" >Home </FootLink> */}
       <Link
         activeClass="active"
         to="top"
@@ -71,7 +71,7 @@ export const FootArrow = () => {
         offset={-15}
         duration={500}> &#8593;
     </Link>
-      <FootLink to="/about" >Contact</FootLink>
+      {/*     <FootLink to="/about" >Contact</FootLink> */}
     </FootDiv>
   )
 }

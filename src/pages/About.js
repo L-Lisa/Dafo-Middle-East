@@ -19,14 +19,14 @@ import { VscrollerTop, FootArrow, VscrollerMidDown, VscrollerEnd } from "compone
 import { ScrollLink } from "components/ScrollButton"
 import { RedLine } from "../components/RedLine"
 import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg"
-import { SMElogo } from "..//images/SMElogo.jpg"
+import SMElogo from "../images/smeDbxTxt.jpg"
 
 export const About = () => {
     const [showTwitter, setShowTwitter] = useState(false)
     return (
         <>
             <ScrollLink />
-            <AboutHero id="top"> <img src={DafoLogga} alt="Dafo" /> <VscrollerMidDown /></AboutHero>
+            <AboutHero id="top">  <VscrollerMidDown /></AboutHero>
 
             <MainText id="sectionMid" >
                 <Mainh1>Dafo Middle East </Mainh1>
@@ -126,11 +126,11 @@ export const About = () => {
 
                         <ContactInfoCard
                             socialHead="Follow Dafo"
-                            socialHeadBox={<SocialMediaBox>
+                            socialHeadBox={<AboutSocialBox> <SocialMediaBox>
                                 <a href="https://www.youtube.com/channel/UCnnPIlXaWwE-wY3X-l3nTXw" target="_blank" rel="noopener noreferrer"><LogoIcon src={youtubeicon} alt="Dafo Youtube link" /></a>
                                 < a href="https://www.linkedin.com/company/dafo-middle-east" target="_blank" rel="noopener noreferrer"><LogoIcon src={Linkedin} alt="Dafo youtube link" /></a>
-                                < a href="https://twitter.com/Dafovehicle" target="_blank" rel="noopener noreferrer"><LogoIcon src={twittericon} alt="Dafo twitter link" /></a>  <img src={SMElogo} alt="Dafo" /> </SocialMediaBox>}
-                            p2={<SME></SME>}
+                                < a href="https://twitter.com/Dafovehicle" target="_blank" rel="noopener noreferrer"><LogoIcon src={twittericon} alt="Dafo twitter link" /></a>  </SocialMediaBox> <SME src={SMElogo} alt="Dafo" /> </AboutSocialBox>}
+                            p2={""}
                             p3=""
                             p4=""
 
@@ -530,11 +530,13 @@ flex-wrap: wrap;
 justify-content: center;
 `;
 
-const SME = styled.div`
-background-image: url(${SMElogo});
-background-position: center;
-background-repeat: no-repeat;
-background-size: contain;
-width:50px;
-height:50px;
+const SME = styled.img`
+width:90px;
+height:90px;
+`;
+
+const AboutSocialBox = styled.div`
+display:flex;
+flex-direction:column;
+align-items: center;
 `;
