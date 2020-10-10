@@ -33,6 +33,7 @@ export const VideoBackground = ({ videoSource, DafoDubaiME }) => {
 const Container = styled.section`
 position: relative;
     overflow: hidden;
+    background: #1c1c1c;
     @media (min-width: 1190px) {
   height:auto;
   }
