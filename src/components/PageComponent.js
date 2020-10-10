@@ -24,19 +24,21 @@ export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, ma
 
       <MidSection id="sectionMid" >
         {headerText && <HeaderText>{headerText}</HeaderText>}
-        {mainText1 && <MainText >{mainText1}</MainText>}
-        <Line></Line>
-        {mainText2 && <MainText>{mainText2}</MainText>}
-        {listItem1 && <ListItem>
-          <ul>
-            {listItem1 && <li><RedLine />{listItem1}</li>}
-            {listItem2 && <li><RedLine />{listItem2}</li>}
-            {listItem3 && <li><RedLine />{listItem3}</li>}
-          </ul>
-        </ListItem>}
-        <Line></Line>
-        {mainText3 && <MainText>{mainText3}</MainText>}
-        {mainText4 && <MainText>{mainText4}</MainText>}
+        <TextAlignBox>
+          {mainText1 && <MainText >{mainText1}</MainText>}
+          <Line></Line>
+          {mainText2 && <MainText>{mainText2}</MainText>}
+          {listItem1 && <ListItem>
+            <ul>
+              {listItem1 && <li><RedLine />{listItem1}</li>}
+              {listItem2 && <li><RedLine />{listItem2}</li>}
+              {listItem3 && <li><RedLine />{listItem3}</li>}
+            </ul>
+          </ListItem>}
+          <Line></Line>
+          {mainText3 && <MainText>{mainText3}</MainText>}
+          {mainText4 && <MainText>{mainText4}</MainText>}
+        </TextAlignBox>
         {/*   <VEnd><Link activeClass="active"
                     spy={true}
                     smooth={true}
@@ -152,6 +154,15 @@ margin-top: -7px;
   }
 `;
 
+const TextAlignBox = styled.section`
+display:flex;
+width: 95%;
+display: flex;
+flex-direction: column;
+justify-items: flex-start;
+align-items: flex-start;
+`;
+
 const ListItem = styled.ul`
 color:#1c1c1c;
 padding: 14px 0px;
@@ -184,7 +195,8 @@ width: 88%;
 @media (min-width: 1200px) {
   /*   font-size: 2.2rem; */
 padding-bottom: 50px;
-width: 70%;
+width: auto;
+text-align: center;
   }
 `;
 
@@ -194,12 +206,12 @@ line-height: 1.5rem;
 padding: 0 10px 0 10px;
 @media (min-width: 1200px) {
 padding: 0 40px 0 40px;
-width: 70%;
+
 margin: 0 auto;
 padding-left:10px;
   }
   @media (min-width: 1500px) {
-  width: 70%;
+
   margin: 0 auto;
   padding-left:10px;
   }

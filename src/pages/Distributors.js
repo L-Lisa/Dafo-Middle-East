@@ -10,12 +10,13 @@ import DistributorLogo from "images/DafoMeNoBackTransp.png"
 import Tebra from "images/Tebra-Logo.jpg"
 import { DistributorCard } from "../components/DistributorCard"
 import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg"
-
+import { RedLine } from "../components/RedLine"
 
 export const Distributors = () => {
     return (
         <>
             <PageComponent
+
                 coverImage={coverImage}
                 ImageText={"Distributors"}
                 headerText={"Dafo Middle East authorized distributors and service providers "}
@@ -23,7 +24,9 @@ export const Distributors = () => {
                 mainText2={""}
                 mainText3={""}
                 lastElement={<EndSection id="sectionEnd" >
-                    <EndH1>List of Dafo Middle East authorized distributors and service providers </EndH1>
+
+                    <H2>List of Dafo Middle East authorized distributors and service providers </H2>
+
                     <ContactSection>
                         <DistribBox
                             coverImage={Tebra} alt=" Dafo Distributor Tebra"
@@ -62,6 +65,8 @@ export const Distributors = () => {
                 </PlayerContainer>
             </>  */}
                     </ContactSection>
+                    <RedLine
+                        width="200px" />
                 </EndSection>}
             />
 
@@ -177,5 +182,21 @@ background-color: #fff;
   }
   @media (min-width: 1500px) {
     
+  }
+`;
+
+const H2 = styled.h2`
+margin-top: 35px;
+text-align: center;
+@media (min-width: 400px) {
+width: 88%;
+}
+@media (min-width: 400px) {
+  margin-top: 50px;
+}
+@media (min-width: 1200px) {
+  /*   font-size: 2.2rem; */
+padding-bottom: 50px;
+width: 70%;
   }
 `;

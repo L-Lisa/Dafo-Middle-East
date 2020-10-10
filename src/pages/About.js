@@ -26,7 +26,7 @@ export const About = () => {
     return (
         <>
             <ScrollLink />
-            <AboutHero id="top">  <VscrollerMidDown /></AboutHero>
+            <AboutHero id="top">    <img src={DafoLogga} alt="Dafo" /> <VscrollerMidDown /></AboutHero>
 
             <MainText id="sectionMid" >
                 <Mainh1>Dafo Middle East </Mainh1>

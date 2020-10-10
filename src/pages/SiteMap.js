@@ -24,9 +24,7 @@ export const SiteMap = () => {
                 <LI>
                     <Link to="/downloads"> <h2>Downloads</h2></Link>
                 </LI>
-                <LI>
-                    <Link to="/certifications"> <h2>Certifications</h2></Link>
-                </LI>
+
             </SiteMapContainer>
         </Wrapper>
     )

@@ -175,7 +175,6 @@ const MainText = styled.div`
   }
     @media (min-width: 1200px) {
   height:100vh;
-  margin-top: 60px;
   font-size: 1.2rem;
   }
   li span{
@@ -307,6 +306,9 @@ margin-top: -90px;
   height:100vh;
   margin-top: -140px;
   background:#1c1c1c;
+  display: flex;
+flex-direction: column;
+justify-content: center;
   }
 `;
 const Space = styled.span`
@@ -365,8 +367,11 @@ display:flex;
 const Para = styled.div`
 height:auto;
 width: 70%;
-    margin: 0 auto;
-    padding-left:10px;
+margin: 0 auto;
+padding-left:10px;
+  @media (min-width:160px){ 
+  width:unset;
+  }
 `;
 
 const SocialMediaBox = styled.span`

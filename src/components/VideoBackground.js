@@ -16,7 +16,7 @@ export const VideoBackground = ({ videoSource, DafoDubaiME }) => {
                 <source src={videoSource} type="video/mp4" />
             </Video>
             <ImgBox>
-                <img src={FilmText} alt="Dafo" />
+                <img src={FilmText} alt="Dafo Middle East" />
                 <V><Link activeClass="active"
                     spy={true}
                     smooth={true}
@@ -88,7 +88,7 @@ bottom:0;
 color: white;
 display:none;
 cursor:pointer;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 @media (min-width:1190px){ 
     display:flex;
     }
