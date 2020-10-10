@@ -14,7 +14,7 @@ export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, ma
       <ScrollLink />
       {coverImage &&
         <TopSection id="top">
-          <CoverImage src={coverImage} />
+          <CoverImage src={coverImage} alt="Dafo Middle East" />
           <VscrollerMidDown />
           <TopText>
             {ImageText && <p>{ImageText}</p>}

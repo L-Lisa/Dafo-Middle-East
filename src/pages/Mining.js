@@ -12,7 +12,7 @@ export const Mining = () => {
     return (
         <>
             <PageComponent
-                coverImage={MiningImg}
+                coverImage={MiningImg} alt="Dafo Middle East Fire protection"
                 ImageText={"Mining & Heavy Duty Equipment"}
                 headerText={"Fire safety for contracting mining machinery"}
                 mainText1={"Fires in vehicles often take hold very quickly and are hard to extinguish with a handheld extinguisher. A correctly dimensioned vehicle fire suppression system offers you fast, effective protection that limits the consequences of a fire."}

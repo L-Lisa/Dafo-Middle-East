@@ -69,7 +69,7 @@ export const About = () => {
                 <EndH1>Contact Dafo Middle East</EndH1>
                 <ContactDiv >
                     <ContactsBox
-                        coverImage={JohanDafo}
+                        coverImage={JohanDafo} alt="Johan Larsson General Manager Dafo Middle East"
                         title="General Manager"
                         secondaryText={"Johan Larsson"}
                         email1="johan.larsson@dafo-middle-east.com"
@@ -78,7 +78,7 @@ export const About = () => {
                     />
 
                     <ContactsBox
-                        coverImage={Shadi}
+                        coverImage={Shadi} alt="Abdulah Shadi Regional Manager Dafo Middle East"
                         title="Regional Manager"
                         secondaryText={"Abdulah Shadi"}
                         email1="abdullah.shadi@dafo-middle-east.com"
@@ -89,7 +89,7 @@ export const About = () => {
 
                     <ContactsBox
                         coverImage={contactUs}
-                        title="Sales & Inquires"
+                        title="Sales & Inquires" alt="Dafo sales team Middle East Office"
                         secondaryText={"Dafo sales team"}
                         email1="sales@dafo-middle-east.com"
                         mailto1="mailto:sales@dafo-middle-east.com"
@@ -128,8 +128,9 @@ export const About = () => {
                             socialHead="Follow Dafo"
                             socialHeadBox={<AboutSocialBox> <SocialMediaBox>
                                 <a href="https://www.youtube.com/channel/UCnnPIlXaWwE-wY3X-l3nTXw" target="_blank" rel="noopener noreferrer"><LogoIcon src={youtubeicon} alt="Dafo Youtube link" /></a>
-                                < a href="https://www.linkedin.com/company/dafo-middle-east" target="_blank" rel="noopener noreferrer"><LogoIcon src={Linkedin} alt="Dafo youtube link" /></a>
-                                < a href="https://twitter.com/Dafovehicle" target="_blank" rel="noopener noreferrer"><LogoIcon src={twittericon} alt="Dafo twitter link" /></a>  </SocialMediaBox> <SME src={SMElogo} alt="Dafo" /> </AboutSocialBox>}
+
+                                < a href="https://www.linkedin.com/company/dafo-middle-east" target="_blank" rel="noopener noreferrer"><LogoIcon src={Linkedin} alt="Dafo LinkedIn link" /></a>
+                                < a href="https://twitter.com/Dafovehicle" target="_blank" rel="noopener noreferrer"><LogoIcon src={twittericon} alt="Dafo twitter link" /></a>  </SocialMediaBox> <SME src={SMElogo} alt="Dafo proud supporter of local business" /> </AboutSocialBox>}
                             p2={""}
                             p3=""
                             p4=""

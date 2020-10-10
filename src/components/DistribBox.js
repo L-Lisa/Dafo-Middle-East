@@ -122,7 +122,7 @@ export const DistribBox = ({ title, secondaryText, secondaryText2, coverImage, c
     return (
 
         <Container className={className}>
-            {coverImage && <ImageDiv><CoverImage src={coverImage} /></ImageDiv>}
+            {coverImage && <ImageDiv><CoverImage src={coverImage} alt="Dafo Middle East" /></ImageDiv>}
             <ContactList>
                 <li>{title && <Title>{title}</Title>}</li>
                 <li>  {secondaryText && <SecondaryText>{secondaryText}</SecondaryText>}</li>

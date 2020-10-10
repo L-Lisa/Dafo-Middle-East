@@ -83,7 +83,7 @@ export const DistributorCard = ({ titleD, secondaryTextD, secondaryTextD2, cover
     return (
 
         <Container classNameD={classNameD}>
-            {coverImageD && <ImageDiv><CoverLogoD src={coverImageD} /></ImageDiv>}
+            {coverImageD && <ImageDiv><CoverLogoD src={coverImageD} alt="Dafo Distributer Tebra" /></ImageDiv>}
             <ContactList>
                 <li>{titleD && <TitleDtitleD>{titleD}</TitleDtitleD>}</li>
 
