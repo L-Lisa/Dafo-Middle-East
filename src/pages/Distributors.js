@@ -11,48 +11,47 @@ import Tebra from "images/Tebra-Logo.jpg"
 import { DistributorCard } from "../components/DistributorCard"
 import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg"
 import { RedLine } from "../components/RedLine"
+import { MidDistributors } from "../components/MidDistributors"
+
 
 export const Distributors = () => {
-    return (
-        <>
-            <PageComponent
+  return (
+    <>
 
-                coverImage={coverImage}
-                ImageText={"Distributors"}
-                headerText={"Dafo Middle East authorized distributors and service providers "}
-                mainText1={"All our authorized distributors have trained personnel qualified for sales, installation & maintenance. "}
-                mainText2={""}
-                mainText3={""}
-                lastElement={<EndSection id="sectionEnd" >
+      <PageComponent
 
-                    <H2>List of Dafo Middle East authorized distributors and service providers </H2>
+        coverImage={coverImage}
+        ImageText={"Distributors"}
 
-                    <ContactSection>
-                        <DistribBox
-                            coverImage={Tebra} alt=" Dafo Distributor Tebra"
-                            title="Tebra General TradingMaverick Digital"
-                            secondaryText={"1st floor, BMTC building5th floor, Suite W5.2"}
-                            secondaryText={"P.O. Box 1247Kose Heights, Argwings Kodhek rd."}
-                            secondaryText={"Argwings Kodhek rd. Nairobi & Mombasa, Kenya"}
-                            email1="info@tebratrading.com"
+        mainText1={<MidDistributors />}
+        mainText2={""}
+        mainText3={""}
+        lastElement={<EndSection id="sectionEnd" >
 
-                            mailto1="info@tebratrading.com"
-                            email2="info@maverickdigital.co.ke"
-                            mailto2="info@maverickdigital.co.ke"
-                        />
-                        {/*    <DistribBox
-                            coverImage={Tebra}
-                            title="Tebra General TradingMaverick Digital"
-                            secondaryText={"1st floor, BMTC building5th floor, Suite W5.2"}
-                            secondaryText={"P.O. Box 1247Kose Heights, Argwings Kodhek rd."}
-                            secondaryText={"Argwings Kodhek rd. Nairobi & Mombasa, Kenya"}
-                            email1="info@tebratrading.com"
+          <H2>List of Dafo Middle East authorized distributors and service providers </H2>
+          <Red></Red>
+          <ContactSection>
 
-                            mailto1="info@tebratrading.com"
-                            email2="info@maverickdigital.co.ke"
-                            mailto2="info@maverickdigital.co.ke"
-                        /> */}
-                        {/*   <>
+            <DistribBox
+              coverImage={Tebra} alt=" Dafo Distributor Tebra"
+              title="Tebra General Trading"
+              secondaryText1={"Dubai, United Arab Emirates:"}
+              secondaryText2={"Head Office: First Floor, BMTC Building, Deira "}
+              secondaryText3={"Dubai, U.A.E. P.O.Box 1247"}
+              email1="info@tebratrading.com"
+              mailto1="info@tebratrading.com"
+            />
+            <DistribBox
+              coverImage={""} alt=" Dafo Kenya"
+              title={"Maverick Digital"}
+              secondaryText1={"Mombasa, Kenya: "}
+              secondaryText2={"P.O. Box 1247 Kose Heights, Argwings Kodhek rd."}
+              secondaryText3={" Nairobi & Mombasa, Kenya"}
+              email2="info@maverickdigital.co.ke"
+              mailto2="info@maverickdigital.co.ke"
+
+            />
+            {/*   <>
                 <PlayerContainer>
                     <EmbedPlayer>
                         <ReactPlayer
@@ -64,16 +63,28 @@ export const Distributors = () => {
                     </EmbedPlayer>
                 </PlayerContainer>
             </>  */}
-                    </ContactSection>
-                    <RedLine
-                        width="200px" />
-                </EndSection>}
-            />
+
+          </ContactSection>
+          <Red></Red>
+        </EndSection>}
+      />
 
 
-        </>
-    )
+    </>
+  )
 }
+
+const Red = styled.span`
+width:${props => props.width ? props.width : "200px"};
+height: 4px;
+background: #ee0201;
+align-self: center;
+margin: 2px 5px 2px 2px;
+display: inline-block;
+margin: 30px 0;
+`;
+
+
 export const EndH1 = styled.h1`
 /* font-size: 26px; */
  margin: 0 auto;

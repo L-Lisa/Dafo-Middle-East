@@ -28,6 +28,7 @@ margin: 8px; */
     width: 30%;
     max-width: 315px;
     background: none;
+    height:410px;
     @media(min-width:410px){
     width:50%;
     }
@@ -38,19 +39,21 @@ margin: 8px; */
 `;
 
 const Title = styled.h1`
-width: 100%;
-    margin: 0px;
-   /*  font-size: 20px; */
-    font-weight: 500;
-`;
-const SecondaryText = styled.h2`
-width: 100%;
-    margin: 0px;
+    width: 100%;
+    margin: 3px;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 1.1em;
- /*    font-size: medium; */
-    padding-top: 9px;
+padding-top: 9px;
+text-align: center;
+`;
+const SecondaryText = styled.article`
+    width: 100%;
+    margin: 0px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: left;
+    line-height: 1.5rem;
 `;
 
 
@@ -118,17 +121,19 @@ list-style: none;
   }
 `;
 
-export const DistribBox = ({ title, secondaryText, secondaryText2, coverImage, children, className, supportingText, buttonText, email1, mailto1, email2, mailto2, phone1, phone2, phone3, phone4 }) => {
+export const DistribBox = ({ title, secondaryText1, secondaryText2, secondaryText3, secondaryText4, secondaryText5, coverImage, children, className, supportingText, buttonText, email1, mailto1, email2, mailto2, phone1, phone2, phone3, phone4 }) => {
     return (
-
         <Container className={className}>
             {coverImage && <ImageDiv><CoverImage src={coverImage} alt="Dafo Middle East" /></ImageDiv>}
             <ContactList>
                 <li>{title && <Title>{title}</Title>}</li>
-                <li>  {secondaryText && <SecondaryText>{secondaryText}</SecondaryText>}</li>
+                <li>  {secondaryText1 && <SecondaryText>{secondaryText1}</SecondaryText>}</li>
+                <li>  {secondaryText2 && <SecondaryText>{secondaryText2}</SecondaryText>}</li>
+                <li>  {secondaryText3 && <SecondaryText>{secondaryText3}</SecondaryText>}</li>
+                <li>  {secondaryText4 && <SecondaryText>{secondaryText4}</SecondaryText>}</li>
                 <li>  {phone1 && <Phone>{phone1}</Phone>} </li>
                 <li> {email1 && <MailLink href={mailto1}>{email1}</MailLink>}</li>
-                <li>  {secondaryText2 && <SecondaryText>{secondaryText2}</SecondaryText>}</li>
+                <li>  {secondaryText5 && <SecondaryText>{secondaryText5}</SecondaryText>}</li>
                 <li> {email2 && <MailLink href={mailto2}>{email2}</MailLink>}</li>
             </ContactList>
 
