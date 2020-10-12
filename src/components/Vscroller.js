@@ -153,8 +153,8 @@ a{
 `;
 
 const P = styled.p`
-font-size: 1.5rem;
-font-weight: 900;
+font-size: 1.2rem;
+font-weight: 700;
 `;
 
 const MarginP = styled.div`

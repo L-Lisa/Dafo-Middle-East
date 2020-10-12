@@ -54,7 +54,6 @@ export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, ma
         {lastElement && <LastDiv>{lastElement}</LastDiv>}
         {lastElementColRow && <LastElementColRow>{lastElementColRow}</LastElementColRow>}
       </EndSection>
-
     </PageWrapper>
   )
 }
@@ -204,6 +203,7 @@ const MainText = styled.article`
 width: 90%;
 line-height: 1.5rem;
 padding: 0 10px 0 10px;
+margin: 0 auto;
 @media (min-width: 1200px) {
 padding: 0 40px 0 40px;
 

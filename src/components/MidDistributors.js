@@ -39,7 +39,6 @@ flex-direction: column;
 justify-content: center;
 padding: 3px;
 align-items:center;
-margin-top: -7px;
 `;
 
 

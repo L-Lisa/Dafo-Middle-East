@@ -396,9 +396,14 @@ align-items:center;
 color: #ee273e;
 cursor:pointer;
 display:none;
+font-size: 1.2rem;
+font-weight: 700;
     margin-bottom: 20px;
 @media (min-width:1190px){ 
     display:flex;
+    }
+    @media (min-width:1600px){ 
+        margin-top: 62px;
     }
 `;
 const Points = styled.div`
@@ -412,7 +417,7 @@ display:flex;
 
 const Para = styled.article`
 height:auto;
-width: 97%;
+width: 90%;
     margin: 0 auto;
     padding-left:10px;
     @media (min-width:1400px){ 
@@ -474,10 +479,10 @@ font-style: italic;
 `;
 
 const QouteBox = styled.div`
-background:#fff;
-width:100%;
-padding:10px;
-border-radius:2px;
+background: #fff;
+margin: 0 auto;
+padding: 20px;
+border-radius: 2px;
 `;
 
 const AboutLiBox1 = styled.div`
