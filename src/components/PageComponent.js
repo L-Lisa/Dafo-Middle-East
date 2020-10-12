@@ -206,7 +206,6 @@ padding: 0 10px 0 10px;
 margin: 0 auto;
 @media (min-width: 1200px) {
 padding: 0 40px 0 40px;
-
 margin: 0 auto;
 padding-left:10px;
   }
