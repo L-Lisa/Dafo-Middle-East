@@ -6,17 +6,16 @@ import { PowerGenPage } from "../pages/PowerGenPage"
 import { MiningConstruction } from "../pages/MiningConstruction"
 import { ContactUsPage } from "../pages/ContactUsPage"
 import { SiteMap } from "../pages/SiteMap"
-import { Footer } from "../components/Footer"
+
 import { Header } from "../components/Header"
 import { Downloads } from "../pages/Downloads"
-import { Certifications } from "../pages/Certifications"
 import { Vehicles } from "../pages/Vehicles"
 import { Mining } from "../pages/Mining"
 import { Power } from "../pages/Power"
 import { BuyButton } from "..//components/BuyButton"
 import { Distributors } from "../pages/Distributors"
 import { About } from "../pages/About"
-import { VscrollerTop, FootArrow, VscrollerMidDown, VscrollerEnd } from "components/Vscroller"
+import { FootArrow } from "components/Vscroller"
 import { ScrollToTop } from "../components/ScrollToTop"
 
 
@@ -74,9 +73,7 @@ export const Directions = () => {
                     <Route path="/downloads" exact>
                         <Downloads />
                     </Route>
-                    <Route path="/certifications" exact>
-                        <Certifications />
-                    </Route>
+
                 </Switch>
             </main>
             < FootArrow />

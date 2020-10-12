@@ -1,8 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from "styled-components/macro"
-import { Link, animateScroll as scroll } from "react-scroll";
-import { NavLink } from "react-router-dom"
-import { Vscroll400 } from "components/Vscroller"
 
 export const BuyButton = () => {
 
@@ -13,17 +10,6 @@ export const BuyButton = () => {
             <BtnContainer >
 
                 <P>  <a href="mailto:sales@dafo-middle-east.com"> Place Order</a></P>
-                {/*    <NavLink to="/contact-us"> */}
-                {/*  <Link
-                    activeClass="active"
-                    to="/contact-us"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}>
-
-                </Link> */}{/* </NavLink> */}
-                {/*    < Vscroll400 /> */}
             </BtnContainer >
         </>
     )
@@ -35,7 +21,6 @@ const BtnContainer = styled.div`
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    -webkit-align-content: center;
     -ms-flex-line-pack: center; 
     -webkit-box-pack: center;
     -webkit-justify-content: center;

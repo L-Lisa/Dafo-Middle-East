@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styled from 'styled-components/macro'
-import { PageComponent } from "components/PageComponent.js"
-import { Link, animateScroll as scroll } from "react-scroll"
+import { Link } from "react-scroll"
 import DafoLogga from "../images/DafoMeNoBack.png";
 import aboutImg from "../images/About-Dafo-1.jpg"
-import ReactPlayer from 'react-player/youtube'
-import { Timeline } from "react-twitter-widgets";
+
 import { TwitterFeed } from "components/Twitter"
 import { ContactsBox } from "../components/ContactsBox"
 import Shadi from "..//images/Shadi.jpg"
@@ -15,7 +13,7 @@ import { ContactInfoCard } from "../components/ContactInfoCard"
 import youtubeicon from "..//images/youtubeicon.png"
 import twittericon from "..//images/twittericon.png"
 import Linkedin from "..//images/Linkedin.png"
-import { VscrollerTop, FootArrow, VscrollerMidDown, VscrollerEnd } from "components/Vscroller"
+import { VscrollerMidDown } from "components/Vscroller"
 import { ScrollLink } from "components/ScrollButton"
 import { RedLine } from "../components/RedLine"
 import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg"
@@ -178,88 +176,10 @@ img{
     margin-top: -90px;
 }
 `;
-const EmbedPlayer = styled.div`
-width: max-content;
-height: max-content;
-padding-bottom: 30px;
-@media(min-width:630px){
-width: 620px;
-height: 450px;
-}
-@media(min-width:876px){
-    width: 564px;
-    height: 350px;
-}
-@media(min-width:1200px){
-    width: 1200px;
-    height: 700px;
-}
-`;
-const PlayerContainer = styled.div`
-width: max-content;
-height:auto;
-margin: 0 auto;
-margin-top: 40px;
-`;
-
-const Top = styled.div`
-height:30px;
-color:#fff;
-background:gray;
-display:flex;
-padding: 7px;
-justify-content:center;
-:hover{
-color:gray;
-background:whitesmoke;
-}`;
-const ImgBox = styled.div`
-position: absolute;
-    top: 0;
-    /* color:#f1f1f1;
-    background-color: rgba(0, 0, 0, 0.3); */
-    width: 100%;
-    height: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    @media (min-width: 400px) {
-        height: 350px;
-  }
-  @media (min-width: 550px) {
-  height:500px;
-  }
-  @media (min-width: 900px) {
-    height: 866px;
-  }
-  @media (min-width: 1200px) {
-  height:1200px;
-  }
-    img {
-    width: 200px;
-    height: auto;
-    display: block;
-    position: absolute;
-    @media (min-width: 550px) {
-        width: 300px;
-  }
-  @media (min-width: 750px) {
-        width: 400px;
-  }
-  @media (min-width: 1200px) {
-        width: 500px;
-  }
-  }
-`;
 
 
-const LastContainer = styled.section`
-width:100%;
-display:flex;
-flex-direction: column;
-align-items: center;
-`;
+
+
 
 const ContactDiv = styled.div`
 display:flex;
@@ -302,44 +222,7 @@ justify-content: center;
 align-items: center;
 flex-direction: column-reverse;
 `;
-const TwitterInfoBox = styled.article`
-display: flex;
-align-items: baseline;
-flex-wrap: wrap;
-    align-content: center;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    @media(min-width:630px){
-        flex-direction: row;
-        justify-content: center;
-    align-items: baseline;
-    margin-top: 35px;
-}
-@media(min-width:1400px){
-    display:none;
-}
-`;
-const TwitterInfoBoxLRG = styled.section`
-display:none;
- @media(min-width:1400px){
-       display:flex;
-       flex-direction: row;
-        justify-content: center;
-    align-items: baseline;
-}
-`;
 
-const H1 = styled.h1`
-  width: 100%;
-    margin-bottom: 6px;
-    text-align: left;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 1.1em;
-    padding-top: 9px;
-`;
 
 const Mainh1 = styled.h1`
 width: 100%;
@@ -378,7 +261,6 @@ const MainText = styled.div`
     @media (min-width: 1200px) {
   min-height:100vh;
   font-size: 1.2rem;
-/*   margin-top: -50px; */
   }
   li span{
 height:4px;
@@ -499,7 +381,6 @@ width: 220px;
 `;
 
 export const EndH1 = styled.h1`
-/* font-size: 26px; */
  margin: 0 auto;
  cursor: pointer;
     color: #ee0201;
@@ -524,7 +405,6 @@ export const EndH1 = styled.h1`
         display:none;
     }
     @media(min-width:630px){
-      /*   font-size: 30px; */
         max-width:unset;
 }
 `;

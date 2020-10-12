@@ -1,25 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import styled from "styled-components/macro";
-
-import UnceImage from "..//images/UnceImage.png";
-
-
 import contactUs from "..//images/sales.jpg"
-import { Timeline } from "react-twitter-widgets";
-import ReactPlayer from 'react-player/youtube'
 import { VideoBackground } from "..//components/VideoBackground.js"
-
-import HeroLogo from "images/DafoMeNoBackTransp.png"
 import { ContactsBox } from "../components/ContactsBox"
 import { ContactInfoCard } from "../components/ContactInfoCard"
 import Shadi from "..//images/Shadi.jpg"
 import { ScrollLink } from "components/ScrollButton"
 import JohanDafo from "..//images/JohanDafo.jpg"
-import { Vscroller } from "components/Vscroller"
-import { Link, animateScroll as scroll } from "react-scroll";
-import { BuyButton } from "..//components/BuyButton"
-import dafoMEred from "..//images/dafoMEred.jpg"
-import DafoRedFlame from "../images/DafoRedFlame.jpg"
+import { Link } from "react-scroll";
 import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg"
 import { RedLine } from "../components/RedLine"
 import youtubeicon from "..//images/youtubeicon.png"
@@ -31,7 +19,6 @@ export const MainPage = () => {
   return (
     <MainPgWrapper>
       <ScrollLink />
-      {/*     <BuyButton /> */}
       <VideoContainer id="top">
         <VideoBackground videoSource={"https://res.cloudinary.com/dnjk2bwkp/video/upload/v1600437742/18eMainVid_yok0cm.mp4"} ImgFront={"DafoDubaiME"} alt=" Dafo MIddle East"
         ></VideoBackground>
@@ -139,14 +126,7 @@ With more than 165000 vehicle systems sold worldwide know-how and experience ens
         </InfoDiv>
 
       </ContactSection>
-      {/*   <Top> <Link
-        activeClass="active"
-        to="top"
-        spy={true}
-        smooth={true}
-        offset={0}
-        duration={500}> &#8593;
-            </Link></Top> */}
+
     </MainPgWrapper>
   )
 }
@@ -226,7 +206,6 @@ background-repeat: no-repeat;
   }
 `;
 export const EndH1 = styled.h1`
-/* font-size: 26px; */
  margin: 0 auto;
     color: #ee0201;
     width: -webkit-max-content;
@@ -244,7 +223,6 @@ export const EndH1 = styled.h1`
     font-size: calc(16px + 1vw);
     margin-block-start: 0; 
     @media(min-width:630px){
-      /*   font-size: 30px; */
         max-width:unset;
 }
 `;
@@ -270,7 +248,6 @@ flex-wrap: wrap;
 `;
 const InfoDiv = styled.div`
 width: 100%;
-/* background: whitesmoke; */
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -315,19 +292,6 @@ const Space = styled.span`
 height:30px;
 `;
 
-const Top = styled.div`
-height:30px;
-color:#fff;
-background:gray;
-display:flex;
-padding: 7px;
-justify-content:center;
-:hover{
-color:gray;
-background:whitesmoke;
-}
-`;
-
 const V = styled.div`
 width: 100%;
 height:30px;
@@ -342,18 +306,6 @@ display:none;
     }
 `;
 
-const InfoBox1 = styled.article`
-display:flex;
-flex-direction:column;
-`;
-const InfoBox2 = styled.article`
-display:flex;
-flex-direction:column;
-`;
-const InfoContact = styled.article`
-display:flex;
-flex-direction:column;
-`;
 
 const Points = styled.div`
 width:auto;
@@ -383,61 +335,7 @@ const LogoIcon = styled.img`
 height:30px;
 margin-right:3px;
 `;
-/* const TwitterBox = styled.div`
-  overflow: scroll;
-  height: auto;
-  @media (min-width: 676px) {
-          height: 300px;
-  }
-  @media (min-width: 800px) {
-          height: 350px;
-  }
-  @media (min-width: 900px) {
-          height: 380px;
-  }
-  @media (min-width: 1000px) {
-          height: 410px;
-  }
-  @media (min-width: 1100px) {
-          height: 480px;
-  }
-  @media (min-width: 1200px) {
-          height: 520px;
-  }
-  @media (min-width: 1300px) {
-          height: 570px;
-  }
-  @media (min-width: 1400px) {
-          height: 620px;
-  }
-  @media (min-width: 1500px) {
-          height: 670px;
-  }
-  @media (min-width: 1500px) {
-          height: 690px;
-  }
-  @media (min-width: 1500px) {
-          height: 670px;
-  }
-  @media (min-width: 1500px) {
-          height: auto;
-  }
-`; */
 
-const EmbedPlayer = styled.div`
-display:none;
-@media(min-width:676px){
-display:inline-block;
-margin:0 auto;
-height: 400px;
-}
-`;
-const PlayerContainer = styled.div`
-width: max-content;
-height:auto;
-margin: 0 auto;
-margin-top: 40px;
-`;
 
 const Hide400 = styled.div`
     padding-top: 55px;

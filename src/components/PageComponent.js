@@ -1,8 +1,8 @@
 import React from "react"
 import styled from 'styled-components/macro'
-import { Link, animateScroll as scroll } from "react-scroll";
+
 import { ScrollLink } from "components/ScrollButton"
-import { VscrollerTop, FootArrow, VscrollerMidDown, VscrollerEnd } from "components/Vscroller"
+import { VscrollerMidDown, VscrollerEnd } from "components/Vscroller"
 import { RedLine } from "../components/RedLine"
 
 export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, mainText2, mainText3, lastElement, listItem1, listItem2, listItem3, mainText4, EndHeader1, EndHeader2, lastElementColRow }) => {
@@ -39,13 +39,7 @@ export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, ma
           {mainText3 && <MainText>{mainText3}</MainText>}
           {mainText4 && <MainText>{mainText4}</MainText>}
         </TextAlignBox>
-        {/*   <VEnd><Link activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={0}
-                    duration={500}
-                    to="sectionEnd"><p>&#8595;</p></Link></VEnd>
-                    */}
+
         <VscrollerEnd />
       </MidSection>
       <EndSection id="sectionEnd">
@@ -92,8 +86,6 @@ object-fit: contain;
 `;
 
 const TopText = styled.h1`
-/* font-size: 2rem;
-font-size: 2rem; */
     position: absolute;
     z-index: 9;
     display: flex;
@@ -108,7 +100,7 @@ font-size: 2rem; */
     padding: 5px;
     text-transform: uppercase;
     font-size: calc(24px + 1vw);
-   /*  letter-spacing: 3px; */
+ 
     }
     @media (min-width: 670px) {
         display: flex;
@@ -116,11 +108,11 @@ font-size: 2rem; */
   @media (min-width: 1200px) {
     top: unset;
     left: 30px;
-   /*  font-size: 50px; */
+
   }
   @media (min-width: 1800px) {
     left: 60px;
- /*    font-size: 60px; */
+
   }
 `;
 const Line = styled.div`
@@ -130,7 +122,7 @@ const MidSection = styled.section`
 width: 100%;
 background: #f5f5f5;
 margin: 0 auto;
-  /* font-size: 1rem; */
+
 display: -webkit-box;
 display: -webkit-flex;
 display: -ms-flexbox;
@@ -192,7 +184,6 @@ width: 88%;
   margin-top: 50px;
 }
 @media (min-width: 1200px) {
-  /*   font-size: 2.2rem; */
 padding-bottom: 50px;
 width: auto;
 text-align: center;
@@ -235,18 +226,7 @@ height:auto;
 width: 100%;
 background:#1c1c1c;
 `;
-const V = styled.div`
-width: 100%;
-height:30px;
-justify-content:center;
-align-items:center;
-color: #ee273e;
-display:none;
-    margin-bottom: 20px;
-@media (min-width:1190px){ 
-    display:flex;
-    }
-`;
+
 
 const LastElementColRow = styled.div`
 height: auto;
@@ -260,23 +240,9 @@ flex-wrap: wrap;
     width: inherit;
     }
 `;
-/* const VEnd = styled.div`
-width: 100%;
-height: 30vh;
-height:max-content;
-justify-content:center;
-align-items:center;
-color: red;
-display:none;
-    margin-bottom: 20px;
-@media (min-width:1190px){
-    display:flex;
-    }
-`;
- */
+
 
 export const EndH1 = styled.h2`
-/* font-size: 26px; */
  margin: 0 auto;
     color: #ee0201;
     width: -webkit-max-content;
@@ -293,18 +259,11 @@ export const EndH1 = styled.h2`
     font-weight: 700;
     margin-block-start: 0; 
     @media(min-width:630px){
-      /*   font-size: 30px; */
         max-width:unset;
 }
 `;
 
 const EndH2 = styled.h2`
-/* font-size:20px; */
+
 `;
 
-/*
-const RedLine = styled.span`
-color:red;
-width:6px;
-height:2px;
-`; */

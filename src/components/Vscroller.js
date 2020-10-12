@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from "styled-components/macro"
 import { Link, animateScroll as scroll } from "react-scroll";
-import { NavLink } from "react-router-dom"
+
 
 
 export const Vscroll400 = () => {
@@ -62,7 +62,6 @@ export const VscrollerEnd = () => {
 export const FootArrow = () => {
   return (
     <FootDiv>
-      {/*     <FootLink to="/" >Home </FootLink> */}
       <Link
         activeClass="active"
         to="top"
@@ -71,7 +70,6 @@ export const FootArrow = () => {
         offset={-15}
         duration={500}> &#8593;
     </Link>
-      {/*     <FootLink to="/about" >Contact</FootLink> */}
     </FootDiv>
   )
 }
@@ -90,30 +88,6 @@ background:#e9e9ea;
 }`;
 
 const Vdiv = styled.div`
-/* z-index: 200;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    font-weight: 900;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    position: absolute;
-    bottom: -239%;
-    flex-direction: column;
-    position: absolute;
-    width: 100%;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    position: absolute;
- */
 width: 100%;
 height:30px;
 justify-content:center;
@@ -178,12 +152,6 @@ width: auto;
     }
 `;
 
-const FootLink = styled(NavLink)`
- text-decoration: none;
- color:#fff;
- font-weight:400;
- font-size:0.8rem;
- margin: 0 15px;
-`;
+
 
 

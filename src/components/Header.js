@@ -1,64 +1,28 @@
 import React, { useState } from "react"
 import styled from 'styled-components/macro'
-import dafoMEred from "..//images/dafoMEred.jpg"
-import { Link, NavLink } from "react-router-dom"
-import youtubeicon from "..//images/youtubeicon.png"
-import twittericon from "..//images/twittericon.png"
-import Linkedin from "..//images/Linkedin.png"
-import Vehicle from "..//images/Vehicle.jpg"
-import redNblack from "..//images/redNblackLogo.png"
+
+import { NavLink } from "react-router-dom"
+
 import DafoRedNoBackground from "..//images/DafoVehicleLogoNoBackground.png"
-import { RedLine } from "../components/RedLine"
+
 import REDVehicle from "../images/RED_VEHICLE_LOGO.png"
-import DafoRedFlame from "../images/DafoRedFlame.jpg"
-import { ScrollLink } from "components/ScrollButton"
+
 
 
 export const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
     const [showProducts, setShowProducts] = useState(false)
-    const [showMenuX, setShowMenuX] = useState(false)
+
     return (
         < HeaderWrapper >
 
-            {/*  <NavLink to="/" onClick={() => setShowProducts(false)} > <Link
 
-                to="top"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={50}>
-            </Link><VehicleImg src={dafoMEred} alt="Dafo Middle East" /></NavLink> */}
-
-            {/*  <TopHeader>
-                <SocialMediaBox>
-                    <a href="https://www.youtube.com/channel/UCnnPIlXaWwE-wY3X-l3nTXw" target="_blank" rel="noopener noreferrer"><LogoIcon src={youtubeicon} alt="Dafo Youtube link" /></a>
-                    < a href="https://www.linkedin.com/company/dafo-middle-east" target="_blank" rel="noopener noreferrer"><LogoIcon src={Linkedin} alt="Dafo youtube link" /></a>
-                    < a href="https://twitter.com/Dafovehicle" target="_blank" rel="noopener noreferrer"><LogoIcon src={twittericon} alt="Dafo twitter link" /></a>
-
-                    <Link to="/"><VehicleImg src={DafoRedNoBackground} alt="Dafo Middle East" /></Link>
-                </SocialMediaBox>
-
-                <MiniNav>
-                    <NavLink to="/downloads">Downloads</NavLink>
-                    <NavLink to="/contact-us">Contact</NavLink>
-                    <NavLink to="/">Home</NavLink>
-                </MiniNav>
-            </TopHeader> */}
 
 
             <Nav>
                 <BurgerBox>
-                    {/*  <LogoHeader>
-                        <Link to="/"><img src={DafoRedNoBackground} alt="Dafo Middle East" /></Link>
-                    </LogoHeader> */}
-                    <NavLink to="/" onClick={() => setShowProducts(false)} > <Link
-                        to="top"
-                        spy={true}
-                        smooth={true}
-                        offset={0}
-                        duration={50}>
-                    </Link>
+
+                    <NavLink to="/" onClick={() => setShowProducts(false)} >
                         <BurgerLogo src={REDVehicle} alt="Dafo Middle East" />
 
                     </NavLink>
@@ -89,25 +53,21 @@ export const Header = () => {
                         <li>
                             <StyledBurgerLink to="/distributors" onClick={() => setShowMenu(false)}>Distributors</StyledBurgerLink>
                         </li>
-                        {/*  <li>
-                            <NavLink to="/certifications" onClick={() => setShowMenu(false)}>Certificates</NavLink>
-                        </li> */}
+
                         <li>
                             <StyledBurgerLink to="/about" onClick={() => setShowMenu(false)}>About Dafo</StyledBurgerLink>
                         </li>
                         <li>
                             <StyledBurgerLink to="/downloads" onClick={() => setShowMenu(false)}>Downloads</StyledBurgerLink>
                         </li>
-                        {/*   <li>
-                            <NavLink to="/contact-us" onClick={() => setShowMenu(false)}>Contact</NavLink>
-                        </li> */}
+
                         <li>
                             <StyledBurgerLink to="/site-map" onClick={() => setShowMenu(false)}>Site Map</StyledBurgerLink>
                         </li>
                         <li>
                             <StyledBurgerLink to="/" onClick={() => setShowMenu(false)}>Home</StyledBurgerLink>
                         </li>
-                        {/* <img src={DafoRedFlame} alt="Dafo Middle East" /> */}
+
                     </ul>
                 }
             </Nav>
@@ -120,17 +80,9 @@ export const Header = () => {
                     <li>
                         <NavLink to="/distributors" onClick={() => setShowProducts(false)}>Distributors</NavLink>
                     </li>
-                    {/*   <li>
-                        <NavLink to="/certifications">Certificates</NavLink>
-                    </li> */}
+
                     <li>
-                        <NavLink to="/" onClick={() => setShowProducts(false)} > {/* <Link
-                            to="top"
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration={50}>
-                        </Link> */}<NavListLogo src={DafoRedNoBackground} alt="Dafo Middle East" /></NavLink>
+                        <NavLink to="/" onClick={() => setShowProducts(false)} > <NavListLogo src={DafoRedNoBackground} alt="Dafo Middle East" /></NavLink>
                     </li>
                     <li>
                         <NavLink to="/downloads" onClick={() => setShowProducts(false)}>Downloads</NavLink>
@@ -138,10 +90,7 @@ export const Header = () => {
                     <li>
                         <NavLink to="/about" onClick={() => setShowProducts(false)}>About</NavLink>
                     </li>
-                    {/* <li>
-                        <NavLink to="/contact-us">Contact</NavLink>
-                    </li>
-                    */}
+
 
                 </ul>
             </InlineNav>
@@ -149,32 +98,13 @@ export const Header = () => {
                 <InlineNav2 id="close" >
                     <ProductNav>Automatic fire detection and suppression system for:</ProductNav>
                     <Li2>
-                        <NavLink to="/vehicles" > {/* <Link
-                            to="top"
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration={500}>
-                        </Link> */}Vehicles</NavLink>
+                        <NavLink to="/vehicles" >Vehicles</NavLink>
                     </Li2>
                     <Li2>
-                        <NavLink to="/power">{/* <Link
-                            to="top"
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration={500}>
-                        </Link> */}Powergenerators</NavLink>
+                        <NavLink to="/power">Powergenerators</NavLink>
                     </Li2>
                     <Li2>
-                        <NavLink to="/mining" > {/* <Link
-
-                            to="top"
-                            spy={true}
-                            smooth={true}
-                            offset={0}
-                            duration={500}>
-                        </Link> */}Mining & heavy duty mobile equipment</NavLink>
+                        <NavLink to="/mining" >Mining & heavy duty mobile equipment</NavLink>
                     </Li2>
                 </InlineNav2>
             }
@@ -195,52 +125,7 @@ z-index: 1000;
 margin-bottom: -14px;
 `;
 
-const TopHeader = styled.section`
-box-sizing:border-box;
-background:#1c1c1c;
-width:100%;
-padding:10px;
-height:60px;
-display:none;
-@media(min-width:676px){
-    display:flex; 
-    justify-content:space-between;
-}
-`;
 
-/* const SocialMediaBox = styled.span`
-    width: 35%;
-    display: flex;
-    align-items: center;
-`
-const LogoIcon = styled.img`
-height:30px;
-margin-right:3px;
-`
-const MiniNav = styled.div`
-width:300px;
-display:flex;
-justify-content: flex-end;
-a{
-    color:white;
-    text-decoration:none;
-    margin:6px;
-    align-self: center;
-    transition: transform .2s;
-    &:hover{
-        color:gray;
-        transform: scale(1.1);
-    }}
-`; */
-const LogoHeader = styled.div`
-img{
-width: 150px;
-padding: 20px;
-}
-@media(min-width:676px){
-    display:none;
-}
-`;
 const BurgerBox = styled.section`
 display:flex;
 align-items: center;
@@ -419,11 +304,6 @@ list-style:none;
     }
 `;
 
-
-const VehicleImg = styled.img`
-height: 55px;
-margin-left: 5px;
-`;
 const NavListLogo = styled.img`
   padding: 3px 2px 2px 3px;
     height: 55px;

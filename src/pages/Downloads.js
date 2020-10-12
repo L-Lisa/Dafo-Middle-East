@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import styled from 'styled-components/macro'
-import { Mailinglist } from "../components/Mailinglist"
 import foldericon from "../images/fileImg.jpg"
 import { RedLine } from "../components/RedLine"
 import DafoRedFlame from "../images/DafoRedFlame.jpg"
@@ -12,10 +11,10 @@ export const Downloads = () => {
     const [lName, setLName] = useState("");
     const [showInfo, setShowInfo] = useState(false)
 
-    const handleSubmit = event => {
-        event.preventDefault();
-        /*   setShowInfo("true"); */
-    };
+    /*    const handleSubmit = event => {
+           event.preventDefault();
+              setShowInfo("true"); 
+       }; */
 
     return (
         <Color>
@@ -93,7 +92,7 @@ export const Downloads = () => {
                                             </div></div>
                                     </div>
                                 </Form>
-                                <iframe onLoad={() => setShowInfo(true)} name="hiddenFrame" src="about:blank" style={{ display: 'none' }}></iframe>
+                                <iframe onLoad={() => setShowInfo(true)} title="hidden frame just for looks" name="hiddenFrame" src="about:blank" style={{ display: 'none' }}></iframe>
                             </div>
                         </FormBox>
                     </Main>

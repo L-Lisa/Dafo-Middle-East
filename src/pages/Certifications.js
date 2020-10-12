@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+/* import React, { useState } from "react"
 import styled from 'styled-components/macro'
 import { Mailinglist } from "../components/Mailinglist"
 import foldericon from "../images/foldericon.png"
@@ -14,7 +14,7 @@ export const Certifications = () => {
 
     const handleSubmit = event => {
         event.preventDefault();
-        /*   setShowInfo("true"); */
+
     };
 
     return (
@@ -27,7 +27,7 @@ export const Certifications = () => {
                     <FormBox>
                         <div id="mc_embed_signup">
                             <Form action="https://gmail.us17.list-manage.com/subscribe/post-json?u=ddf4337f8aa288503ec5cf4fb&amp;id=2b430cfaa9&c=?"
-                                /* action="https://dafo-middle-east.us4.list-manage.com/subscribe/post-json?u=4fc9766f7a3940cb4177774a4&amp;id=93f2cf16ba&c=?" */
+
                                 method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate"
                                 target="hiddenFrame" novalidate
                             >
@@ -83,9 +83,7 @@ export const Certifications = () => {
                                             <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"
                                                 className="button"
                                             />
-                                            {/*  <div className="indicates-required"><span className="asterisk">*</span> indicates required</div> */}
-                                            {/*  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-                                        <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script> */}
+
                                         </div></div>
                                 </div>
                             </Form>
@@ -107,18 +105,6 @@ export const Certifications = () => {
     )
 }
 
-/* const Wrapper = styled.main`
-width: 100%;
-height:100wh;
-background:#1c1c1c;
-background-color: #dcd8d8;
-padding: 20px;
-box-sizing: border-box;
-div{
-                    background:#ffff;
-    padding:40px;
-}
-` */
 
 const DownloadsWrapper = styled.main`
 box-sizing:border-box;
@@ -159,7 +145,7 @@ padding: 30px;
 margin-bottom: 20px;
 box-shadow: 2px 2px 10px 2px rgb(207 204 204 / 70%);
 @media only screen and (min-width : 400px) {
-    
+
 }
 @media only screen and (min-width : 990px) {
   max-width: 550px;
@@ -266,4 +252,4 @@ margin: 0 auto;
     flex-direction:row;
     height:200px;
 }
-`;
+`; */

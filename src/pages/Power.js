@@ -1,7 +1,6 @@
 import React from "react"
 import styled from 'styled-components/macro'
 import { PageComponent } from "components/PageComponent.js"
-import { Link, animateScroll as scroll } from "react-scroll"
 import ReactPlayer from 'react-player/youtube'
 import PowerGenMainImage from "..//images/Kompressor1920x1200.jpg"
 import DafoRedFlameFadeContent from "../images/DafoRedFlameFadeContent.jpg"
@@ -77,15 +76,3 @@ height:auto;
 margin: 0 auto;
 margin-top: 40px;
 `;
-
-const Top = styled.div`
-height:30px;
-color:#fff;
-background:gray;
-display:flex;
-padding: 7px;
-justify-content:center;
-:hover{
-color:gray;
-background:whitesmoke;
-}`;

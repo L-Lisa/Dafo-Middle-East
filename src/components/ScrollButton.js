@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from "styled-components/macro"
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 
 
@@ -52,7 +52,6 @@ const BtnContainer = styled.div`
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    -webkit-align-content: center;
     -ms-flex-line-pack: center; 
     -webkit-box-pack: center;
     -webkit-justify-content: center;

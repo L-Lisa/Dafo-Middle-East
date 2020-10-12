@@ -1,9 +1,7 @@
 import React from "react"
 import styled from 'styled-components/macro'
 import FilmText from "../images//NedladdadFilmtext.png";
-import { ScrollLink } from "components/ScrollButton"
-/* import { Vscroller } from "components/Vscroller" */
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 export const VideoBackground = ({ videoSource, DafoDubaiME }) => {
 
@@ -11,7 +9,7 @@ export const VideoBackground = ({ videoSource, DafoDubaiME }) => {
     return (
         <Container>
             <Video autoPlay="autoplay" loop="loop" muted
-            /*  poster={FilmText} */
+
             >
                 <source src={videoSource} type="video/mp4" />
             </Video>
@@ -51,8 +49,7 @@ height:100%;
 const ImgBox = styled.div`
 position: absolute;
     top: 0;
-    /* color:#f1f1f1;
-    background-color: rgba(0, 0, 0, 0.3); */
+   
     width: 100%;
     height: 90%;
     display: flex;

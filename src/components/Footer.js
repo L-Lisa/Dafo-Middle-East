@@ -1,4 +1,4 @@
-import React from "react"
+/* import React from "react"
 import styled from 'styled-components/macro'
 
 import { Link } from "react-router-dom"
@@ -43,9 +43,7 @@ export const Footer = () => {
                     <SmeSupport>
                         <img src={smeDxbTxt} alt="Dafo supporting sme enterprise" />
                     </SmeSupport>
-                    {/*   <Link to="/"> <h1>Dafo-middle-east.com/</h1></Link>
-                    <Link to="/contact-us">Contact</Link><br />
-                    <Link to="/site-map">Site-map</Link> */}
+
                 </Box4>
             </Padding>
         </FooterContainer>
@@ -195,3 +193,4 @@ margin:5%;
     width:15%;
 }
 `;
+ */
