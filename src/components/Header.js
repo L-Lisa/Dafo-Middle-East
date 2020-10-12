@@ -15,10 +15,6 @@ export const Header = () => {
 
     return (
         < HeaderWrapper >
-
-
-
-
             <Nav>
                 <BurgerBox>
 
