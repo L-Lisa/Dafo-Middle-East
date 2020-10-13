@@ -7,7 +7,6 @@ import coverImage from "..//images/distributors1920x1200.jpg"
 
 import Tebra from "images/Tebra-Logo.jpg"
 
-import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg"
 
 import { MidDistributors } from "../components/MidDistributors"
 
@@ -107,7 +106,6 @@ height:auto;
 background-color: #fff;
 @media (min-width:677px){
   background-color: none;
- /*  background-image: url(${DafoRedFlameFade}); */
   background-position: center;
 background-repeat: no-repeat;
     background-size: contain;
@@ -149,7 +147,6 @@ width: 88%;
   margin-top: 50px;
 }
 @media (min-width: 1200px) {
-  /*   font-size: 2.2rem; */
 padding-bottom: 50px;
 width: 70%;
   }

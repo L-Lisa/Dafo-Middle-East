@@ -34,16 +34,6 @@ export const Power = () => {
                     </>
                 }
             />
-
-            {/* 
-            <Top> <Link
-                activeClass="active"
-                to="top"
-                spy={true}
-                smooth={true}
-                offset={-15}
-                duration={500}> &#8593;
-            </Link></Top> */}
         </>
     )
 }

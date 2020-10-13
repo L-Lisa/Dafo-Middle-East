@@ -77,7 +77,7 @@ a{
     padding: 6px;
     cursor: pointer;
     background: #ffffff0a;
-    /* border: 1px solid black; */
+ 
     border-radius: 50%;
     margin-right: 7px;
 }
@@ -86,16 +86,3 @@ a{
     }
 `;
 
-
-/* const Dot = styled.p`
-height: 30px;
-width: 30px;
-    background-color: #708090d4;
-    margin: 5px;
-    border-radius: 50%;
-    border: 1px solid black;
-    color: #80808000;
-    .activeClass:active{
-    background-color:red;
-}
-`; */

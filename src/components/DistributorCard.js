@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components/macro"
-/* import PropTypes from 'prop-types'; */
+
 
 
 const Container = styled.div`
@@ -34,9 +34,6 @@ font-weight: 400;
 const CoverLogoD = styled.img`
 width: inherit;
     padding: 2px 10px 2px 10px;
-  /*   @media (min-width: 1200px) {
-       
-  } */
 `;
 
 const Content = styled.div`

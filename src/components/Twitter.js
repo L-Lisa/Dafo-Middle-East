@@ -52,23 +52,5 @@ const TwitterBox = styled.div`
   overflow: scroll;
     margin: 0 auto;
     width: inherit;
-  /* @media (min-width: 676px) {
-          height: 300px;
-  }
-  @media (min-width: 800px) {
-        height: 450px;
-  }
-  @media (min-width: 900px) {
-          height: 380px;
-  }
-  @media (min-width: 1000px) {
-          height: 410px;
-  }
-  @media (min-width: 1100px) {
-          height: 480px;
-  }
-  @media (min-width: 1200px) {
-          height: 520px;
-  } */
 `;
 

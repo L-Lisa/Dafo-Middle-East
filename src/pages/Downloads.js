@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import styled from 'styled-components/macro'
 import foldericon from "../images/fileImg.jpg"
 import { RedLine } from "../components/RedLine"
-import DafoRedFlame from "../images/DafoRedFlame.jpg"
 import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg"
 
 export const Downloads = () => {
@@ -11,10 +10,6 @@ export const Downloads = () => {
     const [lName, setLName] = useState("");
     const [showInfo, setShowInfo] = useState(false)
 
-    /*    const handleSubmit = event => {
-           event.preventDefault();
-              setShowInfo("true"); 
-       }; */
 
     return (
         <Color>
@@ -116,18 +111,7 @@ export const Downloads = () => {
     )
 }
 
-/* const Wrapper = styled.main`
-width: 100%;
-height:100wh;
-background:#1c1c1c;
-background-color: #dcd8d8;
-padding: 20px;
-box-sizing: border-box;
-div{
-                    background:#ffff;
-    padding:40px;
-}
-` */
+
 const Color = styled.div`
 background-color:#fff;
 margin-top: -38px;
@@ -144,7 +128,6 @@ background-repeat: no-repeat;
 `;
 
 const DownloadsWrapper = styled.main`
-/* background-image: url(${""}); */
 background-position: center;
 background-repeat: no-repeat;
     background-size: contain;
@@ -175,10 +158,6 @@ box-shadow: 0 0 35px 7px #fff;
     -moz-box-shadow: 0 0 5px 2px #fff;
     box-shadow: 0 0 35px 7px #fff;
     margin: 25px;
-   /*  background-image: url(${DafoRedFlame});
-    background-position: center;
-background-repeat: no-repeat;
-    background-size: contain; */
 @media only screen and (min-width : 768px) {
     background-image:unset;
 }
