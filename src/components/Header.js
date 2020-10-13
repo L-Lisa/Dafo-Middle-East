@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom"
 
 import DafoRedNoBackground from "..//images/DafoVehicleLogoNoBackground.png"
 
-import REDVehicle from "../images/RED_VEHICLE_LOGO.png"
+import REDVehicle from "../images/RED_VEHICLE_LOGO2000.jp2"
 
 
 
@@ -222,7 +222,6 @@ ul{
     list-style:none;
     display:flex;
     justify-content: center;
-    /* padding: 13px 0px 0 0; */
 }
 a{
 text-decoration:none;
