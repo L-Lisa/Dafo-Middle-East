@@ -73,15 +73,3 @@ background: #ee0201;
     }
 `;
 
-/* const Dot = styled.p`
-height: 30px;
-width: 30px;
-background - color: #708090d4;
-margin: 5px;
-border - radius: 50 %;
-border: 1px solid black;
-color: #80808000;
-    .activeClass: active{
-    background - color: #ee273e;
-}
-`; */

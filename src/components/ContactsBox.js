@@ -1,14 +1,9 @@
 import React from "react"
 import styled from "styled-components/macro"
-/* import PropTypes from 'prop-types'; */
+
 
 
 const Container = styled.div`
-/* box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),0px 1px 1px 0px rgba(0, 0, 0, 0.14),0px 1px 3px 0px rgba(0,0,0,.12);
-margin-bottom: 20px;
-border-radius: 3px;
-width: 200px;
-margin: 8px; */
     display: flex;
     min-width: 221px;
     width: min-content;
@@ -37,7 +32,7 @@ margin: 8px; */
 const Title = styled.h1`
 width: 100%;
     margin: 0px;
-   /*  font-size: 20px; */
+
     font-weight: 500;
 `;
 const SecondaryText = styled.h2`
@@ -46,7 +41,6 @@ width: 100%;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 1.1em;
- /*    font-size: medium; */
     padding-top: 9px;
 `;
 

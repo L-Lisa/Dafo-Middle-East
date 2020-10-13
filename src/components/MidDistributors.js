@@ -25,7 +25,7 @@ const MidSection = styled.section`
 width: 100%;
 background: #f5f5f5;
 margin: 0 auto;
-  /* font-size: 1rem; */
+
 display: -webkit-box;
 display: -webkit-flex;
 display: -ms-flexbox;
@@ -54,7 +54,7 @@ width: 88%;
   margin-top: 50px;
 }
 @media (min-width: 1200px) {
-  /*   font-size: 2.2rem; */
+
 padding-bottom: 50px;
 width: auto;
 text-align: center;

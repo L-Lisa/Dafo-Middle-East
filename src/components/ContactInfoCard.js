@@ -68,7 +68,7 @@ const P1 = styled.p`
 text-align: left;
     margin-block-end: 0;
     margin-block-start: 0;
-    /* padding: 2px; */
+
     font-size: 0.9em;
 `;
 
