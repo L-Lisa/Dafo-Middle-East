@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom"
 
 import DafoRedNoBackground from "..//images/DafoVehicleLogoNoBackground.png"
 
-import REDVehicle from "../images/RED_VEHICLE_LOGO2000.jp2"
+import REDVehicle from "..//images/RED_VEHICLE_LOGO.png"
 
 
 
