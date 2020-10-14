@@ -1,8 +1,8 @@
 /* import React, { useState } from "react"
 import styled from 'styled-components/macro'
 import { Mailinglist } from "../components/Mailinglist"
-import foldericon from "../images/foldericon.png"
-import DafoRedFlame from "../images/DafoRedFlame.jpg"
+import foldericon from "../images/foldericon.webp"
+import DafoRedFlame from "../images/DafoRedFlame.webp"
 
 
 export const Certifications = () => {

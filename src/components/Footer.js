@@ -2,8 +2,8 @@
 import styled from 'styled-components/macro'
 
 import { Link } from "react-router-dom"
-import smeDxbTxt from "..//images/smeDbxTxt.jpg"
-import DafoWhite from "..//images/White-dafo-logo.png"
+import smeDxbTxt from "..//images/smeDbxTxt.webp"
+import DafoWhite from "..//images/White-dafo-logo.webp"
 export const Footer = () => {
     return (
         <FooterContainer>

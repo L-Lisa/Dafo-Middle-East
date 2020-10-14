@@ -1,82 +1,81 @@
-import React from "react"
-import { BrowserRouter, Route, Switch } from "react-router-dom"
-import { MainPage } from "../pages/Mainpage"
-import { BusPage } from "../pages/BusPage"
-import { PowerGenPage } from "../pages/PowerGenPage"
-import { MiningConstruction } from "../pages/MiningConstruction"
-import { ContactUsPage } from "../pages/ContactUsPage"
-import { SiteMap } from "../pages/SiteMap"
+import React, { Suspense } from "react";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Header } from "../components/Header";
+import { BuyButton } from "../components/BuyButton";
+import { FootArrow } from "components/Vscroller";
+import { ScrollToTop } from "../components/ScrollToTop";
 
-import { Header } from "../components/Header"
-import { Downloads } from "../pages/Downloads"
-import { Vehicles } from "../pages/Vehicles"
-import { Mining } from "../pages/Mining"
-import { Power } from "../pages/Power"
-import { BuyButton } from "..//components/BuyButton"
-import { Distributors } from "../pages/Distributors"
-import { About } from "../pages/About"
-import { FootArrow } from "components/Vscroller"
-import { ScrollToTop } from "../components/ScrollToTop"
-
+const MainPage = React.lazy(() => import("../pages/Mainpage"));
+const BusPage = React.lazy(() => import("../pages/BusPage"));
+const PowerGenPage = React.lazy(() => import("../pages/PowerGenPage"));
+const MiningConstruction = React.lazy(() =>
+  import("../pages/MiningConstruction")
+);
+const ContactUsPage = React.lazy(() => import("../pages/ContactUsPage"));
+const SiteMap = React.lazy(() => import("../pages/SiteMap"));
+const Downloads = React.lazy(() => import("../pages/Downloads"));
+const Vehicles = React.lazy(() => import("../pages/Vehicles"));
+const Mining = React.lazy(() => import("../pages/Mining"));
+const Power = React.lazy(() => import("../pages/Power"));
+const Distributors = React.lazy(() => import("../pages/Distributors"));
+const About = React.lazy(() => import("../pages/About"));
 
 export const Directions = () => {
-    return (
-        <BrowserRouter>
-            <ScrollToTop />
-            <Header />
-            <BuyButton />
-            <main>
-                <Switch>
-                    <Route path="/" exact>
-                        <MainPage />
-                    </Route>
+  return (
+    <BrowserRouter>
+      <Suspense fallback={<div>Loading...</div>}>
+        <ScrollToTop />
+        <Header />
+        <BuyButton />
+        <main>
+          <Switch>
+            <Route path="/" exact>
+              <MainPage />
+            </Route>
 
-                    <Route path="/bus" exact>
-                        <BusPage />
-                    </Route>
+            <Route path="/bus" exact>
+              <BusPage />
+            </Route>
+            <Route path="/vehicles" exact>
+              <Vehicles />
+            </Route>
+            <Route path="/mining" exact>
+              <Mining />
+            </Route>
+            <Route path="/power" exact>
+              <Power />
+            </Route>
+            <Route path="/distributors" exact>
+              <Distributors />
+            </Route>
 
-                    <Route path="/vehicles" exact>
-                        <Vehicles />
-                    </Route>
+            <Route path="/about" exact>
+              <About />
+            </Route>
 
-                    <Route path="/mining" exact>
-                        <Mining />
-                    </Route>
+            <Route path="/powergenerators" exact>
+              <PowerGenPage />
+            </Route>
 
-                    <Route path="/power" exact>
-                        <Power />
-                    </Route>
-                    <Route path="/distributors" exact>
-                        <Distributors />
-                    </Route>
+            <Route path="/mining-constructon" exact>
+              <MiningConstruction />
+            </Route>
 
-                    <Route path="/about" exact>
-                        <About />
-                    </Route>
+            <Route path="/contact-us" exact>
+              <ContactUsPage />
+            </Route>
 
-                    <Route path="/powergenerators" exact>
-                        <PowerGenPage />
-                    </Route>
+            <Route path="/site-map" exact>
+              <SiteMap />
+            </Route>
 
-                    <Route path="/mining-constructon" exact>
-                        <MiningConstruction />
-                    </Route>
-
-                    <Route path="/contact-us" exact>
-                        <ContactUsPage />
-                    </Route>
-
-                    <Route path="/site-map" exact>
-                        <SiteMap />
-                    </Route>
-
-                    <Route path="/downloads" exact>
-                        <Downloads />
-                    </Route>
-
-                </Switch>
-            </main>
-            < FootArrow />
-        </BrowserRouter>
-    )
-}
+            <Route path="/downloads" exact>
+              <Downloads />
+            </Route>
+          </Switch>
+        </main>
+        <FootArrow />
+      </Suspense>
+    </BrowserRouter>
+  );
+};

@@ -1,9 +1,9 @@
 /* import React from "react"
 import styled from 'styled-components/macro'
-import JohanDafo from "..//images/JohanDafo.jpg"
-import UnceImage from "..//images/UnceImage.png"
-import Shadi from "..//images/Shadi.jpg"
-import contactUs from "..//images/contactUs.jpg"
+import JohanDafo from "..//images/JohanDafo.webp"
+import UnceImage from "..//images/UnceImage.webp"
+import Shadi from "..//images/Shadi.webp"
+import contactUs from "..//images/contactUs.webp"
 
 export const Sidebar = () => {
     return (
