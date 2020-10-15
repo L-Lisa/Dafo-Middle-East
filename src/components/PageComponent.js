@@ -6,11 +6,8 @@ import { VscrollerMidDown, VscrollerEnd } from "components/Vscroller"
 import { RedLine } from "../components/RedLine"
 
 export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, mainText2, mainText3, lastElement, listItem1, listItem2, listItem3, mainText4, EndHeader1, EndHeader2, lastElementColRow }) => {
-
   return (
-
     <PageWrapper>
-
       <ScrollLink />
       {coverImage &&
         <TopSection id="top">
@@ -19,9 +16,7 @@ export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, ma
           <TopText>
             {ImageText && <p>{ImageText}</p>}
           </TopText>
-
         </TopSection>}
-
       <MidSection id="sectionMid" >
         {headerText && <HeaderText>{headerText}</HeaderText>}
         <TextAlignBox>
@@ -39,7 +34,6 @@ export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, ma
           {mainText3 && <MainText>{mainText3}</MainText>}
           {mainText4 && <MainText>{mainText4}</MainText>}
         </TextAlignBox>
-
         <VscrollerEnd />
       </MidSection>
       <EndSection id="sectionEnd">
@@ -51,8 +45,6 @@ export const PageComponent = ({ coverImage, ImageText, headerText, mainText1, ma
     </PageWrapper>
   )
 }
-
-
 
 
 const PageWrapper = styled.section`
