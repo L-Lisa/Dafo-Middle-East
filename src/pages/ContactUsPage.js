@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
-import contactUs from "..//images/sales.webp";
-import dafoMEred from "..//images/dafoMEred.webp";
+import contactUs from "..//images/sales.jpg";
+import dafoMEred from "..//images/dafoMEred.jpg";
 const ContactUsPage = () => {
   return (
     <ContactContainer>

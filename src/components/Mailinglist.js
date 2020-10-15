@@ -1,9 +1,9 @@
 /* import React, { Component } from 'react';
 import Mailchimp from 'react-mailchimp-form'
 import styled from 'styled-components';
-import dafoMEred from "..//images/dafoMEred.webp"
-import DafoBlack from "..//images/DafoBlack.webp"
-import dafoFlame from "..//images/dafoFlame.webp"
+import dafoMEred from "..//images/dafoMEred.jpg"
+import DafoBlack from "..//images/DafoBlack.jpg"
+import dafoFlame from "..//images/dafoFlame.jpg"
 import { Link } from "react-router-dom"
 
 export const Mailinglist = () => {

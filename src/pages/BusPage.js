@@ -3,8 +3,8 @@ import styled from "styled-components/macro";
 
 import ReactPlayer from "react-player/youtube";
 import { Sidebar } from "components/Sidebar";
-import UnceImage from "..//images/UnceImage.webp";
-import BusGirl from "..//images/BusGirl.webp";
+import UnceImage from "..//images/UnceImage.png";
+import BusGirl from "..//images/BusGirl.jpeg";
 
 const BusPage = () => {
   return (

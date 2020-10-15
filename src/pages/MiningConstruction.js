@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
-/* import oldMining from "..//images/Mining.webp" */
-import Mining from "..//images/catepillar.webp";
+/* import oldMining from "..//images/Mining.jpg" */
+import Mining from "..//images/catepillar.jpg";
 import { Sidebar } from "components/Sidebar";
 const MiningConstruction = () => {
   return (

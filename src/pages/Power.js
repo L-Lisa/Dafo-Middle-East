@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components/macro";
 import { PageComponent } from "components/PageComponent.js";
 import ReactPlayer from "react-player/youtube";
-import PowerGenMainImage from "..//images/Kompressor1920x1200.webp";
-import DafoRedFlameFadeContent from "../images/DafoRedFlameFadeContent.webp";
+import PowerGenMainImage from "..//images/Kompressor1920x1200.jpg";
+import DafoRedFlameFadeContent from "../images/DafoRedFlameFadeContent.jpg";
 const Power = () => {
   return (
     <>

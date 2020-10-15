@@ -3,9 +3,9 @@ import styled from "styled-components/macro";
 import { PageComponent } from "components/PageComponent.js";
 
 import { DistribBox } from "../components/DistribBox";
-import coverImage from "..//images/distributors1920x1200.webp";
+import coverImage from "..//images/distributors1920x1200.jpg";
 
-import Tebra from "images/Tebra-Logo.webp";
+import Tebra from "images/Tebra-Logo.jpg";
 
 import { MidDistributors } from "../components/MidDistributors";
 

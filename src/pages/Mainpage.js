@@ -1,18 +1,18 @@
 import React from "react";
 import styled from "styled-components/macro";
-import contactUs from "..//images/sales.webp";
+import contactUs from "..//images/sales.jpg";
 import { VideoBackground } from "..//components/VideoBackground.js";
 import { ContactsBox } from "../components/ContactsBox";
 import { ContactInfoCard } from "../components/ContactInfoCard";
-import Shadi from "..//images/Shadi.webp";
+import Shadi from "..//images/Shadi.jpg";
 import { ScrollLink } from "components/ScrollButton";
-import JohanDafo from "..//images/JohanDafo.webp";
+import JohanDafo from "..//images/JohanDafo.jpg";
 import { Link } from "react-scroll";
-import DafoRedFlameFade from "../images/DafoRedFlamefaded.webp";
+import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg";
 import { RedLine } from "../components/RedLine";
-import youtubeicon from "..//images/youtubeicon.webp";
-import twittericon from "..//images/twittericon.webp";
-import Linkedin from "..//images/Linkedin.webp";
+import youtubeicon from "..//images/youtubeicon.png";
+import twittericon from "..//images/twittericon.png";
+import Linkedin from "..//images/Linkedin.png";
 
 const MainPage = () => {
   return (

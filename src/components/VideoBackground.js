@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import FilmText from "../images//NedladdadFilmtext.webp";
+import FilmText from "../images//NedladdadFilmtext.png";
 import { Link } from "react-scroll";
 
 export const VideoBackground = ({ videoSource, DafoDubaiME }) => {

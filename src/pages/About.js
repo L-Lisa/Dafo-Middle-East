@@ -1,23 +1,23 @@
 import React, { useState } from "react";
 import styled from "styled-components/macro";
 import { Link } from "react-scroll";
-import DafoLogga from "../images/DafoMeNoBack.webp";
-import aboutImg from "../images/About-Dafo-1.webp";
+import DafoLogga from "../images/DafoMeNoBack.png";
+import aboutImg from "../images/About-Dafo-1.jpg";
 
 import { TwitterFeed } from "components/Twitter";
 import { ContactsBox } from "../components/ContactsBox";
-import Shadi from "..//images/Shadi.webp";
-import JohanDafo from "..//images/JohanDafo.webp";
-import contactUs from "..//images/sales.webp";
+import Shadi from "..//images/Shadi.jpg";
+import JohanDafo from "..//images/JohanDafo.jpg";
+import contactUs from "..//images/sales.jpg";
 import { ContactInfoCard } from "../components/ContactInfoCard";
-import youtubeicon from "..//images/youtubeicon.webp";
-import twittericon from "..//images/twittericon.webp";
-import Linkedin from "..//images/Linkedin.webp";
+import youtubeicon from "..//images/youtubeicon.png";
+import twittericon from "..//images/twittericon.png";
+import Linkedin from "..//images/Linkedin.png";
 import { VscrollerMidDown } from "components/Vscroller";
 import { ScrollLink } from "components/ScrollButton";
 import { RedLine } from "../components/RedLine";
-import DafoRedFlameFade from "../images/DafoRedFlamefaded.webp";
-import SMElogo from "../images/smeDbxTxt.webp";
+import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg";
+import SMElogo from "../images/smeDbxTxt.jpg";
 const About = () => {
   const [showTwitter, setShowTwitter] = useState(false);
   return (
