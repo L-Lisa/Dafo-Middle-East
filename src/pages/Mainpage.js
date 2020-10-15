@@ -355,7 +355,7 @@ const Para = styled.div`
   width: 70%;
   margin: 0 auto;
   padding-left: 10px;
-  @media (min-width: 160px) {
+  @media (min-width: 1600px) {
     width: unset;
   }
 `;
