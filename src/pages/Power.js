@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components/macro";
 import { PageComponent } from "components/PageComponent.js";
 import ReactPlayer from "react-player/youtube";
-import PowerGenMainImage from "..//images/Kompressor1920x1200.webp";
-import DafoRedFlameFadeContent from "../images/DafoRedFlameFadeContent.webp";
+import PowerGenMainImage from "..//images/Kompressor1920x1200.jpg";
 import powerEndSection from "../images/power-section3.jpg"
 
 
@@ -39,31 +38,4 @@ const PowerIMG3 = styled.img`
 width:100%;
 `;
 
-const EmbedPlayer = styled.div`
-  background-image: url(${DafoRedFlameFadeContent});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: max-content;
-  height: max-content;
-  padding-bottom: 30px;
-  @media (min-width: 630px) {
-    width: 620px;
-    height: 450px;
-  }
-  @media (min-width: 876px) {
-    width: 564px;
-    height: 350px;
-  }
-  @media (min-width: 1200px) {
-    width: 1200px;
-    height: 700px;
-  }
-`;
-const PlayerContainer = styled.div`
-  width: max-content;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 40px;
-`;
 export default Power;

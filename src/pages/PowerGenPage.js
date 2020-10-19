@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import PowerGenMainImage from "..//images/Kompressor.webp";
+import PowerGenMainImage from "..//images/Kompressor.JPG";
 import { Sidebar } from "components/Sidebar";
 const PowerGenPage = () => {
   return (

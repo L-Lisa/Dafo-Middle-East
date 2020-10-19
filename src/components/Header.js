@@ -3,9 +3,9 @@ import styled from "styled-components/macro";
 
 import { NavLink } from "react-router-dom";
 
-import DafoRedNoBackground from "..//images/DafoVehicleLogoNoBackground.webp";
+import DafoRedNoBackground from "..//images/DafoVehicleLogoNoBackground.png";
 
-import REDVehicle from "..//images/RED_VEHICLE_LOGO.webp";
+import REDVehicle from "..//images/RED_VEHICLE_LOGO.png";
 
 export const Header = () => {
   const [showMenu, setShowMenu] = useState(false);

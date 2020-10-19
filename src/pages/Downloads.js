@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components/macro";
-import foldericon from "../images/fileImg.webp";
+import foldericon from "../images/fileImg.jpg";
 import { RedLine } from "../components/RedLine";
-import DafoRedFlameFade from "../images/DafoRedFlamefaded.webp";
+import DafoRedFlameFade from "../images/DafoRedFlamefaded.jpg";
 const Downloads = () => {
   const [email, setEmail] = useState("");
   const [fName, setFName] = useState("");
