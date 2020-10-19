@@ -122,7 +122,7 @@ const EndSection = styled.section`
   height: auto;
   background-color: #fff;
   @media (min-width: 1190px) {
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
   }
   @media (min-width: 1500px) {

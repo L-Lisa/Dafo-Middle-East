@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { PageComponent } from "components/PageComponent.js";
-import ReactPlayer from "react-player/youtube";
 import PowerGenMainImage from "..//images/Kompressor1920x1200.jpg";
 import powerEndSection from "../images/power-section3.jpg"
 

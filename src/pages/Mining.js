@@ -3,7 +3,6 @@ import styled from "styled-components/macro";
 import { PageComponent } from "components/PageComponent.js";
 import MiningImg from "..//images/catepillar1920x1200.jpg";
 import ReactPlayer from "react-player/youtube";
-import DafoRedFlameFadeContent from "../images/DafoRedFlameFadeContent.jpg";
 
 const Mining = () => {
   return (
