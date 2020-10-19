@@ -19,10 +19,13 @@ const Power = () => {
         mainText2={
           "Dafo Forrex Fire Suppression Systems respond rapidly to any increase in temperature. The Dafo system is developed to use worldwide in both cold and hot climate. It ensures maximum protection while being much more economical than previously available solutions like water sprinkler, dry chemical or CO2-systems"
         }
+        lastElement={
+          <ThirdSectionImgBox>
+            <PowerIMG3 src={powerEndSection} />
+          </ThirdSectionImgBox>
+        }
       />
-      <ThirdSectionImgBox>
-        <PowerIMG3 src={powerEndSection} />
-      </ThirdSectionImgBox>
+
     </>
   );
 };
