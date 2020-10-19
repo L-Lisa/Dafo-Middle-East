@@ -100,4 +100,7 @@ width: 100%;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-`
+    align-items: baseline;
+    justify-content: left;
+    padding: 5px;
+`;

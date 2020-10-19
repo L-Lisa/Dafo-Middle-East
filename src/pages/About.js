@@ -3,7 +3,6 @@ import styled from "styled-components/macro";
 import { Link } from "react-scroll";
 import DafoLogga from "../images/DafoMeNoBack.webp";
 import aboutImg from "../images/About-Dafo-1.webp";
-
 import { TwitterFeed } from "components/Twitter";
 import { ContactsBox } from "../components/ContactsBox";
 import Shadi from "..//images/Shadi.webp";
@@ -18,6 +17,7 @@ import { ScrollLink } from "components/ScrollButton";
 import { RedLine } from "../components/RedLine";
 import DafoRedFlameFade from "../images/DafoRedFlamefaded.webp";
 import SMElogo from "../images/smeDbxTxt.webp";
+
 const About = () => {
   const [showTwitter, setShowTwitter] = useState(false);
   return (
@@ -167,7 +167,7 @@ const About = () => {
             />
 
             <ContactInfoCard
-              socialHead="Follow Dafo"
+              title="Follow Dafo"
               socialHeadBox={
                 <AboutSocialBox>
                   {" "}
@@ -474,6 +474,7 @@ const Flex = styled.div`
 const SME = styled.img`
   width: 100px;
   height: 100px;
+  margin: 5px;
 `;
 
 const AboutSocialBox = styled.div`

@@ -4,6 +4,9 @@ import { PageComponent } from "components/PageComponent.js";
 import ReactPlayer from "react-player/youtube";
 import PowerGenMainImage from "..//images/Kompressor1920x1200.webp";
 import DafoRedFlameFadeContent from "../images/DafoRedFlameFadeContent.webp";
+import powerEndSection from "../images/power-section3.jpg"
+
+
 const Power = () => {
   return (
     <>
@@ -17,21 +20,24 @@ const Power = () => {
         mainText2={
           "Dafo Forrex Fire Suppression Systems respond rapidly to any increase in temperature. The Dafo system is developed to use worldwide in both cold and hot climate. It ensures maximum protection while being much more economical than previously available solutions like water sprinkler, dry chemical or CO2-systems"
         }
-        mainText3={""}
-        videoHeader={"Placeholder video"}
-        lastElement={
-          <>
-            <PlayerContainer>
-              <EmbedPlayer>
-                <ReactPlayer url="" width="100%" height="100%" playing muted />
-              </EmbedPlayer>
-            </PlayerContainer>
-          </>
-        }
       />
+      <ThirdSectionImgBox>
+        <PowerIMG3 src={powerEndSection} />
+      </ThirdSectionImgBox>
     </>
   );
 };
+
+
+const ThirdSectionImgBox = styled.section`
+width: 100%;
+object-fit: cover;
+margin-bottom: -4px;
+`;
+
+const PowerIMG3 = styled.img`
+width:100%;
+`;
 
 const EmbedPlayer = styled.div`
   background-image: url(${DafoRedFlameFadeContent});

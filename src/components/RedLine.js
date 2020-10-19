@@ -10,7 +10,8 @@ export const RedLine = () => {
 }
 
 const Red = styled.span`
-width:${props => props.width ? props.width : "50px"};
+width:${(props) => (props.width ? props.width : "50px")};
+
     height: 4px;
     background: #ee0201;
     align-self: center;

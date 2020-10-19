@@ -9,7 +9,7 @@ export const BuyButton = () => {
 
             <BtnContainer >
 
-                <P>  <a href="mailto:sales@dafo-middle-east.com"> Place Order</a></P>
+                <P>  <a href="mailto:sales@dafo-middle-east.com"> Contact Us</a></P>
             </BtnContainer >
         </>
     )

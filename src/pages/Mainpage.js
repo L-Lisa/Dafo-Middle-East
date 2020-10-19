@@ -361,9 +361,9 @@ const Para = styled.div`
 `;
 
 const SocialMediaBox = styled.span`
-  width: 35%;
   display: flex;
   align-items: center;
+  margin:0 auto;
 `;
 const LogoIcon = styled.img`
   height: 30px;

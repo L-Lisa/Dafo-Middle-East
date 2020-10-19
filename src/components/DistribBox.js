@@ -60,11 +60,9 @@ width: auto;
         width: auto;
   }
 `;
-
 const Content = styled.div`
 padding:2px;
 `;
-
 const ChildrenContent = styled.div`
 width:100%;
 `;
@@ -116,7 +114,6 @@ list-style: none;
         text-align:left;
   }
 `;
-
 export const DistribBox = ({ title, secondaryText1, secondaryText2, secondaryText3, secondaryText4, secondaryText5, coverImage, children, className, supportingText, buttonText, email1, mailto1, email2, mailto2, phone1, phone2, phone3, phone4 }) => {
     return (
         <Container className={className}>
