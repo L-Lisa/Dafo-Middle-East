@@ -1,16 +1,206 @@
 import React, { useState } from "react";
 import styled from "styled-components/macro";
-
 import { NavLink } from "react-router-dom";
-
 import DafoRedNoBackground from "..//images/DafoVehicleLogoNoBackground.png";
-
 import REDVehicle from "..//images/RED_VEHICLE_LOGO.png";
+
+const HeaderWrapper = styled.main`
+background: #1c1c1c;
+box-sizing: border-box;
+width: 100%;
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+z-index: 1000;
+margin-bottom: -14px;
+`;
+const BurgerBox = styled.section`
+display: flex;
+align-items: center;
+background: #1c1c1c;
+justify-content: space-between;
+@media (min-width: 319px) {
+  flex-direction: row;
+}
+`;
+const Nav = styled.nav`
+background: white;
+ul {
+list-style: none;
+text-decoration: none;
+width: auto;
+background: #1c1c1c;
+padding: 10px 6px;
+margin: 0px 0px;
+}
+li {
+line-height: 1.8rem;
+margin-left: 10%;
+}
+`;
+const StyledBurgerLink = styled(NavLink)`
+text-decoration: none;
+color: #ffff;
+border-bottom: 1px solid #eb0f1a;
+&:hover {
+color: lightgrey;
+border-bottom: 2px solid #eb0f1a;
+}
+`;
+const Hamburger = styled.div`
+margin-right: 5px;
+@media (min-width: 319px) {
+margin-right: 18px;
+}
+.container {
+display: inline-block;
+cursor: pointer;
+height: 32px;
+width: 100%;
+@media (min-width: 676px) {
+display: none;
+}
+}
+.bar1,
+.bar2,
+.bar3 {
+width: 35px;
+height: 5px;
+background-color: #ee0201;
+margin: 6px 0;
+transition: 0.4s;
+border-radius: 2px;
+}
+.xclose1 {
+width: 70px;
+height: 10px;
+background-color: #ee0201;
+margin: 6px 10px 0 0;
+border-radius: 2px;
+top: 19px;
+left: -7px;
+transform: scale(0.5) rotate(-45deg);
+}
+.xclose2 {
+display: none;
+}
+.xclose3 {
+width: 70px;
+height: 10px;
+background-color: #ee0201;
+margin: -10px 0;
+transition: 0.4s;
+border-radius: 2px;
+top: 20px;
+left: -7px;
+transform: scale(0.5) rotate(45deg);
+}
+`;
+const BurgerLogo = styled.img`
+padding: 3px 2px 2px 3px;
+height: 55px;
+@media (min-width: 676px) {
+display: none;
+}
+`;
+const InlineNav = styled.ul`
+display: none;
+background: #1c1c1c;
+box-sizing: border-box;
+ul {
+list-style: none;
+display: flex;
+justify-content: center;
+}
+a {
+text-decoration: none;
+transition: transform 0.2s;
+padding: 0 8px 0 8px;
+color: #fff;
+text-transform: uppercase;
+margin-bottom: -12px;
+&:hover {
+color: red;
+}
+}
+li {
+transition: transform 0.2s;
+font-size: calc(9px + 1vw);
+&:hover {
+border-radius: 5%;
+transform: scale(1.1);
+color: #ee0201;
+}
+}
+@media (min-width: 676px) {
+display: inline;
+}
+`;
+const InlineNav2 = styled.ul`
+box-sizing: border-box;
+list-style: none;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: center;
+-webkit-justify-content: center;
+-ms-flex-pack: center;
+justify-content: center;
+padding: 0px 0 10px 0;
+margin-bottom: -25px;
+margin-top: -14px;
+flex-direction: column;
+text-align: left;
+margin-left: 20%;
+@media only screen and (min-width: 1000px) {
+flex-direction: row;
+text-align: left;
+margin-left: unset;
+}
+a {
+text-decoration: none;
+transition: transform 0.2s;
+padding: 0 16px 0 0;
+color: #626262a3;
+color: #fff;
+&:hover {
+color: #ee0201;
+}
+}
+`;
+const ProductNav = styled.p`
+margin-top: 0px;
+padding-right: 12px;
+color: #eb141b;
+`;
+const Li2 = styled.li`
+list-style: none;
+text-decoration: none;
+transition: transform 0.2s;
+@media only screen and (min-width: 1000px) {
+margin-top: 1px;
+}
+&:hover {
+border-radius: 5%;
+transform: scale(1.1);
+color: #626262;
+}
+`;
+const NavListLogo = styled.img`
+padding: 3px 2px 2px 3px;
+height: 55px;
+margin: -40px 0 0 0;
+display: none;
+@media (min-width: 676px) {
+display: flex;
+}
+`;
+
 
 export const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [showProducts, setShowProducts] = useState(false);
-
   return (
     <HeaderWrapper>
       <Nav>
@@ -54,7 +244,6 @@ export const Header = () => {
                 Distributors
               </StyledBurgerLink>
             </li>
-
             <li>
               <StyledBurgerLink to="/about" onClick={() => setShowMenu(false)}>
                 About Dafo
@@ -68,7 +257,6 @@ export const Header = () => {
                 Downloads
               </StyledBurgerLink>
             </li>
-
             <li>
               <StyledBurgerLink
                 to="/site-map"
@@ -97,7 +285,6 @@ export const Header = () => {
               Distributors
             </NavLink>
           </li>
-
           <li>
             <NavLink to="/" onClick={() => setShowProducts(false)}>
               {" "}
@@ -136,203 +323,3 @@ export const Header = () => {
   );
 };
 
-const HeaderWrapper = styled.main`
-  background: #1c1c1c;
-  box-sizing: border-box;
-  width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  margin-bottom: -14px;
-`;
-
-const BurgerBox = styled.section`
-  display: flex;
-  align-items: center;
-  background: #1c1c1c;
-  justify-content: space-between;
-  @media (min-width: 319px) {
-    flex-direction: row;
-  }
-`;
-
-const Nav = styled.nav`
-  background: white;
-  ul {
-    list-style: none;
-    text-decoration: none;
-    width: auto;
-    background: #1c1c1c;
-    padding: 10px 6px;
-    margin: 0px 0px;
-    li:nth-child(odd) {
-    }
-  }
-  li {
-    line-height: 1.8rem;
-    margin-left: 10%;
-  }
-`;
-const StyledBurgerLink = styled(NavLink)`
-  text-decoration: none;
-  color: #ffff;
-  border-bottom: 1px solid #eb0f1a;
-  &:hover {
-    color: lightgrey;
-    border-bottom: 2px solid #eb0f1a;
-  }
-`;
-const Hamburger = styled.div`
-  margin-right: 5px;
-  @media (min-width: 319px) {
-    margin-right: 18px;
-  }
-  .container {
-    display: inline-block;
-    cursor: pointer;
-    height: 32px;
-    width: 100%;
-
-    @media (min-width: 676px) {
-      display: none;
-    }
-  }
-  .bar1,
-  .bar2,
-  .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #ee0201;
-    margin: 6px 0;
-    transition: 0.4s;
-    border-radius: 2px;
-  }
-  .xclose1 {
-    width: 70px;
-    height: 10px;
-    background-color: #ee0201;
-    margin: 6px 10px 0 0;
-    border-radius: 2px;
-    top: 19px;
-    left: -7px;
-    transform: scale(0.5) rotate(-45deg);
-  }
-  .xclose2 {
-    display: none;
-  }
-  .xclose3 {
-    width: 70px;
-    height: 10px;
-    background-color: #ee0201;
-    margin: -10px 0;
-    transition: 0.4s;
-    border-radius: 2px;
-    top: 20px;
-    left: -7px;
-    transform: scale(0.5) rotate(45deg);
-  }
-`;
-const BurgerLogo = styled.img`
-  padding: 3px 2px 2px 3px;
-  height: 55px;
-  @media (min-width: 676px) {
-    display: none;
-  }
-`;
-const InlineNav = styled.ul`
-  display: none;
-  background: #1c1c1c;
-  box-sizing: border-box;
-  ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-  }
-  a {
-    text-decoration: none;
-    transition: transform 0.2s;
-    padding: 0 8px 0 8px;
-    color: #fff;
-    text-transform: uppercase;
-    margin-bottom: -12px;
-    &:hover {
-      color: red;
-    }
-  }
-  li {
-    transition: transform 0.2s;
-    font-size: calc(9px + 1vw);
-
-    &:hover {
-      border-radius: 5%;
-      transform: scale(1.1);
-      color: #ee0201;
-    }
-  }
-  @media (min-width: 676px) {
-    display: inline;
-  }
-`;
-const InlineNav2 = styled.ul`
-  box-sizing: border-box;
-  list-style: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding: 0px 0 10px 0;
-  margin-bottom: -25px;
-  margin-top: -14px;
-  flex-direction: column;
-  text-align: left;
-  margin-left: 20%;
-  @media only screen and (min-width: 1000px) {
-    flex-direction: row;
-    text-align: left;
-    margin-left: unset;
-  }
-  a {
-    text-decoration: none;
-    transition: transform 0.2s;
-    padding: 0 16px 0 0;
-    color: #626262a3;
-    color: #fff;
-    &:hover {
-      color: #ee0201;
-    }
-  }
-`;
-const ProductNav = styled.p`
-  margin-top: 0px;
-  padding-right: 12px;
-  color: #eb141b;
-`;
-
-const Li2 = styled.li`
-  list-style: none;
-  text-decoration: none;
-  transition: transform 0.2s;
-  @media only screen and (min-width: 1000px) {
-    margin-top: 1px;
-  }
-  &:hover {
-    border-radius: 5%;
-    transform: scale(1.1);
-    color: #626262;
-  }
-`;
-
-const NavListLogo = styled.img`
-  padding: 3px 2px 2px 3px;
-  height: 55px;
-  margin: -40px 0 0 0;
-  display: none;
-  @media (min-width: 676px) {
-    display: flex;
-  }
-`;

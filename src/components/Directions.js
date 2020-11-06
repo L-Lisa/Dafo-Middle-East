@@ -32,7 +32,6 @@ export const Directions = () => {
             <Route path="/" exact>
               <MainPage />
             </Route>
-
             <Route path="/bus" exact>
               <BusPage />
             </Route>
@@ -48,27 +47,21 @@ export const Directions = () => {
             <Route path="/distributors" exact>
               <Distributors />
             </Route>
-
             <Route path="/about" exact>
               <About />
             </Route>
-
             <Route path="/powergenerators" exact>
               <PowerGenPage />
             </Route>
-
             <Route path="/mining-constructon" exact>
               <MiningConstruction />
             </Route>
-
             <Route path="/contact-us" exact>
               <ContactUsPage />
             </Route>
-
             <Route path="/site-map" exact>
               <SiteMap />
             </Route>
-
             <Route path="/downloads" exact>
               <Downloads />
             </Route>
