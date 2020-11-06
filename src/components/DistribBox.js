@@ -6,7 +6,6 @@ import styled from "styled-components/macro"
 const Container = styled.div`
 display: flex;
 min-width: 221px;
-width: min-content;
 flex-direction: column;
 align-items: center;
 justify-content: center;
@@ -50,10 +49,11 @@ text-align: left;
 line-height: 1.5rem;
 `;
 const CoverImage = styled.img`
-width: auto;
-height: 200px;
+max-width: 210px;
+max-height: 200px;
 @media (min-width: 1200px) {
     width: auto;
+    max-width: unset;
   }
 `;
 const Content = styled.div`
@@ -74,7 +74,7 @@ font-size: 1rem;
 `;
 const ImageDiv = styled.div`
 width: 100%;
-height: 200px;
+height: 50%;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -82,7 +82,6 @@ justify-content: center;
 justify-items: center;
 align-content: center;
 @media (min-width: 1200px) {
-height:auto;
 }
 `;
 const MailLink = styled.a`

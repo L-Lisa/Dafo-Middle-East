@@ -119,7 +119,6 @@ const HeaderText = styled.h1`
 margin-top: 35px;
 text-align: center;
 @media (min-width: 400px) {
-text-align: left;
 width: 88%;
 }
 @media (min-width: 400px) {
@@ -137,13 +136,11 @@ line-height: 1.5rem;
 padding: 0 10px 0 10px;
 margin: 0 auto;
 @media (min-width: 1200px) {
-padding: 0 40px 0 40px;
 margin: 0 auto;
-padding-left:10px;
+line-height: 1.9rem;
 }
 @media (min-width: 1500px) {
 margin: 0 auto;
-padding-left:10px;
 }
 `;
 const EndSection = styled.div`

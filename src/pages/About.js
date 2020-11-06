@@ -250,8 +250,8 @@ flex-wrap: wrap;
 justify-content: center;
 `;
 const SME = styled.img`
-width: 100px;
-height: 100px;
+width: 130px;
+height: 130px;
 margin: 5px;
 `;
 const AboutSocialBox = styled.div`
@@ -403,7 +403,7 @@ const About = () => {
               p4="Dubai, UAE"
             />
             <ContactInfoCard
-              title="Follow Dafo"
+              socialHead="Follow Dafo"
               socialHeadBox={
                 <AboutSocialBox>
                   {" "}

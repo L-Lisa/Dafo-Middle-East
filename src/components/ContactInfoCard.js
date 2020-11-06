@@ -45,7 +45,7 @@ text-align: left;
 font-weight: 400;
 text-transform: uppercase;
 font-size: 1.1em;
-padding-top: 9px;
+padding-top: 16px;
 text-align: center;
 `;
 const SocialHeadBox = styled.div`
@@ -57,7 +57,7 @@ width: 100%;
 -ms-flex-pack: center;
 justify-content: center;
 align-items: baseline;
-justify-content: left;
+justify-content: center;
 padding: 5px;
 `;
 

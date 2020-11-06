@@ -4,6 +4,7 @@ import { PageComponent } from "components/PageComponent.js";
 import { DistribBox } from "../components/DistribBox";
 import coverImage from "..//images/distributors1920x1200.jpg";
 import Tebra from "images/Tebra-Logo.jpg";
+import Maverick from "images/MaverickLogo.jpeg";
 import { MidDistributors } from "../components/MidDistributors";
 
 
@@ -119,7 +120,7 @@ const Distributors = () => {
                 mailto1="info@tebratrading.com"
               />
               <DistribBox
-                coverImage={""}
+                coverImage={Maverick}
                 alt=" Dafo Kenya"
                 title={"Maverick Digital"}
                 secondaryText1={"Mombasa, Kenya: "}
