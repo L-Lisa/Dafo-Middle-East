@@ -1,21 +1,6 @@
 import React from 'react'
 import styled from "styled-components/macro"
 
-export const BuyButton = () => {
-
-
-    return (
-        <>
-
-            <BtnContainer >
-
-                <P>  <a href="mailto:sales@dafo-middle-east.com"> Contact Us</a></P>
-            </BtnContainer >
-        </>
-    )
-}
-
-
 const BtnContainer = styled.div`
   z-index: 5;
     display: -webkit-box;
@@ -55,7 +40,6 @@ a{
     }
 `;
 
-
 const P = styled.p`
 margin-right: 6px;
     color: #fff;
@@ -72,4 +56,18 @@ background: #ee0201;
     font-size: 2rem;
     }
 `;
+
+export const BuyButton = () => {
+
+    return (
+        <>
+            <BtnContainer >
+                <P><a href="mailto:sales@dafo-middle-east.com"> Contact Us</a></P>
+            </BtnContainer >
+        </>
+    )
+}
+
+
+
 
