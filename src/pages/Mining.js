@@ -4,6 +4,30 @@ import { PageComponent } from "components/PageComponent.js";
 import MiningImg from "..//images/catepillar1920x1200.jpg";
 import ReactPlayer from "react-player/youtube";
 
+const EmbedPlayer = styled.div`
+width: max-content;
+height: max-content;
+padding-bottom: 30px;
+@media (min-width: 630px) {
+width: 620px;
+height: 450px;
+}
+@media (min-width: 876px) {
+width: 564px;
+height: 350px;
+}
+@media (min-width: 1200px) {
+width: 1200px;
+height: 700px;
+}
+`;
+const PlayerContainer = styled.div`
+width: max-content;
+height: auto;
+margin: 0 auto;
+margin-top: 40px;
+`;
+
 const Mining = () => {
   return (
     <>
@@ -42,28 +66,5 @@ const Mining = () => {
   );
 };
 
-const EmbedPlayer = styled.div`
 
-  width: max-content;
-  height: max-content;
-  padding-bottom: 30px;
-  @media (min-width: 630px) {
-    width: 620px;
-    height: 450px;
-  }
-  @media (min-width: 876px) {
-    width: 564px;
-    height: 350px;
-  }
-  @media (min-width: 1200px) {
-    width: 1200px;
-    height: 700px;
-  }
-`;
-const PlayerContainer = styled.div`
-  width: max-content;
-  height: auto;
-  margin: 0 auto;
-  margin-top: 40px;
-`;
 export default Mining;

@@ -2,6 +2,77 @@ import React from 'react'
 import styled from "styled-components/macro"
 import { Link, animateScroll as scroll } from "react-scroll";
 
+const FootDiv = styled.div`
+height:30px;
+color:#fff;
+background:gray;
+display:flex;
+font-size: 1.3rem;
+justify-content:center;
+align-items: baseline;
+:hover{
+color:gray;
+background:#e9e9ea;
+}
+`;
+const Vdiv = styled.div`
+width: 100%;
+height:30px;
+justify-content:center;
+align-items:center;
+color: #ee273e;
+display:none;
+margin-top: 5px;
+margin-bottom: 5px;
+margin: 5px;
+height: 5px;
+width: 5px;
+border-radius: 50%;
+@media (min-width:1190px){ 
+display:flex;
+bottom: 60px;
+}
+`;
+export const VscrollerMidDownDiv = styled.div`
+width:100%;
+position: absolute;
+z-index: 9;
+display: none;
+bottom:8px;
+color: #ee273e;
+height:30px;
+@media (min-width: 1200px) {
+display: flex;
+justify-content: center;
+align-items: center;
+a{
+width: 20px;
+cursor: pointer;
+}
+}
+`;
+const P = styled.p`
+font-size: 1.2rem;
+font-weight: 700;
+`;
+const MarginP = styled.div`
+margin:50px;
+`;
+const Div400 = styled.div`
+    align-self: center;
+    margin-top: -40px;
+`;
+const Btn400 = styled.button`
+width: auto;
+color: #ee273e;
+background: #fff;
+border-radius: 50%;
+padding: 4px;
+border: none;
+:focus{
+  color:none;
+}
+`;
 
 
 export const Vscroll400 = () => {
@@ -73,85 +144,4 @@ export const FootArrow = () => {
     </FootDiv>
   )
 }
-
-const FootDiv = styled.div`
-height:30px;
-color:#fff;
-background:gray;
-display:flex;
-font-size: 1.3rem;
-justify-content:center;
-align-items: baseline;
-:hover{
-color:gray;
-background:#e9e9ea;
-}`;
-
-const Vdiv = styled.div`
-width: 100%;
-height:30px;
-justify-content:center;
-align-items:center;
-color: #ee273e;
-display:none;
-margin-top: 5px;
-    margin-bottom: 5px;
-    margin: 5px;
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
-  
-@media (min-width:1190px){ 
-    display:flex;
-    bottom: 60px;
-    }
-`;
-
-export const VscrollerMidDownDiv = styled.div`
-width:100%;
-position: absolute;
-z-index: 9;
-display: none;
-bottom:8px;
-color: #ee273e;
-height:30px;
-@media (min-width: 1200px) {
-  display: flex;
-  justify-content: center;
-align-items: center;
-a{
-  width: 20px;
-  cursor: pointer;
-}
-}
-`;
-
-const P = styled.p`
-font-size: 1.2rem;
-font-weight: 700;
-`;
-
-const MarginP = styled.div`
-margin:50px;
-`;
-
-const Div400 = styled.div`
-    align-self: center;
-    margin-top: -40px;
-`;
-
-const Btn400 = styled.button`
-width: auto;
-    color: #ee273e;
-    background: #fff;
-    border-radius: 50%;
-    padding: 4px;
-    border: none;
-    :focus{
-      color:none;
-    }
-`;
-
-
-
 

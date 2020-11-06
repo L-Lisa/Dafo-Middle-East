@@ -3,8 +3,51 @@ import styled from "styled-components/macro";
 import { PageComponent } from "components/PageComponent.js";
 import BusGirl from "..//images/BusGirl1920x1200.jpg";
 import ReactPlayer from "react-player";
-
 import Unce from "..//images/UnceImage.png";
+
+const EmbedPlayer = styled.div`
+width: max-content;
+height: max-content;
+padding-bottom: 30px;
+@media (min-width: 630px) {
+width: 620px;
+height: 450px;
+}
+@media (min-width: 876px) {
+width: 564px;
+height: 350px;
+}
+@media (min-width: 1200px) {
+width: 1200px;
+height: 700px;
+}
+`;
+const PlayerContainer = styled.div`
+width: max-content;
+margin: 0 auto;
+background: #1c1c1c;
+height: 100%;
+width: 100vw;
+padding-top: 40px;
+margin: 0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+align-content: center;
+@media (min-width: 1200px) {
+width: 1200px;
+}
+`;
+
+const UNCE = styled.div`
+width: 230px;
+height: 147px;
+background-image: url(${Unce});
+background-repeat: no-repeat;
+background-size: contain;
+margin: 0 auto;
+margin-top: 20px;
+`;
 
 const Vehicles = () => {
   return (
@@ -46,47 +89,5 @@ const Vehicles = () => {
   );
 };
 
-const EmbedPlayer = styled.div`
-  width: max-content;
-  height: max-content;
-  padding-bottom: 30px;
-  @media (min-width: 630px) {
-    width: 620px;
-    height: 450px;
-  }
-  @media (min-width: 876px) {
-    width: 564px;
-    height: 350px;
-  }
-  @media (min-width: 1200px) {
-    width: 1200px;
-    height: 700px;
-  }
-`;
-const PlayerContainer = styled.div`
-  width: max-content;
-  margin: 0 auto;
-  background: #1c1c1c;
-  height: 100%;
-  width: 100vw;
-  padding-top: 40px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  @media (min-width: 1200px) {
-    width: 1200px;
-  }
-`;
 
-const UNCE = styled.div`
-  width: 230px;
-  height: 147px;
-  background-image: url(${Unce});
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin: 0 auto;
-  margin-top: 20px;
-`;
 export default Vehicles;

@@ -4,6 +4,14 @@ import { PageComponent } from "components/PageComponent.js";
 import PowerGenMainImage from "..//images/Kompressor1920x1200.jpg";
 import powerEndSection from "../images/power-section3.jpg"
 
+const ThirdSectionImgBox = styled.section`
+width: 100%;
+object-fit: cover;
+margin-bottom: -4px;
+`;
+const PowerIMG3 = styled.img`
+width:100%;
+`;
 
 const Power = () => {
   return (
@@ -24,20 +32,8 @@ const Power = () => {
           </ThirdSectionImgBox>
         }
       />
-
     </>
   );
 };
-
-
-const ThirdSectionImgBox = styled.section`
-width: 100%;
-object-fit: cover;
-margin-bottom: -4px;
-`;
-
-const PowerIMG3 = styled.img`
-width:100%;
-`;
 
 export default Power;

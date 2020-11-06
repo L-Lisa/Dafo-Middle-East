@@ -2,7 +2,11 @@ import React, { useState, useEffect } from "react";
 import styled from 'styled-components/macro'
 import { Timeline } from "react-twitter-widgets";
 
-
+const TwitterBox = styled.div`
+overflow: scroll;
+margin: 0 auto;
+width: inherit;
+`;
 
 export const TwitterFeed = () => {
         const [twitterLoaded, settwitterLoaded] = useState(false);
@@ -10,7 +14,6 @@ export const TwitterFeed = () => {
                 if (twitterLoaded) {
                         const scrollingCss =
                                 " div.timeline-Viewport {overflow: hidden;} div.timeline-Viewport ol {position:relative; top:0;animation: scroll 120s linear 0.5s infinite;} @keyframes scroll {95% { top: -1000%; } 100%{top:0;}}";
-
                         const iframes = document.querySelectorAll("[id^=twitter-widget]");
                         for (let index = 0; index < iframes.length; index++) {
                                 const iframe = iframes[index];
@@ -22,10 +25,8 @@ export const TwitterFeed = () => {
                         }
                 }
         }, [twitterLoaded]);
-
         return (
                 <TwitterBox>
-
                         <Timeline
                                 renderError={(_err) => <p>Could not load Twitter</p>}
                                 dataSource={{
@@ -39,18 +40,7 @@ export const TwitterFeed = () => {
                                 onLoad={() => settwitterLoaded(true)}
                         />
                 </TwitterBox>
-
-
         )
 }
 
-
-
-
-
-const TwitterBox = styled.div`
-  overflow: scroll;
-    margin: 0 auto;
-    width: inherit;
-`;
 

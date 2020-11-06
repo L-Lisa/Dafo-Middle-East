@@ -6,12 +6,6 @@ import { FootArrow } from "components/Vscroller";
 import { ScrollToTop } from "../components/ScrollToTop";
 
 const MainPage = React.lazy(() => import("../pages/Mainpage"));
-const BusPage = React.lazy(() => import("../pages/BusPage"));
-const PowerGenPage = React.lazy(() => import("../pages/PowerGenPage"));
-const MiningConstruction = React.lazy(() =>
-  import("../pages/MiningConstruction")
-);
-const ContactUsPage = React.lazy(() => import("../pages/ContactUsPage"));
 const SiteMap = React.lazy(() => import("../pages/SiteMap"));
 const Downloads = React.lazy(() => import("../pages/Downloads"));
 const Vehicles = React.lazy(() => import("../pages/Vehicles"));
@@ -32,9 +26,6 @@ export const Directions = () => {
             <Route path="/" exact>
               <MainPage />
             </Route>
-            <Route path="/bus" exact>
-              <BusPage />
-            </Route>
             <Route path="/vehicles" exact>
               <Vehicles />
             </Route>
@@ -49,15 +40,6 @@ export const Directions = () => {
             </Route>
             <Route path="/about" exact>
               <About />
-            </Route>
-            <Route path="/powergenerators" exact>
-              <PowerGenPage />
-            </Route>
-            <Route path="/mining-constructon" exact>
-              <MiningConstruction />
-            </Route>
-            <Route path="/contact-us" exact>
-              <ContactUsPage />
             </Route>
             <Route path="/site-map" exact>
               <SiteMap />

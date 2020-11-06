@@ -8,4 +8,3 @@ export const App = () => {
 }
 
 
-// Make product images backgrounds
