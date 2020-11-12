@@ -58,7 +58,6 @@ background: #ee0201;
 `;
 
 export const BuyButton = () => {
-
     return (
         <>
             <BtnContainer >
