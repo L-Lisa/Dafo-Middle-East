@@ -191,7 +191,7 @@ const Downloads = () => {
               <H2>Downloads</H2>
               <P>
                 Enter your details here to proceed to our download library and
-                join our mailing list.
+                join our mailing list. By doing so you agree to us storing your details, we will not share them with any other party. If you do have any questions, please get in touch.
               </P>
             </IntroDiv>
             <FormBox>
