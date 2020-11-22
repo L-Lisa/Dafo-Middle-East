@@ -62,7 +62,7 @@ const SiteMap = () => {
           </Link>
         </LI>
         <LI>
-          <Link to="/contact-us">
+          <Link to="/about">
             {" "}
             <h2>Contact Us</h2>
           </Link>
