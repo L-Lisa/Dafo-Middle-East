@@ -13,8 +13,17 @@ import { RedLine } from "../components/RedLine";
 import youtubeicon from "..//images/youtubeicon.png";
 import twittericon from "..//images/twittericon.png";
 import Linkedin from "..//images/Linkedin.png";
+import TagManager from 'react-gtm-module'
+//analytics
+const tagManagerArgs = {
+  gtmId: 'G-4VK34CQH61'
+}
+TagManager.initialize(tagManagerArgs)
 
 const MainPage = () => {
+  window.dataLayer.push({
+    event: 'pageview'
+  });
   return (
     <MainPgWrapper>
       <ScrollLink />

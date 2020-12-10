@@ -15,6 +15,7 @@ const Distributors = React.lazy(() => import("../pages/Distributors"));
 const About = React.lazy(() => import("../pages/About"));
 
 export const Directions = () => {
+
   return (
     <BrowserRouter>
       <Suspense fallback={<div>Loading...</div>}>
