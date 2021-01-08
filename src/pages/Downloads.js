@@ -158,10 +158,21 @@ justify-content: center;
 margin: 50px 0;
 max-width: 500px;
 margin: 0 auto;
+ul{
+  padding-inline-start: unset;
+  text-align: center;
+}
+li{
+  list-style: none;
+}
+@media (min-width: 350px) {
+  ul{
+  text-align: left;
+}}
 @media (min-width: 676px) {
 width: 70%;
 flex-direction: column;
-height: 400px;
+/* height: 400px; */
 width: auto;
 }
 `;
@@ -298,21 +309,25 @@ const Downloads = () => {
                   <H2>Welcome,</H2>{" "}
                   <P> follow the link to request access the downloadable files</P>
                   <ul>
-                    <RedLine /> Certificates
-                </ul>
-                  <ul>
-                    <Hide>
-                      <RedLine />{" "}
-                    </Hide>{" "}
+                    <li>
+                      <Hide>
+                        <RedLine />{" "}
+                      </Hide>{" "}Certificates
+                    </li>
+                    <li>
+                      <Hide>
+                        <RedLine />{" "}
+                      </Hide>{" "}
                   Instructions
-                </ul>
-                  <ul>
-                    {" "}
-                    <Hide>
-                      <RedLine />{" "}
-                    </Hide>{" "}
+                </li>
+                    <li>
+                      {" "}
+                      <Hide>
+                        <RedLine />{" "}
+                      </Hide>{" "}
                   And more..
-                </ul>
+                  </li>
+                  </ul>
                   <AccessButton>
                     <img src={foldericon} alt="Dafo downloads" />
                   Download Library
