@@ -73,7 +73,7 @@ const Vehicles = () => {
             <PlayerContainer>
               <EmbedPlayer>
                 <ReactPlayer
-                  url="https://www.youtube.com/watch?v=yFrJz5tydMQ&t=50s"
+                  url="https://www.youtube.com/watch?v=C2DFPusay5w"
                   width="100%"
                   height="100%"
                   playing
