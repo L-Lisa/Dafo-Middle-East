@@ -139,9 +139,9 @@ const Distributors = () => {
                 title={"Kalmar"}
                 secondaryText1={"United Arab Emirates:"}
                 secondaryText2={
-                  "JBC 5, Unit 3501, Cluster W"
+                  "JBC 5, Unit 3501, Cluster W, Jumeira Lake Towers"
                 }
-                secondaryText3={" P.O.Box 282574, Jumeira Lake Towers, Dubai"}
+                secondaryText3={" P.O.Box 282574, Dubai"}
                 email2="+971 (0) 442 86 644"
               // mailto2="info@maverickdigital.co.ke"
               />
