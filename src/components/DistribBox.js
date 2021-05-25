@@ -93,7 +93,7 @@ const Phone = styled.div`
 padding: 2px;
 font-size: 0.9em;
 `;
-const ContactList = styled.ul`
+const ContactList = styled.ul` 
 list-style: none;
 line-height: normal;
 color: #1c1c1c;
@@ -106,6 +106,9 @@ margin-top: 0;
 @media (min-width: 630px) {
     width: 95%;
     text-align:left;
+}
+@media (min-width: 900px) {
+    padding: 04px 20px;
 }
 `;
 export const DistribBox = ({ title, secondaryText1, secondaryText2, secondaryText3, secondaryText4, secondaryText5, coverImage, children, className, supportingText, buttonText, email1, mailto1, email2, mailto2, phone1, phone2, phone3, phone4 }) => {

@@ -5,6 +5,7 @@ import { DistribBox } from "../components/DistribBox";
 import coverImage from "..//images/distributors1920x1200.jpg";
 import Tebra from "images/Tebra-Logo.jpg";
 import Maverick from "images/MaverickLogo.jpeg";
+import Kalmar from "images/Kalmar.png"
 import { MidDistributors } from "../components/MidDistributors";
 
 
@@ -111,11 +112,11 @@ const Distributors = () => {
                 coverImage={Tebra}
                 alt=" Dafo Distributor Tebra"
                 title="Tebra General Trading"
-                secondaryText1={"Dubai, United Arab Emirates:"}
+                secondaryText1={"United Arab Emirates:"}
                 secondaryText2={
                   "Head Office: First Floor, BMTC Building, Deira "
                 }
-                secondaryText3={"Dubai, U.A.E. P.O.Box 1247"}
+                secondaryText3={"P.O.Box 1247, Dubai "}
                 email1="info@tebratrading.com"
                 mailto1="info@tebratrading.com"
               />
@@ -130,6 +131,19 @@ const Distributors = () => {
                 secondaryText3={" Nairobi & Mombasa, Kenya"}
                 email2="info@maverickdigital.co.ke"
                 mailto2="info@maverickdigital.co.ke"
+              />
+
+              <DistribBox
+                coverImage={Kalmar}
+                alt=" Dafo distributor Kalmar Global"
+                title={"Kalmar"}
+                secondaryText1={"United Arab Emirates:"}
+                secondaryText2={
+                  "JBC 5, Unit 3501, Cluster W"
+                }
+                secondaryText3={" P.O.Box 282574, Jumeira Lake Towers, Dubai"}
+                email2="+971 (0) 442 86 644"
+              // mailto2="info@maverickdigital.co.ke"
               />
             </ContactSection>
             <Red></Red>
