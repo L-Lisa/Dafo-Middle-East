@@ -136,7 +136,7 @@ const Distributors = () => {
               <DistribBox
                 coverImage={Kalmar}
                 alt=" Dafo distributor Kalmar Global"
-                title={"Kalmar"}
+                title={"Kalmar Middle East DMCC"}
                 secondaryText1={"United Arab Emirates:"}
                 secondaryText2={
                   "JBC 5, Unit 3501, Cluster W, Jumeira Lake Towers"
