@@ -133,13 +133,20 @@ const CalculatorBox = styled.div`
     margin: 2px;
   }
 `;
+const Fine = styled.div`
+  font-size: 9px;
+  width: 91%;
+  padding-left: 8px;
+  margin: 0 auto;
+  padding-top: 4px;
+`;
 
 export const Calculator2 = () => {
   const [height, setHeight] = useState();
   const [width, setWidth] = useState();
   const [depth, setDepth] = useState();
   const volumeProtected = ((height * width * depth) / 1000000000).toFixed(3);
-  const volumeProtectedNum = Number(volumeProtected);
+  // const volumeProtectedNum = Number(volumeProtected);
 
   const [calculatedVolumeP, setCalculatedVolumeP] = useState(volumeProtected);
   const [showcalculation, setShowcalculation] = useState();
@@ -149,21 +156,21 @@ export const Calculator2 = () => {
   function round5(x) {
     return Math.ceil(x / 5) * 5;
   }
-  const multiply = volumeProtectedNum * 3;
-  const largerOrder = round5(multiply);
+  function round10(x) {
+    return Math.ceil(x / 10) * 10;
+  }
+  const multiply = volumeProtected * 3;
+  const even5 = round5(multiply);
+  const even10 = round10(multiply);
   const err = "a larger scale, please contact our sales team.";
   const recomendMessage = `${recomended} liters.`;
 
   const recomendedOrder = () => {
-    /*  if (volumeProtectedNum <= 5) setRecomended(15);
-    if (volumeProtectedNum > 5 && volumeProtectedNum <= 10.5) setRecomended(35); */
-    /*  if (volumeProtectedNum > 10.5 && volumeProtectedNum <= 12.5) {
-      setRecomended(12.5);
-    }
-    if (volumeProtectedNum > 12.5) setRecomended(largerOrder); */
-    if (largerOrder < 100) setRecomended(largerOrder);
-
-    if (largerOrder > 100) setMessage(err);
+    if (multiply < 10) setRecomended(even5);
+    if (multiply >= 10 && multiply <= 12.5) setRecomended(12.5);
+    if (multiply > 12.5 && multiply < 30) setRecomended(even5);
+    if (multiply > 30) setRecomended(even10);
+    if (multiply > 100) setMessage(err);
   };
   const ClickVolumeProtected = (e) => {
     e.preventDefault();
@@ -172,10 +179,10 @@ export const Calculator2 = () => {
     console.log(volumeProtected);
     recomendedOrder();
   };
-  console.log(recomended);
-  console.log(recomendMessage);
-  console.log(calculatedVolumeP);
-  console.log();
+  console.log("recomended", recomended);
+  console.log("recomendMessage", recomendMessage);
+  console.log("calculatedVolumeP", calculatedVolumeP);
+  console.log("multiply", multiply);
   return (
     <Wrapper>
       <Bolts1>
@@ -240,7 +247,10 @@ export const Calculator2 = () => {
           )}
         </ResultDiv>
       </CalculatorSection>
-
+      <Fine>
+        * These numbers serve as a guidance, Dafo engineers will make final
+        calculations for your system.
+      </Fine>
       <Bolts1>
         <Dot />
         <Dot />
