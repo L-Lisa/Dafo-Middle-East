@@ -155,12 +155,14 @@ export const Calculator2 = () => {
   const recomendMessage = `${recomended} liters.`;
 
   const recomendedOrder = () => {
-    if (volumeProtectedNum <= 5) setRecomended(5);
-    if (volumeProtectedNum > 5 && volumeProtectedNum <= 10.5) setRecomended(10);
-    if (volumeProtectedNum > 10.5 && volumeProtectedNum <= 12.5) {
+    /*  if (volumeProtectedNum <= 5) setRecomended(15);
+    if (volumeProtectedNum > 5 && volumeProtectedNum <= 10.5) setRecomended(35); */
+    /*  if (volumeProtectedNum > 10.5 && volumeProtectedNum <= 12.5) {
       setRecomended(12.5);
     }
-    if (volumeProtectedNum > 12.5) setRecomended(largerOrder);
+    if (volumeProtectedNum > 12.5) setRecomended(largerOrder); */
+    if (largerOrder < 100) setRecomended(largerOrder);
+
     if (largerOrder > 100) setMessage(err);
   };
   const ClickVolumeProtected = (e) => {
@@ -170,7 +172,10 @@ export const Calculator2 = () => {
     console.log(volumeProtected);
     recomendedOrder();
   };
-
+  console.log(recomended);
+  console.log(recomendMessage);
+  console.log(calculatedVolumeP);
+  console.log();
   return (
     <Wrapper>
       <Bolts1>
